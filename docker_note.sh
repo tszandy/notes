@@ -1,7 +1,12 @@
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
+<<<<<<< HEAD
 #kali images
 docker run --net "host" --name kali  -ti kalilinux/kali /bin/bash
+=======
+#kali 
+docker run -it --name kali --net "host" kalilinux/kali /bin/bash
+>>>>>>> 0b9263d (update notes)
 docker start -i kali
 
 #windows
