@@ -1,5 +1,9 @@
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
+#kali images
+docker run --net "host" --name kali  -ti kalilinux/kali /bin/bash
+docker start -i kali
+
 #windows
 docker run --rm -v C:\Users\44498\Desktop\leetcode\cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
