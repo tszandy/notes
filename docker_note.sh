@@ -1,6 +1,14 @@
+
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
-<<<<<<< HEAD
+docker rm -f angular
+docker build -f Dockerfile_angular -t tszandy/ubuntu_angular:0.01 . && docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:0.01 /bin/bash
+
+docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:0.01 /bin/bash
+
+docker start -i angular
+
+>>>>>>> 1dc7c65 (update notes)
 #kali images
 docker run --net "host" --name kali  -ti kalilinux/kali /bin/bash
 =======
@@ -44,7 +52,11 @@ docker run --rm --gpus all -dti nvidia/cuda:11.4.1-runtime-ubuntu18.04 /bin/bash
 #docker run nvidia ubuntu runtime --gpus attached all gpu 
 docker run --rm --gpus all -ti nvidia/cuda:11.4.1-runtime-ubuntu18.04 /bin/bash
 
-#rm all unrunning docker containers
+# docker remove dangling image
+docker rmi $(docker images -f "dangling=true" -q)
+docker image prune
+
+# docker rm all unrunning docker containers
 docker container prune
 docker rm $(docker ps -aq)
 
@@ -68,5 +80,11 @@ docker volume rm ${volume_name}
 docker volume inspect ${volume_name}
 docker inspect ${volume_name}
 
+# docker save image
+docker save ${image_name} > /PATH/${image_name}.tar 
 
+# docker load image
+docker load < /PATH/${image_name}.tar 
 
+# docker rm <none> images
+docker rmi $(docker images --filter “dangling=true” -q --no-trunc)

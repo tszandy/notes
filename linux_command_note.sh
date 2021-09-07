@@ -1,5 +1,9 @@
 Linux System
 
+echo "${username}:${password}" | chpasswd # change password of username need root access
+
+usermod -aG sudo ${username} # add user to the sudo group
+
 cd # go to home directory
 
 cd - # go to previous location 
