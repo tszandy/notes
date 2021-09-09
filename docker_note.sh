@@ -1,10 +1,13 @@
 
+<<<<<<< HEAD
 # ubuntu cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
 # jenkin environment
 docker run --name jenkin -u root -rm -d -p 8080:8080 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
 
+=======
+>>>>>>> 70314c4 (update kali docker image)
 # ubuntu angular environment image
 docker rm -f angular
 docker build -f Dockerfile_angular -t tszandy/ubuntu_angular:0.01 . && docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:0.01 /bin/bash
@@ -21,9 +24,14 @@ docker run --name python -ti tszandy/ubuntu_python:0.01 /bin/bash
 docker start -i python
 
 # kali images
+docker rm -f kali
+docker build -f Dockerfile_kali -t tszandy/kalilinux:0.01 . && docker run --name kali --net "host" -ti tszandy/kalilinux:0.01 /bin/bash
 docker run --name kali --net "host" -ti kalilinux/kali /bin/bash
 >>>>>>> 9dbb82c (update python note)
 docker start -i kali
+
+# cpp environment image
+docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
 # windows cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 

@@ -1,0 +1,32 @@
+From kalilinux/kali
+
+Run apt update
+
+Run apt -y autoremove
+
+Run apt -y clean
+
+Run apt install -y nmap
+
+Run apt install -y burpsuite
+
+Run apt install -y --allow-change-held-packages wireshark
+
+Run apt install -y metasploit-framework
+
+Run apt install -y aircrack-ng
+
+Run apt install -y netcat-traditional
+
+Run apt install -y john
+
+Run apt install -y sqlmap
+
+Run apt install -y autopsy
+
+Run apt install -y kali-tools-social-engineering
+
+Run apt install -y man-db
+
+Run apt install -y exploitdb
+
