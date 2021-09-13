@@ -110,3 +110,40 @@ $$ # Expands to the process ID of the shell.
 $! # Expands to the process ID of the most recently executed background (asynchronous) command.
 $0 # Expands to the name of the shell or shell script.
 $_ # The underscore variable is set at shell startup and contains the absolute file name of the shell or script being executed as passed in the argument list. Subsequently, it expands to the last argument to the previous command, after expansion. It is also set to the full pathname of each command executed and placed in the environment exported to that command. When checking mail, this parameter holds the name of the mail file.
+
+# example 
+echo $0
+bash
+echo $#
+0
+
+# exect command date and print output
+echo "`date`"
+echo "$(date)"
+
+# assign variable date to 20021226
+date=20021226
+echo $date
+20021226
+
+echo \$date
+$date
+
+echo '$date'
+$date
+
+echo "$date"
+20021226
+
+# brace expansion
+echo sp{el,il,al}l
+spell spill spall
+
+# get variable start with N
+echo ${!N*}
+
+# creation of the named variable if it does not yet exist
+echo ${FRANKY:=Franky}
+Franky
+
+
