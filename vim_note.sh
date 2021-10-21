@@ -31,5 +31,6 @@ ctrl+f # Scroll page down towards end of file
 ctrl+b # Scroll page up towards top of file
 >> # indent (move right) line one shiftwidth
 << # de-indent (move left) line one shiftwidth
+. # repeat previous command
 
 /{expression} # search expression n find next,N find previous
