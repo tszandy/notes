@@ -19,3 +19,5 @@ os.getcwd()
 # get val of environment variable key if it exists otherwise return None 
 os.getenv(key)
 
+# get split filepath and file extension
+(file_path,file_ext) = os.path.splitext(path)

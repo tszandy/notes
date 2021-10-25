@@ -6,3 +6,9 @@ lsmod
 
 #remove kernel module 
 rmmod
+
+# auto add kernel module
+modprobe $module_name
+
+# update module dependency 
+depmod
