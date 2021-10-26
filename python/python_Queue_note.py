@@ -5,3 +5,6 @@ Queue
 
 LifoQueue
 
+PriorityQueue
+
+SimpleQueue
