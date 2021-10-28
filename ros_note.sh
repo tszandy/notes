@@ -230,7 +230,7 @@ generate_messages(
 Getting Help
 
 rosmsg -h
-* You should see a list of different rosmsg subcommands.  Commands:
+* You should see a list of different rosmsg subcommands. Commands:
 *   rosmsg show     Show message description
 *   rosmsg list     List all messages
 *   rosmsg md5      Display message md5sum

@@ -1,3 +1,3 @@
 dom - document object modol
-ng - angular
+ng  - angular
 lts - long term support
