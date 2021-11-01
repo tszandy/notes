@@ -38,7 +38,7 @@ Ex; grep ${input_stream} ${file}, grep root /etc/passwd
 less # see the contents of the file one screenful at a time 
 
 diff # differences between two text files 
- file # see format of file 
+file # see format of file 
 
 find # find certain file 
 ex: find ${path} -name ${file_name} 
@@ -76,7 +76,7 @@ ps w # Show full command names, not just what fits on one line.
 kill pid # terminate a process 
 kill -STOP pid # freeze a process instead of terminating it 
 kill -CONT pid # the CONT signal to continue running the process again 
- CTRL-Z # suspend processes 
+CTRL-Z # suspend processes 
 fg # bring back suspend processes
 jobs # list suspend processes
 
@@ -85,7 +85,7 @@ CTRL-C # kill processes
 running command in background	
 you can detach a process from the shell and put it in the “background” with the ampersand (&) 
 The dark side of running background processes is that they may expect to work with the standard input (or worse, read directly from the terminal) 
-If a program tries to read something from the standard input when it’s in the background, it can freeze (try fg to bring it back) or terminate. Also, if the program writes to the standard output or standard error, the output can appear in the terminal window with no regard for anything else run- ning there, meaning that you can get unexpected output when you’re work- ing on something else. 
+If a program tries to read something from the standard input when it’s in the background, it can freeze (try fg to bring it back) or terminate. Also,if the program writes to the standard output or standard error, the output can appear in the terminal window with no regard for anything else run- ning there, meaning that you can get unexpected output when you’re work- ing on something else. 
 The best way to make sure that a background process doesn’t bother you is to redirect its output (and possibly input) 
 
 ln -s target linkname # create a symbolic link from target to linkname 
@@ -164,7 +164,7 @@ The base path for devices is /sys/devices. For example, the SATA hard disk at /d
 /sys/devices/pci0000:00/0000:00:1f.2/host0/target0:0:0/0:0:0:0/block/sda 
 
 Use the udevadm command to show the path and other attributes: 
-udevadm info --query=all --name=/dev/sda The udevadm program is in /sbin 
+udevadm info --query=all --name=/dev/sdaThe udevadm program is in /sbin 
 
 dd copies data in blocks of a fixed size 
 dd if=/dev/zero of=new_file bs=1024 count=1 
@@ -173,7 +173,7 @@ mount # mount file systems
 
 lsscsi # list the SCSI devices on your system ,Small Computer System Interface (SCSI) was orig- inally developed as a hardware and protocol standard for communication 
 
-lsscsi [0:0:0:0]u diskv ATA WDC WD3200AAJS-2 01.0 /dev/sdaw [1:0:0:0] cd/dvd Slimtype DVD A DS8A5SH XA15 /dev/sr0 [2:0:0:0] disk FLASH Drive UT_USB20 0.00 /dev/sdb 
+lsscsi[0:0:0:0]u diskv ATA WDC WD3200AAJS-2 01.0 /dev/sdaw [1:0:0:0] cd/dvd Slimtype DVD A DS8A5SH XA15 /dev/sr0 [2:0:0:0] disk FLASH Drive UT_USB20 0.00 /dev/sdb 
 
 If you were referring to the device names directly in the fstab file (see Section 4.2.8), you’d have to make some changes to that file in order to get things (mostly) back to normal. To solve this problem, most modern Linux systems use the Universally Unique Identifier (UUID, see Section 4.2.4) for persistent disk device access. 
 
@@ -211,20 +211,20 @@ gdisk A version of fdisk that supports GPT but not MBR.
 parted -l  # view your system’s partition table 
 
 
-The Fourth Extended filesystem (ext4) is the current iteration of a line of filesystems native to Linux.  
-The Second Extended filesystem (ext2) was a longtime default for Linux systems inspired by traditional Unix file- systems such as the Unix File System (UFS) and the Fast File System (FFS).  
-The Third Extended filesystem (ext3) added a journal feature (a small cache outside the normal filesystem data structure) to enhance data integrity and hasten booting.  
-ISO 9660 (iso9660) is a CD-ROM standard. Most CD-ROMs use some variety of the ISO 9660 standard.  
+The Fourth Extended filesystem (ext4) is the current iteration of a line of filesystems native to Linux. 
+The Second Extended filesystem (ext2) was a longtime default for Linux systems inspired by traditional Unix file- systems such as the Unix File System (UFS) and the Fast File System (FFS). 
+The Third Extended filesystem (ext3) added a journal feature (a small cache outside the normal filesystem data structure) to enhance data integrity and hasten booting. 
+ISO 9660 (iso9660) is a CD-ROM standard. Most CD-ROMs use some variety of the ISO 9660 standard. 
 FAT filesystems (msdos, vfat, umsdos) pertain to Microsoft systems. 
 
-HFS+ (hfsplus) is an Apple standard used on most Macintosh systems.   mkfs utility can create many kinds of filesystems. 
+HFS+ (hfsplus) is an Apple standard used on most Macintosh systems. mkfs utility can create many kinds of filesystems. 
 you can create an ext4 partition on /dev/sdf2 with this command: 
 mkfs -t ext4 /dev/sdf2 
 
 mount # To learn the current filesystem status of your system 
 
-mount -t type device mountpoint mount -t ext4 /dev/sdf2 /home/extra  You normally don’t need to supply the -t type option because mount can usually figure it out for you  
-umount mountpoint # To unmount (detach) a filesystem, use the umount command:  
+mount -t type device mountpointmount -t ext4 /dev/sdf2 /home/extra You normally don’t need to supply the -t type option because mount can usually figure it out for you 
+umount mountpoint # To unmount (detach) a filesystem, use the umount command: 
 blkid # To view a list of devices and the corresponding filesystems and UUIDs on your system, use the blkid (block ID) program: 
 
 To mount a filesystem by its UUID 
@@ -243,7 +243,7 @@ exec, noexec Enables or disables execution of programs on the filesystem.
 suid, nosuid Enables or disables setuid programs. 
 ro Mounts the filesystem in read-only mode (as does the -r short option). 
 rw Mounts the filesystem in read-write mode. 
-conv=rule (FAT-based filesystems) Converts the newline characters in files based on rule, which can be binary, text, or auto. 
+conv=rule (FAT-based filesystems) Converts the newline charactersin files based on rule, which can be binary, text, or auto.
 mount -n -o remount /  # command remounts the root in read-write mode 
 
 The /etc/fstab Filesystem Table 
@@ -262,9 +262,9 @@ sysfs Mounted on /sys.
 tmpfs Mounted on /run and other locations. 
 
 Boot Loader Overview 
-GRUB A near-universal standard on Linux systems LILO One of the first Linux boot loaders. ELILO is a UEFI version 
+GRUB A near-universal standard on Linux systemsLILO One of the first Linux boot loaders. ELILO is a UEFI version 
 SYSLINUX Can be configured to run from many different kinds of filesystems 
-LOADLIN Boots a kernel from MS-DOS efilinux A UEFI boot loader intended to serve as a model and refer- 
+LOADLIN Boots a kernel from MS-DOSefilinux A UEFI boot loader intended to serve as a model and refer- 
 ence for other UEFI boot loaders 
 coreboot (formerly LinuxBIOS) A high-performance replacement for the PC BIOS that can include a kernel 
 Linux Kernel EFISTUB A kernel plugin for loading the kernel directly from the EFI/UEFI System Partition (ESP) found on recent systems 
@@ -280,7 +280,7 @@ syslogd # system log
 
 /etc/passwd # maps usernames to user IDs 
 
-An x in the second passwd file field indicates that the encrypted password is stored in the shadow file. A star (*) indicates that the user cannot log in, and if the field is blank (that is, you see two colons in a row, like ::), no password is required to log in. (Beware of blank pass- words. You should never have a user without a password.)  
+An x in the second passwd file field indicates that the encrypted password is stored in the shadow file. A star (*) indicates that the user cannot log in, and if the field is blank (that is, you see two colons in a row, like ::), no password is required to log in. (Beware of blank pass- words. You should never have a user without a password.) 
 ￼
 
 Special Users 
@@ -303,15 +303,15 @@ use f to change the displayed fields and u to display the number of major page f
 
 lsof # command lists open files and the processes using them 
 
-lsof /usr #You can use command-line options to provide a filename as an argument and have lsof list only the entries that match the argument  
-lsof -p pid  # To list the open files for a particular process ID, run:  
+lsof /usr #You can use command-line options to provide a filename as an argument and have lsof list only the entries that match the argument 
+lsof -p pid  # To list the open files for a particular process ID, run: 
 ps m # display the thread information in ps 
- top -p pid1 [-p pid2 ...]  # To monitor one or more specific processes over time  
+top -p pid1 [-p pid2 ...]  # To monitor one or more specific processes over time 
 time # find out how much CPU time a command uses during its lifetime 
 
-Most shells have a built-in time command that doesn’t provide exten- sive statistics, so you’ll probably need to run /usr/bin/time  
+Most shells have a built-in time command that doesn’t provide exten- sive statistics, so you’ll probably need to run /usr/bin/time 
 ps -l # command lists the current priority of a process 
- uptime # tells you three load averages in addition to how long the kernel has been running 
+uptime # tells you three load averages in addition to how long the kernel has been running 
 The three bolded numbers are the load averages for the past 1 minute, 5 minutes, and 15 minutes 
 
 vmstat 2 # reports statistics every 2 seconds 
@@ -331,7 +331,7 @@ Physical layer Defines how to send raw data across a physical medium, such as Et
 Each Internet host has at least one numeric IP address in the form of a.b.c.d, such as 10.23.2.37. 
 
 ifconfig # To see the addresses that are active on your Linux machine 
- route -n # It uses a destination configuration called a routing table to determine its routing behavior. To show the routing table, 
+route -n # It uses a destination configuration called a routing table to determine its routing behavior. To show the routing table, 
 
 There’s one tricky detail: Say the host wants to send something to 10.23.2.132, which matches both rules in the routing table, 0.0.0.0/0 and 10.23.2.0/24. How does the kernel know to use the second one? It chooses the longest destination prefix that matches. This is where CIDR network form comes in particularly handy: 10.23.2.0/24 matches, and its prefix is 24 bits long; 0.0.0.0/0 also matches, but its prefix is 0 bits long (that is, it has no prefix), so the rule for 10.23.2.0/24 takes priority. 
 
@@ -340,7 +340,7 @@ The Domain Name Service (DNS) system, which maps names to IP addresses so that y
 
 ping # the most basic network debugging tools. 
 
-ping 10.23.2.1 PING 10.23.2.1 (10.23.2.1) 56(84) bytes of data. 64 bytes from 10.23.2.1: icmp_req=1 ttl=64 time=1.76 ms 
+ping 10.23.2.1PING 10.23.2.1 (10.23.2.1) 56(84) bytes of data.64 bytes from 10.23.2.1: icmp_req=1 ttl=64 time=1.76 ms 
 64 bytes from 10.23.2.1: icmp_req=2 ttl=64 time=2.35 ms 
 64 bytes from 10.23.2.1: icmp_req=4 ttl=64 time=1.69 ms 
 64 bytes from 10.23.2.1: icmp_req=5 ttl=64 time=1.61 ms 
@@ -355,14 +355,14 @@ host www.example.com # To find the IP address behind a domain name
 You can also use host in reverse: Enter an IP address instead of a host- name to try to discover the hostname behind the IP address. But don’t expect this to work reliably. Many hostnames can represent a single IP address, and DNS doesn’t know how to determine which hostname should correspond to an IP address. 
 
 The IEEE 802 family of standards documents defines many different kinds of Ethernet networks, from wired to wireless, but they all have a few things in common, in particular, the following: 
-All devices on an Ethernet network have a Media Access Control (MAC) address, sometimes called a hardware address.  Devices on an Ethernet network send messages in frames, which are wrappers around the data sent.  
+All devices on an Ethernet network have a Media Access Control (MAC) address, sometimes called a hardware address. Devices on an Ethernet network send messages in frames, which are wrappers around the data sent. 
 eth0 (the first Ethernet card in the com- puter)
 wlan0 (a wireless interface). 
 
 ifconfig # viewing the network interface settings: 
- ethtool # display or change the settings on Ethernet cards. 
+ethtool # display or change the settings on Ethernet cards. 
 
-ifconfig -a # displays a kernel network inter- face corresponding to the hardware  
+ifconfig -a # displays a kernel network inter- face corresponding to the hardware 
 ifconfig interface address netmask mask # To manually set the IP address and netmask for a kernel network interface 
 interface is the name of the interface, such as eth0 
 
@@ -372,7 +372,7 @@ The gw-address parameter is the IP address of your default gateway; it must be a
 route del -net default # To remove a default gateway 
 
 You can easily override the default gateway with other routes. For example, say your machine is on subnet 10.23.2.0/24, you want to reach a subnet at 192.168.45.0/24, and you know that 10.23.2.44 can act as a router for that subnet. Run this command to send traffic bound for 192.168.45.0 to that router: 
-route add -net 192.168.45.0/24 gw 10.23.2.44 
+route add -net 192.168.45.0/24 gw 10.23.2.44
 You don’t need to specify the router in order to delete a route: 
 route del -net 192.168.45.0/24 
 
@@ -384,13 +384,13 @@ and Fedora uses its own set of scripts with configuration in /etc/sysconfig/netw
 Most normal network client applications don’t particularly care what IP address your machine uses, as long as it works. Dynamic Host Configuration Protocol (DHCP, described in Section 9.16) tools do the basic network layer configuration on typical clients. 
 
 There’s more to the story, though. For example, wireless networks add additional dimensions to interface configuration, such as network names, authentication, and encryption techniques. When you step back to look at the bigger picture, you see that your system needs a way to answer the fol- lowing questions: 
-* If the machine has multiple physical network interfaces (such as a notebook with wired and wireless Ethernet), how do you choose which one(s) to use?  
-* How should the machine set up the physical interface? For wireless net- works, this includes scanning for network names, choosing a name, and negotiating authentication.  
-* Once the physical network interface is connected, how should the machine set up the software network layers, such as the Internet layer?  
-* How can you let a user choose connectivity options? For example, how do you let a user choose a wireless network?  
+* If the machine has multiple physical network interfaces (such as a notebook with wired and wireless Ethernet), how do you choose which one(s) to use? 
+* How should the machine set up the physical interface? For wireless net- works, this includes scanning for network names, choosing a name, and negotiating authentication. 
+* Once the physical network interface is connected, how should the machine set up the software network layers, such as the Internet layer? 
+* How can you let a user choose connectivity options? For example, how do you let a user choose a wireless network? 
 * What should the machine do if it loses connectivity on a network interface? 
 
-Answering these questions is usually more than simple boot scripts  can handle, and it’s a real hassle to do it all by hand. The answer is to use a system service that can monitor physical networks and choose (and auto- matically configure) the kernel network interfaces based on a set of rules that makes sense to the user. The service should also be able to respond to requests from users, who should be able to change the wireless network they’re on without having to become root just to fiddle around with net- work settings every time something changes.  
+Answering these questions is usually more than simple boot scripts can handle, and it’s a real hassle to do it all by hand. The answer is to use a system service that can monitor physical networks and choose (and auto- matically configure) the kernel network interfaces based on a set of rules that makes sense to the user. The service should also be able to respondto requests from users, who should be able to change the wireless network they’re on without having to become root just to fiddle around with net- work settings every time something changes. 
 The most widely used option on desktops and notebooks is NetworkManager. Other network configuration management systems are mainly targeted for smaller embedded systems, such as OpenWRT’s netifd, Android’s ConnectivityManager service, ConnMan, and Wicd. We’ll briefly discuss NetworkManager because it’s the one you’re most likely to encoun- ter. We won’t go into a tremendous amount of detail, though, because after you see the big picture, NetworkManager and other configuration systems will be more transparent. 
 
 NetworkManager is a daemon that the system starts upon boot. Like all daemons, it does not depend on a running desktop component. Its job is to listen to events from the system and users and to change the network con- figuration based on a bunch of rules. 
@@ -432,7 +432,7 @@ NAT is the most commonly used way to share a single IP address with a pri- vate 
 In order to set up a Linux machine to perform as a NAT router, you must activate all of the following inside the kernel configuration: network packet filtering (“firewall support”), connection tracking, IP tables support, full NAT, and MASQUERADE target support. Most distribution kernels come with this support. 
 Next you need to run some complex-looking iptables commands to make the router perform NAT for its private subnet. Here’s an example that applies to an internal Ethernet network on eth1 sharing an external connec- tion at eth0 (you’ll learn more about the iptables syntax in Section 9.21): 
 
-# sysctl -w net.ipv4.ip_forward # iptables -P FORWARD DROP # iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE # iptables -A FORWARD -i eth0 -o eth1 -m state --state ESTABLISHED,RELATED -j ACCEPT # iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT 
+# sysctl -w net.ipv4.ip_forward# iptables -P FORWARD DROP# iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE# iptables -A FORWARD -i eth0 -o eth1 -m state --state ESTABLISHED,RELATED -j ACCEPT # iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT 
 # iptables -L # viewing the current configuration 
 # iptables -P FORWARD DROP # The DROP policy tells the kernel to dis- card the packet. To set the policy on a chain 
 # iptables -A INPUT -s 192.168.34.63 -j DROP # Say that someone at 192.168.34.63 is annoying you. To prevent them from talking to your machine
@@ -445,9 +445,9 @@ All is well until you hear from someone you know at 192.168.34.37 saying that th
 The kernel reads the chain from top to bottom, using the first rule that matches. 
 The first rule does not match 192.168.34.37, but the second does, because it applies to all hosts from 192.168.34.1 to 192.168.34.254 and this second rule says to drop packets. When a rule matches, the kernel carries out the action and looks no further down in the chain. (You might notice that 192.168.34.37 can send packets to any port on your machine except port 25 because the second rule only applies to port 25.) 
 The solution is to move the third rule to the top. First, delete the third rule with this command: 
-# iptables -D INPUT 3 
+# iptables -D INPUT 3
 Then insert that rule at the top of the chain with iptables -I: 
-# iptables -I INPUT -s 192.168.34.37 -j ACCEPT 
+# iptables -I INPUT -s 192.168.34.37 -j ACCEPT
 To insert a rule elsewhere in a chain, put the rule number after the 
 chain name (for example, iptables -I INPUT 4 ...). 
 
@@ -479,9 +479,9 @@ The network interface must be up for this command to work (if it’s not, run if
 
 iw wlan0 connect network_name # Use iw to connect a network interface to an unsecured wireless network 
 
-telnet is a program originally meant to enable logins to remote hosts.  
+telnet is a program originally meant to enable logins to remote hosts. 
 These are some other common network servers that you might find running on your system: 
-httpd, apache, apache2 Web servers sshd Secure shell daemon (see Section 10.3) postfix, qmail, sendmail Mail servers cupsd Print server nfsd, mountd Network filesystem (file-sharing) daemons smbd, nmbd Windows file-sharing daemons (see Chapter 12) rpcbind Remote procedure call (RPC) portmap service daemon 
+httpd, apache, apache2 Web serverssshd Secure shell daemon (see Section 10.3)postfix, qmail, sendmail Mail serverscupsd Print servernfsd, mountd Network filesystem (file-sharing) daemonssmbd, nmbd Windows file-sharing daemons (see Chapter 12) rpcbind Remote procedure call (RPC) portmap service daemon 
 
 To create SSH protocol version 2 keys, use the ssh-keygen pro- gram that comes with OpenSSH: 
 # ssh-keygen -t rsa -N '' -f /etc/ssh/ssh_host_rsa_key 
@@ -497,16 +497,16 @@ You can also run pipelines to and from an ssh command as shown in the following 
 $ tar zcvf - dir | ssh remote_host tar zxvf - 
 
 You can use scp to transfer files to or from a remote machine to your machine or from one host to another. It works like the cp command. Here are a few examples: 
-$ scp user@host:file . $ scp file user@host:dir $ scp user1@host1:file user2@host2:dir 
+$ scp user@host:file .$ scp file user@host:dir$ scp user1@host1:file user2@host2:dir 
 
 sftp # program works like the command-line ftp client, using get and put commands 
 
 netstat 
 ￼
- lsof -i # a complete list of programs using or listening to ports 
+lsof -i # a complete list of programs using or listening to ports 
 
 The lsof program is like netstat in that it tries to reverse-resolve every IP address that it finds into a hostname, which slows down the output. Use the -n option to disable name resolution: 
-# lsof -n -i You can also specify -P to disable /etc/services port name lookups. 
+# lsof -n -iYou can also specify -P to disable /etc/services port name lookups. 
 
 lsof -i:port # If you’re looking for a particular port 
 
@@ -518,7 +518,7 @@ netcat -l -p port_number # listen on a particular port
 
 Port Scanning 
 nmap 10.1.2.2 # run a generic scan on a host 
- Fortunately, you don’t need to know very much to keep your system safe. Here are a few basic rules of thumb:  Run as few services as possible  Block as much as possible with a firewall  Track the services that you offer to the Internet If you run an SSH server, Postfix, or similar services, keep your software up-to-date and get appropriate security alerts. 
+Fortunately, you don’t need to know very much to keep your system safe. Here are a few basic rules of thumb: Run as few services as possible Block as much as possible with a firewall Track the services that you offer to the Internet If you run an SSH server, Postfix, or similar services, keep your software up-to-date and get appropriate security alerts. 
 Use “long-term support” distribution releases for servers 
 Don’t give an account on your system to anyone who doesn’t need one 
 Avoid installing dubious binary packages 
@@ -554,7 +554,7 @@ When a Unix program finishes, it leaves an exit code for the parent process that
 means that the program ran without a problem. However, if the program has an error, it usually exits with a number other than 0 (but not always, as you’ll see next). 
 
 
-#!/bin/sh if [ "$1" = "hi" ]; then 
+#!/bin/shif [ "$1" = "hi" ]; then 
 echo 'The first argument was "hi"' elif [ "$2" = "bye" ]; then 
 echo 'The second argument was "bye"' else 
 echo -n 'The first argument was not "hi" and the second was not "bye"-- ' 
@@ -567,10 +567,10 @@ the -a and -o flags are the logical “and” and “or” operators (for exampl
 
 File Tests 
 -f Return true if a file is regular
--e Returns true if a file exists -s Returns true if a file is not empty 
+-e Returns true if a file exists-s Returns true if a file is not empty 
 
 File Type Operators 
--d Directory -h Symbolic link 
+-d Directory-h Symbolic link 
 -b  Block device 
 -c  Character device 
 -p Named pipe 
@@ -589,7 +589,7 @@ File Permissions Operators
 -ot (older than) 
 
 two unary string operations: 
--z Returns true if its argument is empty ([ -z "" ] returns 0) -n Returns true if its argument is not empty ([ -n "" ] returns 1) 
+-z Returns true if its argument is empty ([ -z "" ] returns 0)-n Returns true if its argument is not empty ([ -n "" ] returns 1) 
 
 Arithmetic Comparison Operators 
 
@@ -602,7 +602,7 @@ Arithmetic Comparison Operators
 
 #!/bin/sh
 case $1 in
-bye) echo Fine, bye. 
+bye)echo Fine, bye. 
 ;; hi|hello) 
 echo Nice to see you. 
 ;; what*) 
@@ -613,7 +613,7 @@ echo 'Huh?'
 
 It’s sometimes necessary to create a temporary file to collect output for use by a later command. When making such a file, make sure that the filename is distinct enough that no other programs will accidentally write to it. 
 Here’s how to use the mktemp command to create temporary filenames. This script shows you the device interrupts that have occurred in the last two seconds: 
-#!/bin/sh TMPFILE1=$(mktemp /tmp/im1.XXXXXX) TMPFILE2=$(mktemp /tmp/im2.XXXXXX) 
+#!/bin/shTMPFILE1=$(mktemp /tmp/im1.XXXXXX) TMPFILE2=$(mktemp /tmp/im2.XXXXXX) 
     cat /proc/interrupts > $TMPFILE1
     sleep 2
     cat /proc/interrupts > $TMPFILE2
@@ -623,24 +623,24 @@ rm -f $TMPFILE1 $TMPFILE2
 
 Another problem with scripts that employ temporary files is that if the script is aborted, the temporary files could be left behind. In the preceding example, pressing ctRl-C before the second cat command leaves a temporary file in /tmp. Avoid this if possible. Instead, use the trap command to create a signal handler to catch the signal that ctRl-C generates and remove the tem- porary files, as in this handler: 
 
-#!/bin/sh TMPFILE1=$(mktemp /tmp/im1.XXXXXX) 
-TMPFILE2=$(mktemp /tmp/im2.XXXXXX) trap "rm -f $TMPFILE1 $TMPFILE2; exit 1" INT 
+#!/bin/shTMPFILE1=$(mktemp /tmp/im1.XXXXXX) 
+TMPFILE2=$(mktemp /tmp/im2.XXXXXX)trap "rm -f $TMPFILE1 $TMPFILE2; exit 1" INT 
 
-$ basename example.html .html $ basename /usr/local/bin/example 
+$ basename example.html .html$ basename /usr/local/bin/example 
 In both cases, basename returns example 
 
 script to convert GIF image files to the PNG format: 
-#!/bin/sh for file in *.gif; do 
+#!/bin/shfor file in *.gif; do 
 	# exit if there are no files 
 	if [ ! -f $file ]; then 
 		exit 
 	fi 
-	b=$(basename $file .gif) 	echo Converting $b.gif to $b.png... 
+	b=$(basename $file .gif)	echo Converting $b.gif to $b.png... 
 	giftopnm $b.gif | pnmtopng > $b.png 
 done 
 
 The sed program (sed stands for stream editor) is an automatic text editor that takes an input stream (a file or the standard input), alters it accord- ing to some expression, and prints the results to standard output. 
- Use xargs to get around this problem by running a command on each file- name in its standard input stream. 
+Use xargs to get around this problem by running a command on each file- name in its standard input stream. 
 
 Many people use xargs with the find command. For example, the script below can help you verify that every file in the current directory tree that ends with .gif is actually a GIF (Graphic Interchange Format) image: 
 $ find . -name '*.gif' -print | xargs file 
@@ -648,14 +648,14 @@ $ find . -name '*.gif' -print0 | xargs -0 file
 
 Here’s how to perform the preceding task using only find: 
 $ find . -name '*.gif' -exec file {} \; 
- The expr command is a clumsy, slow way of doing math. If you find yourself using it frequently, you should probably be using a language like Python instead of a shell script. 
+The expr command is a clumsy, slow way of doing math. If you find yourself using it frequently, you should probably be using a language like Python instead of a shell script. 
 
 rsync
 On Linux, rsync is the standard synchronizer, offering good performance and many useful ways to perform transfers. 
- To transfer entire directory hierarchies—complete with symbolic links, permissions, modes, and devices—use the -a option. Furthermore, if you want to copy to some place other than your home directory on the remote host, place this destination after the remote host, like this: 
+To transfer entire directory hierarchies—complete with symbolic links, permissions, modes, and devices—use the -a option. Furthermore, if you want to copy to some place other than your home directory on the remote host, place this destination after the remote host, like this: 
 $ rsync -a dir host:destination_dir 
 
-Copying directories can be tricky, so if you’re not exactly sure what will happen when you transfer the files, use the -nv option combination. The -n option tells rsync to operate in “dry run” mode—that is, to run a trial without actually copying any files. The -v option is for verbose mode, which shows details about the transfer and the files involved: 
+Copying directories can be tricky, so if you’re not exactly sure what will happen when you transfer the files, use the -nv option combination. The-n option tells rsync to operate in “dry run” mode—that is, to run a trial without actually copying any files. The -v option is for verbose mode, which shows details about the transfer and the files involved: 
 $ rsync -nva dir host:destination_dir 
 
 Many users like the -z option in conjunction with -a to compress the data before transmission: 
@@ -666,7 +666,7 @@ rsync --bwlimit=10000 -a dir host:destination_dir # limit the bandwidth to 10,00
 
 rsync -a host:src_dir dest_dir # transfer files from a remote machine to your local host 
 
-Samba # The standard file-sharing software suite for Unix  
+Samba # The standard file-sharing software suite for Unix 
 NFS # The standard system for file sharing among Unix systems 
 
 This simple prompt setting for bash ends with the customary $ (the tra- ditional csh prompt ends with %): 
@@ -683,12 +683,12 @@ Toolkits usually consist of shared libraries and support files such as images an
 
 GNOME, KDE, Unity, and Xfce are some com- mon Linux desktop environments. 
 
-Listing Shared Library Dependencies  ldd /bin/bash  Never set LD_LIBRARY_PATH in shell startup files or when compiling soft- ware. When the dynamic runtime linker encounters this variable, it must often search through the entire contents of each specified directory more times than you’d care to know. This causes a big performance hit, but more importantly, you can get conflicts and mismatched libraries because the runtime linker looks in these directories for every program.  
-If you must use LD_LIBRARY_PATH to run some crummy program for which you don’t have the source (or an application that you’d rather not compile, like Mozilla or some other beast), use a wrapper script. Let’s say your exe- cutable is /opt/crummy/bin/crummy.bin and needs some shared libraries in /opt/crummy/lib. Write a wrapper script called crummy that looks like this:  #!/bin/sh LD_LIBRARY_PATH=/opt/crummy/lib export LD_LIBRARY_PATH exec /opt/crummy/bin/crummy.bin $@  
-Avoiding LD_LIBRARY_PATH prevents most shared library problems. But one other significant problem that occasionally comes up with developers is that a library’s application programming interface (API) may change slightly from one minor version to another, breaking installed software. The best solutions here are preventive: Either use a consistent methodology to install shared libraries with -Wl,-rpath to create a runtime link path or simply use the static versions of obscure libraries.  
+Listing Shared Library Dependencies ldd /bin/bashNever set LD_LIBRARY_PATH in shell startup files or when compiling soft- ware. When the dynamic runtime linker encounters this variable, it must often search through the entire contents of each specified directory more times than you’d care to know. This causes a big performance hit, but more importantly, you can get conflicts and mismatched libraries because the runtime linker looks in these directories for every program. 
+If you must use LD_LIBRARY_PATH to run some crummy program for which you don’t have the source (or an application that you’d rather not compile, like Mozilla or some other beast), use a wrapper script. Let’s say your exe- cutable is /opt/crummy/bin/crummy.bin and needs some shared libraries in /opt/crummy/lib. Write a wrapper script called crummy that looks like this: #!/bin/sh LD_LIBRARY_PATH=/opt/crummy/lib export LD_LIBRARY_PATHexec /opt/crummy/bin/crummy.bin $@ 
+Avoiding LD_LIBRARY_PATH prevents most shared library problems. But one other significant problem that occasionally comes up with developers is that a library’s application programming interface (API) may change slightly from one minor version to another, breaking installed software. The best solutions here are preventive: Either use a consistent methodology to install shared libraries with -Wl,-rpath to create a runtime link path or simply use the static versions of obscure libraries. 
 make CC=clang 
 
-clean: 	rm -f $(OBJS) myprog 
+clean:	rm -f $(OBJS) myprog 
 
 MYPACKAGE_INCLUDES=-I/usr/local/include/mypackage 
 MYPACKAGE_LIB=-L/usr/local/lib/mypackage -lmypackage 
@@ -703,14 +703,14 @@ UTIL_OBJS=util.o
 BORING_OBJS=$(UTIL_OBJS) boring.o 
 TRITE_OBJS=$(UTIL_OBJS) trite.o 
 PROGS=boring trite 
- all: $(PROGS)
-boring: $(BORING_OBJS) 	$(CC) -o $@ $(BORING_OBJS) $(LDFLAGS) 
-trite: $(TRITE_OBJS) 	$(CC) -o $@ $(TRITE_OBJS) $(LDFLAGS) 
+all: $(PROGS)
+boring: $(BORING_OBJS)	$(CC) -o $@ $(BORING_OBJS) $(LDFLAGS) 
+trite: $(TRITE_OBJS)	$(CC) -o $@ $(TRITE_OBJS) $(LDFLAGS) 
 
 gdb program # start gdb on an executable named program 
 (gdb) run options # run program with the command-line  argument options 
 (gdb) print variable # print the value of a particular vari- able that the trouble may be related to 
-(gdb) break file:line_num # use the breakpoint feature file is a source code file, and line_num is the line number in that file where gdb should stop  (gdb) continue # tell gdb to continue executing the program  (gdb) clear file:line_num # clear a breakpoint 
+(gdb) break file:line_num # use the breakpoint feature file is a source code file, and line_num is the line number in that file where gdb should stop (gdb) continue # tell gdb to continue executing the program (gdb) clear file:line_num # clear a breakpoint 
 
 http://www.ruby-lang.org/) 
 
@@ -720,19 +720,19 @@ Non-relational databases, sometimes known as NoSQL databases, tend to solve part
 
 Most larger database systems also involve significant networking because they’re distributed over many servers. The most common such net- work setup is called replication, 
 
-The term cloud computing is a catch-all term that’s often used as label for this area. More specifically, infrastructure as a service (IaaS ) refers to systems that allow you to provision and control basic computing resources such as CPU, memory, storage, and networking on a remote server. The OpenStack project is one such API and platform that includes IaaS.  
-Moving up past the raw infrastructure, you can also provision plat- form resources such as the operating system, database servers, and web servers. Systems that offer resources on this level are said to be platform as a service (PaaS).  
+The term cloud computing is a catch-all term that’s often used as label for this area. More specifically, infrastructure as a service (IaaS ) refers to systems that allow you to provision and control basic computing resources such as CPU, memory, storage, and networking on a remote server. The OpenStack project is one such API and platform that includes IaaS. 
+Moving up past the raw infrastructure, you can also provision plat- form resources such as the operating system, database servers, and web servers. Systems that offer resources on this level are said to be platform as a service (PaaS). 
 And once you have custom hardware, you must tailor the system’s software, such as the operating sys- tem internals and user interface. OpenWRT, mentioned in Chapter 9, is one such customized Linux distribution. 
- command-line Editing 
+command-line Editing 
 
 ctrl-A Move the cursor to the beginning of the line 
 ctrl-E Move the cursor to the end of the line 
-ctrl-W Erase the preceding word ctrl-U Erase from cursor to beginning of line 
+ctrl-W Erase the preceding wordctrl-U Erase from cursor to beginning of line 
 ctrl-K Erase from cursor to end of line 
 ctrl-Y Paste erased text (for example, from ctrl-U) 
- man -k keyword 
+man -k keyword 
 
- 
+
 Ctrl + R + ${subname of command} #looking for ${subname of command} press again 
 
 

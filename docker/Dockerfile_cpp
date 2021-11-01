@@ -1,6 +1,8 @@
 From ubuntu:18.04
 
-Run apt-get update && apt-get install -y apt-utils build-essential cmake sudo vim
+Run apt-get update && apt-get install -y apt-utils build-essential cmake sudo vim git
+
+Run yes | unminimize
 
 Run useradd -m -s /bin/bash ice
 
@@ -10,7 +12,7 @@ Run usermod -aG sudo ice
 
 USER ice
 
-Workdir /home/ice
+Workdir /home/ice/cpp_program
 
 Run git config --global user.email "xwddn1994@gmail.com"
 

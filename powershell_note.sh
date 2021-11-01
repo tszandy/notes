@@ -13,6 +13,9 @@ Get-Help
 # get type of variable
 variable.GetType()
 
+# get method of variable
+variable | Get-Member
+
 New-Item
 
 Set-Alias
@@ -20,8 +23,6 @@ Set-Alias
 Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match $name}
 
 Get-PSRepository
-
-Get-Member
 
 Get-Service 
 
