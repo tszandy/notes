@@ -1,0 +1,29 @@
+From ubuntu:18.04
+
+Run apt-get update && apt-get install -y apt-utils build-essential cmake sudo vim git curl python3 python3-pip
+
+Run yes | unminimize
+
+Run useradd -m -s /bin/bash ice
+
+Run echo "ice:1" |chpasswd
+
+Run usermod -aG sudo ice
+
+USER ice
+
+Workdir /home/ice
+
+RUN ssh-keygen -q -t rsa -N '' -f /home/ice/.ssh/id_rsa
+
+Run git config --global user.email "444980834@qq.com"
+
+Run git config --global user.name "Wei Xie"
+
+Run git config --global alias.co checkout
+
+Run git config --global alias.br branch
+
+Run git config --global alias.ct commit
+
+Run git config --global alias.st status

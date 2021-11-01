@@ -1,3 +1,6 @@
+# docker ubuntu environment image
+docker build -f Dockerfile_ubuntu -t tszandy/ubuntu:0.01 . 
+docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:0.01 /bin/bash
 
 <<<<<<< HEAD
 # ubuntu cpp environment image
