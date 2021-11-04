@@ -10,6 +10,9 @@ Write-Host
 # get help for command 
 Get-Help
 
+# print class object
+Write-Host ($obj | Format-Table | Out-String)
+
 # get type of variable
 variable.GetType()
 
@@ -78,4 +81,25 @@ abc
 # execute script or command 
 & script\command
 
+# cast class object to psobject
+foreach ($obj in $objs.PSObject.Properties){
+    $obj
+    $obj.Name
+    $obj.Value
+}
 
+[String]
+[Int]
+[Bool]
+[System.Collections.Generic.List[SystemA.Object]]
+[System.Collections.Generic.List[System.Management.Automation.PSMethod]]
+[hashtable]$var= @{;}
+
+# convert json string to powershell object and hashtable
+$json_string|ConvertFrom-Json
+
+# convert powershell object and hashtable to compact json string
+$powershell_object|ConvertTo-Json -compress
+
+# convert json string to compact json string
+$json_string|ConvertFrom-Json|ConvertTo-Json -compress
