@@ -6,6 +6,8 @@ git stash
 
 # either apply stash or pop stash (delete copy in stash stack)
 git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+# example 
+git stash apply --index 1
 
 # stash specific files to a index with message
 git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
