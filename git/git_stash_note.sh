@@ -14,3 +14,6 @@ git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
           [-u|--include-untracked] [-a|--all] [-m|--message <message>]
           [--pathspec-from-file=<file> [--pathspec-file-nul]]
           [--] [<pathspec>...]]
+
+# git stash one file with message
+git stash push filepath -m "message"
