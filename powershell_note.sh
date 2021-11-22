@@ -95,7 +95,7 @@ foreach ($obj in $objs.PSObject.Properties){
 [System.Collections.Generic.List[System.Management.Automation.PSMethod]]
 [hashtable]$var= @{;}
 
-# convert json string to powershell object and hashtable
+# convert json string to powershell PSCustomObject and Array
 $json_string|ConvertFrom-Json
 
 # convert powershell object and hashtable to compact json string
