@@ -2,15 +2,12 @@
 docker build -f Dockerfile_ubuntu -t tszandy/ubuntu:0.01 . 
 docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:0.01 /bin/bash
 
-<<<<<<< HEAD
 # ubuntu cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
 # jenkin environment
 docker run --name jenkin -u root -rm -d -p 8080:8080 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
 
-=======
->>>>>>> 70314c4 (update kali docker image)
 # ubuntu angular environment image
 docker rm -f angular
 docker build -f Dockerfile_angular -t tszandy/ubuntu_angular:0.01 . && docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:0.01 /bin/bash

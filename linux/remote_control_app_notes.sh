@@ -39,7 +39,7 @@ The following options only apply to SSH connections:
             manually specify a host key (may be repeated)
   -m file   read remote command(s) from file
   -s        remote command is an SSH subsystem (SSH-2 only)
-  -N        don't start a shell/command (SSH-2 only)
+  -N        #don't start a shell/command (SSH-2 only)
   -nc host:port
             open tunnel in place of session (SSH-2 only)
   -sshlog file
