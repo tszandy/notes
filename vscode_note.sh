@@ -1,56 +1,59 @@
-#windows
-#copy line up/down
+# windows
+# use code in file explorer
+add "C:\Users\44498\AppData\Local\Programs\Microsoft VS Code" in environment path
+
+# copy line up/down
 alt + shift + up/down
 
-#move line up/down
+# move line up/down
 alt + up/down
 
-#kill line
+# kill line
 ctrl + shift + k
 
-#split editor screen right
+# split editor screen right
 ctrl + \
 
-#jumping to the definition
+# jumping to the definition
 F12
 
-#peek the definition
+# peek the definition
 alt + F12
 
-#peek the reference
+# peek the reference
 shift + F12
 
-#change every occurrence of name to other name
+# change every occurrence of name to other name
 F2
 
-#go to error
+# go to error
 F8
 
-#jumping back
+# jumping back
 ctrl + u 
 
-#go to line
+# go to line
 ctrl + g then $LINE_NUMBER
 
-#switch editor screen 
+# switch editor screen 
 ctrl + $NUMBER
 
-#search file 
+# search file 
 ctrl + p 
 
-#beginning and end of file 
+# beginning and end of file 
 ctrl + home/end
 
-#add short cut
+# add short cut
 ctrl + k then ctrl + s
 
-#open/close/focusing terminal
+# open/close/focusing terminal
 ctrl + `
 
-#split terminal
+# split terminal
 ctrl + shift + 5
 
-#search function 
+# search function 
 ctrl + shift + p
 
 # fold all level $NUMBER
