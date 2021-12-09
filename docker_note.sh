@@ -1,30 +1,38 @@
 
+# ubuntu cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
+# ubuntu angular environment image
 docker rm -f angular
 docker build -f Dockerfile_angular -t tszandy/ubuntu_angular:0.01 . && docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:0.01 /bin/bash
-
 docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:0.01 /bin/bash
-
 docker start -i angular
 
->>>>>>> 1dc7c65 (update notes)
 #kali images
-docker run --net "host" --name kali  -ti kalilinux/kali /bin/bash
-=======
-#kali 
 docker run -it --name kali --net "host" kalilinux/kali /bin/bash
->>>>>>> 0b9263d (update notes)
+
+# ubuntu python environment image
+docker rm -f python
+docker build -f Dockerfile_python -t tszandy/ubuntu_python:0.01 . && docker run --name python -ti tszandy/ubuntu_python:0.01 /bin/bash
+docker run --name python -ti tszandy/ubuntu_python:0.01 /bin/bash
+docker start -i python
+
+# kali images
+docker run --name kali --net "host" -ti kalilinux/kali /bin/bash
+>>>>>>> 9dbb82c (update python note)
 docker start -i kali
 
-#windows
-docker run --rm -v C:\Users\44498\Desktop\leetcode\cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+# windows cpp environment image
+docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
+docker run --rm --name cpp -v C:\Users\44498\Desktop\leetcode\cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
-#ubuntu
-docker run --rm -v /home/ice/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+# ubuntu cpp environment image
+docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
+docker run --rm --name cpp -v /home/ice/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
-#mac
-docker run --rm -v /Users/weixie/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+# mac cpp environment image
+docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
+docker run --rm --name cpp -v /Users/weixie/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
 #docker command 
 

@@ -1,4 +1,4 @@
-Anaconda command
+# Anaconda command notes
 
 conda create -n python3 python=3.6
 conda remove --name python3 --all
@@ -22,5 +22,4 @@ pip install pandas
 conda remove --name mouse --all
 conda env create -f mouse.yml
 
-conda create -n mouse python=3.8
 
