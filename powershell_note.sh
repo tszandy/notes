@@ -4,11 +4,14 @@
 # powershell script
 .ps1
 
-# write to stdout
-Write-Host
+# print to stdout as one line
+Write-Host 
+
+# print each item as one line
+Write-Output 
 
 # get help for command 
-Get-Help
+Get-Help cmdlet
 
 # print class object
 Write-Host ($obj | Format-Table | Out-String)
@@ -24,6 +27,8 @@ Get-Item -Path Env:*
 
 New-Item
 
+Set-Location # change directory equivalent cd 
+
 Set-Alias
 
 Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match $name}
@@ -36,9 +41,12 @@ Get-Process
 
 Get-Help
 
-Get-ChildItem
+Get-ChildItem # equivalent ls
 
 Get-PSSession
+
+# get all cmdlet command in the system
+Get-Command
 
 Get-Command Get-*Firewall*
 
@@ -48,6 +56,7 @@ Get-Content
 
 Get-AuthenticodeSignature
 
+# get all alias in the system
 Get-Alias
 
 Get-Alias -Definition Get-ChildItem
@@ -66,7 +75,51 @@ Format-List
 
 Invoke-WebRequest
 
+# join path
+Join-Path -Path path -ChildPath child_path
+
+# split path 
+Split-Path -path path
+Split-Path -Path "C:\WINDOWS\system32\WindowsPowerShell\V1.0\about_*.txt"
+C:\WINDOWS\system32\WindowsPowerShell\V1.0
+
+Split-Path -path path -Leaf
+Split-Path -Path "C:\Test\Logs\*.log" -Leaf -Resolve
+Pass1.log
+Pass2.log
+
+Split-Path -path path -LeafBase
+Split-Path -path "C:\Test\Logs\Pass1.log" -LeafBase
+Pass1
+
+Split-Path -path path -Extension
+Split-Path -path "C:\Test\Logs\Pass1.log" -Extension
+.log
+
+Split-Path -path path -Qualifier
+Split-Path -Path "HKCU:\Software\Microsoft" -Qualifier
+HKCU:
+
+Split-Path -path path -NoQualifier
+Split-Path -path "C:\Test\Logs\Pass1.log" -NoQualifier
+\Test\Logs\Pass1.log.
+
+Split-Path -path path -IsAbsolute
+Split-Path -Path ".\My Pictures\*.jpg" -IsAbsolute
+False
+
+Split-Path -path path -LiteralPath 
+
+# Resolves the wildcard characters in a path, and displays the path contents.
+Resolve-Path
+
+Test-Path path -PathType Container
+
 [Console]::Beep()
+
+$dateformat = "%Y-%m-%d %T%Z"
+# get date time in certain format
+Get-Date -UFormat $dateformat
 
 Incoke-Command -ScriptBlock $SBMP -Session $SP71
 
@@ -123,3 +176,6 @@ $file_byte = [system.io.file]::ReadAllBytes("read_from_path")
 Invoke-Command -ComputerName $ComputerName -Credential ($Credential) -ErrorAction Continue -ScriptBlock {
     [System.IO.File]::WriteAllBytes("write_to_path", $using:file_byte)
 }
+
+# Hides the output instead of sending it down the pipeline or displaying it.
+Out-Null
