@@ -44,7 +44,7 @@ ctrl + p
 # beginning and end of file 
 ctrl + home/end
 
-# add short cut
+# add Keyboard Shortcuts
 ctrl + k then ctrl + s
 
 # open/close/focusing terminal
