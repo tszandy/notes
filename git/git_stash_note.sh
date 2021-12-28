@@ -4,6 +4,9 @@ git stash show
 # stash all the change to stash stack
 git stash
 
+# stash all the change to stash stack including new file
+git stash -u
+
 # either apply stash or pop stash (delete copy in stash stack)
 git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
 # example 
