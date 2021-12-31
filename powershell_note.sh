@@ -179,3 +179,6 @@ Invoke-Command -ComputerName $ComputerName -Credential ($Credential) -ErrorActio
 
 # Hides the output instead of sending it down the pipeline or displaying it.
 Out-Null
+# holds the last error code in the powershell script to return the error codes from the powershell script
+$LASTEXITCODE
+
