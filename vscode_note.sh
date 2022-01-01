@@ -71,6 +71,8 @@ ctrl + shift + ]
 # copy current line
 don't highlight anything then ctrl + c
 
-
 # in terminal clear terminal
 ctrl + l
+
+#cmake select compiler
+ctrl + shift + p -> CMake: Select a Kit
