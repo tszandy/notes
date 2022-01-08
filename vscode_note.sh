@@ -29,7 +29,7 @@ F2
 # go to error
 F8
 
-# jumping back
+# jumping back(cursor undo)
 ctrl + u 
 
 # go to line

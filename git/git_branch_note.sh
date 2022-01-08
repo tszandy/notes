@@ -22,3 +22,6 @@ git br -d $branch_name
 # delete a branch $branch_name remotelly
 git push origin --delete $branch_name
 
+# Git delete remote branches in your local repository 
+git remote prune origin
+git fetch --prune
