@@ -30,3 +30,59 @@ double , __int64 , long double , long long , unsigned long long
 # double
     8 bytes
 
+75 // int
+75u // unsigned int
+75l // long
+75ul // unsigned long
+
+# float point number 
+3.14159 // 3.14159
+6.02e23 // 6.02 x 10^23
+1.6e-19 // 1.6 x 10^-19
+3.0 // 3.0
+
+# data structure
+struct structure_name {
+member_type1 member_name1;
+member_type2 member_name2;
+member_type3 member_name3;
+.
+.
+} object_names;
+
+struct product {
+int weight;
+float price;
+} ;
+product apple;
+product banana, melon;
+# is equivalent to 
+struct product {
+int weight;
+float price;
+} apple, banana, melon;
+
+# Defined data types (typedef)
+typedef char C;
+typedef unsigned int WORD;
+typedef char * pChar;
+typedef char field [50];
+
+# Unions allow one same portion of memory to be accessed as different data types
+union union_name {
+member_type1 member_name1;
+member_type2 member_name2;
+member_type3 member_name3;
+.
+.
+} object_names;
+
+enum enumeration_name {
+value1,
+value2,
+value3,
+.
+.
+} object_names;
+enum colors_t {black, blue, green, cyan, red, purple, yellow, white};
+enum months_t { january=1, february, march, april,may, june, july, august, september, october, november, december} y2k;
