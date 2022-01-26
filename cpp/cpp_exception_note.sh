@@ -4,7 +4,7 @@ std::out_of_range()
 std::runtime_error()
 std:bad_alloc
 
-
+#include <exception>
 
 class exception_example: public std::exception
 {
@@ -43,3 +43,7 @@ protected:
      */
     std::string msg_;
 };
+
+throw exception_example("message");
+
+If a function is marked with noexcept, It is not allowed to throw an exception and if it does, std::terminate() will be called.
