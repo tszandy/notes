@@ -261,3 +261,16 @@ inline functions # to reduce the function call overhead. Inline function is a fu
 static and dynamic analysis tool:
 Clang Tidy
 Valgrind
+
+_t was added to C++17 for ::type
+
+cpp structure vs class
+class                                                 Structure
+Member of a class are private by default.             Member of a class are public by default. 
+Memory allocation happens on the heap.                Memory allocation happens on the stack.
+It is a reference type data type.                     It is a value type data type.
+It is declared using the class keyword.               It is declared using the struct keyword.
+
+size_t and std::size_t difference,
+C's size_t and cpp's std:size_t
+

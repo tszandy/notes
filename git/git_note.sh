@@ -1,3 +1,6 @@
+git pull = (git fetch + git merge) or (git fetch + git rebase)
+dependent on pull.rebase = false or true
+
 git add .
 git log
 git ct -m "message"
