@@ -213,3 +213,66 @@ the only operations that are supported are simple operations such as add, subtra
 #include <atomic>
 std::atomic<int> atomic_count{};
 
+auto a1 = std::async(std::launch::async,foo);
+auto a2 = std::async(std::launch::async,foo);
+auto a3 = std::async(std::launch::async,foo);
+auto a4 = std::async(std::launch::async,foo);
+# run four foo function in parallel precompute
+
+auto a1 = std::async(std::launch::deferred,foo);
+auto a2 = std::async(std::launch::deferred,foo);
+auto a3 = std::async(std::launch::deferred,foo);
+auto a4 = std::async(std::launch::deferred,foo);
+# run four foo function in parallel lazy function, 
+will only run the function if the a1,a2,a3,a4 was called.
+
+c++ promise is an argument to a c++ thread.
+c++ future is the return value of the thread.
+
+CV(const and volatile) type qualifiers
+const # defines that the type is constant. 
+volatile # defines that the type is volatile. 
+const object # Non-mutable subobject of a const object.
+volatile object # mutable subobject of a const-volatile object.
+const volatile object # non-mutable subobject of a const volatile object.
+
+parent: const object 
+child : const object: Non-mutables subobject of const object
+
+parent: volatile object 
+child : volatile object: subobject of volatile object
+child : const volatile object: a const subobject of volatile object
+
+parent: const volatile object:
+child : volatile object: Mutable subobject of const volatile object
+child : const volatile object: Non-Mutable subobject of const volatile object
+
+reference/potiner to unqualified type can be converted to reference/potiner to const
+reference/potiner to unqualified type can be converted to reference/potiner to volatile
+reference/potiner to unqualified type can be converted to reference/potiner to const volatile
+reference/potiner to const type can be converted to reference/potiner to const volatile
+reference/potiner to volatile type can be converted to reference/potiner to const volatile
+
+Hayai, a cpp based benchmarking library on github.
+Valgrind, a programming tool for memory debugging.
+ASAN, the address snitizer.
+UBSAN, the undefined behavior sanitizer.
+use #ifndef NDEFBUG to conditionally execute additional checks
+
+test-driven development states that all tests including unit tests, should be written before any source code is written.
+
+behavioral-driven development takes test-driven development a step further with a specific, story-driven approach to unit testing.
+
+catch2 unit-test library.
+#define CATCH_CONFIG_MAIN
+#include <catch.hpp>
+TEST_CASE("case name"){
+    CHECK_NOTHROW(func());
+    REQUIRE_NOTHROW(func());
+    CHECK_THROWS(func());
+    CHECK_THROWS_AS(func());
+    CHECK_THROWS_WITH(func());
+    REQUIRE_THROWS(func());
+    REQUIRE_THROWS_AS(func());
+    REQUIRE_THROWS_WITH(func());
+}
