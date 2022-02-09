@@ -276,3 +276,22 @@ TEST_CASE("case name"){
     REQUIRE_THROWS_AS(func());
     REQUIRE_THROWS_WITH(func());
 }
+
+A mock class is a class that pretends to be the class that is inputted, providing the unit test with seams that allow the unit test to verify the result of a test.
+
+
+ASAN, google's the address snitizer is a set of modifications to the GCC and LLVM compilers. 
+We must add the following compiler flags when compiling code for testing ( but do not add these flags to production releases)
+-fsanitize=address
+-fno-optimize-sibling-calls
+-fsanitize-address-use-after-scope
+-fno-omit-frame-pointer
+-g -01
+
+-fsanitize=address flag tells the compiler to enable ASAN.
+-g flag enables debugging
+-01 flag sets the optimization level to 1 to provide some performance improvements.
+
+UBSAN, the undefined behavior sanitizer.
+-fsanitize=undefined flag tell Gcc or LLVM to use the UBSAN tool.
+
