@@ -182,6 +182,14 @@ class CPolygon {
 how we appended =0 to virtual int area () instead of specifying an implementation for the function.
 This type of function is called a pure virtual function, and all classes that contain at least one pure virtual function
 are abstract base classes.
+a virtual function is a member function which is declared within a base class and is re-defined(overridden) by a derived class.
+Rules for Virtual Functions:
+1. Virtual functions cannot be static
+2. A virtual function can be a friend function of another class.
+3. Virtual functions should be accessed using pointer or reference of base class type to achieve runtime polymorphism
+4. The prototype of virtual functions should be the same in the base as well as derived class.
+5. They are always defined in the base class and overridden in a derived class. It is not mandatory for the derived class to override.
+6. A class may have virtual destructor but it cannot have a virtual constructor.
 
 four specific casting operators: dynamic_cast, reinterpret_cast, static_cast and const_cast.
 dynamic_cast <new_type> (expression)
