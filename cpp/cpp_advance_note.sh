@@ -52,8 +52,8 @@ every class that includes a move-only class as a member also becomes a move-only
 reference qualified member function
 class l-value function is function with & at the end.
 class r-value function is function with && at the end.
-l-value refers to memory location which identifies an object.
-r-value refers to data value that is stored at some address in memory.
+l-value refers to memory location which identifies an object. symbol: &
+r-value refers to data value that is stored at some address in memory. symbol: &&
 std:move() will convert an l-value into an r-value
 std:forward() cast the parameter back to its original reference type.
 
@@ -295,3 +295,110 @@ We must add the following compiler flags when compiling code for testing ( but d
 UBSAN, the undefined behavior sanitizer.
 -fsanitize=undefined flag tell Gcc or LLVM to use the UBSAN tool.
 
+We create a vector (an array of elements in contiguous memory that we must have direct access to) that must remain in sorted order at all times.
+To start, we need some headers:
+#include <vector>
+#include <algorithm>
+#include <iostream>
+To implement our container, we will leverage std::vector. although we cound implement our own container from scratch, most of the time this is not needed, 
+and should be avoided, as such a task is extremely time consuming and complicated.
+we need the algorithm header for std::sort and iostream for testing.
+template<typename T,
+         typename Compare = std:less<T>,
+         typename Allocator = std::allocator<T>
+         >
+class container {
+    using vector_type = std::vector<T, Allocator>;
+    vector_type m_v;
+public:   
+
+
+For the container to function properly with cpp utilities, template functions, and even some key language features, the container will need to
+define the same aliases as std::vector:
+    using value_type = typename vector_type::value_type;
+    using allocator_type = typename vectortype::allocator_type;
+    using size_type = typename vector_type::size_type;
+    using difference_type = typename vector_type::difference_type;
+    using const_reference = typename vector_type::const_reference;
+    using const_pointer = typename vector_type::const_pointer;
+    using compare_type = Compare;
+There is no need to manually define the alies outselves. instead, we can simply forward the declaration of the aliases from the std::vector itself. The exception to this is the compare_type alias.
+We also do not include the non-const version of the reference aliases. 
+
+Next, let's define our constructors(which map to the same constructors that std::vector provides)
+    container() noexcept(noexcept(Allocator())){
+        std::cout<<"1\n";
+    }
+
+Since the default constructor for std::vector produces an empty vector, there is no additional logic that we must add as an empty vector is sorted by default.
+
+Custom allocator constructor
+    explicit container(const Allocator &alloc) noexcept : m_v(alloc){
+        std::cout<<"2\n";
+    }
+
+The first constructor will create the vector of count elements, all initialized with a value of value, 
+The second creates the elements with their default values(for example, a vector of integers would be initialized to zero).
+
+To support the ability to copy and move our container, we will needto implement a copy and move constructor:
+    container(const container &other, const Allocator &alloc): m_v(other.m_v,alloc){
+        std::cout << "5\n";
+    }
+
+    container(container &&other) noexcept: m_v(std::move(other.m_v)){
+        std::cout<<"6\n";
+    }
+
+for completeness, we also provide a move constructor that allows us to move while providing a custom allocator
+    container(container &&other,const Allocator &alloc) : m_v(std::move(other.m_v),alloc){
+        std::cout << "7\n";
+    }
+
+add a constuctor that takes an initializer list
+    container(std::initializer_list<T> init, const Allocator &alloc = Allocator()) : m_v(init, alloc){
+        std::sort(m_v.begin(),m_v.end(),compare_type());
+        std::cout << "8\n";
+    }
+
+Test this container to ensure that each constructor works as expected:
+int main(void){
+    auto alloc = std::allocator<int>();
+    container<int> c1;
+    container<int> c2(alloc);
+    container<int> c3(42,42);
+    container<int> c4(42);
+    container<int> c5(c1,alloc);
+    container<int> c6(std::move(c1));
+    container<int> c7(std::move(c2),alloc);
+    container<int> c8{4,42,15,8,23,16};
+
+    return 0;
+}
+
+We will also need to provide the ability to manually adddata to our container.
+    void push_back(const T &value){
+        m_v.push_back(value);
+        std::sort(m_v.begin(), m_v.end(),compare_type());
+        std::cout << "1\n";
+    }
+
+    void push_back(T &&value){
+        m_v.push_back(std::move(value));
+        std::sort(m_v.begin(),m_v.end(),compare_type());
+        std::cout::cout << "2\n";
+    }
+
+for completeness, we will add the amplace_back()
+
+    template<typename... Args>
+    void emplace_back(Args&&... args){
+        m_v.emplace_back(std::forward<Args>(args)...);
+        std::sort(m_v.begin(),m_v.end(),compare_type());
+
+        std::cout << "3\n";
+    }
+
+
+We will learn how to add APIs from std::set to the custom container we created in the provious recipe.
+
+ 

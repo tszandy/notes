@@ -182,3 +182,20 @@ Out-Null
 # holds the last error code in the powershell script to return the error codes from the powershell script
 $LASTEXITCODE
 
+#equivalent to history in linux
+Get-Content (Get-PSReadlineOption).HistorySavePath
+
+# get drive info 
+get-disk
+wmic diskdrive list
+
+# automatic nonboot drive create partition
+(get-disk|Where-Object -Property IsBoot -EQ $False)`
+    | Initialize-Disk -PartitionStyle GPT -passthru `
+    | New-Partition -AssignDriveLetter -UseMaximumSize `
+    | Format-Volume -FileSystem NTFS -Force $Confirm:$False
+
+# automatic nonboot drive clear partition 
+(get-disk|Where-Object -Property IsBoot -EQ $False) | ? PartitionStyle -NE "RAW" `
+    | Clear-Disk -RemoveData -RemoveOEM -Confirm:$False -ErrorAction SilentlyContinue
+
