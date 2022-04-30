@@ -45,3 +45,5 @@ git rebase master topic
 
 # git make log linear, git rebase split commit
 git rebase 24a155a298c0519574cfa50b587ebfb27db99f63
+
+git rebase --interactive ${commit}^

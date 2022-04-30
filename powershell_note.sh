@@ -199,3 +199,19 @@ wmic diskdrive list
 (get-disk|Where-Object -Property IsBoot -EQ $False) | ? PartitionStyle -NE "RAW" `
     | Clear-Disk -RemoveData -RemoveOEM -Confirm:$False -ErrorAction SilentlyContinue
 
+# find msi of installed package for windows
+wmic product where "Name like '$product_name'" get LocalPackage /format:list
+
+wmic # The Windows Management Instrumentation Command line (WMIC) is a software utility that allows users to performs Windows Management Instrumentation (WMI) operations with a command prompt.
+
+[System.IO.Path]::GetTempPath() # C:\Users\$Username\AppData\Local\Temp
+
+[System.Guid]::NewGuid() # 5933ea2a-9709-4f6f-a9b6-fd25b3b8ea19
+
+Join-Path -Path ([System.IO.Path]::GetTempPath()) -ChildPath ([System.Guid]::NewGuid())
+
+Try{
+    # code 
+} catch {
+    $_.ScriptStackTrace # trace back of code that throw exception.
+}

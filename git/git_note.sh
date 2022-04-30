@@ -15,3 +15,6 @@ git config --global alias.ct commit
 git config --global alias.st status
 
 git config --global pull.rebase true
+
+# count git commit in HEAD
+git rev-list HEAD --count

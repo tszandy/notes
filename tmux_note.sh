@@ -12,9 +12,9 @@ tmux select-window -t 0 # tmux select window 0
 
 tmux select-pane -t 0 # tmux select pane 0
 
-tmux send-keys ‘${command}’ # tmux type ${command}
+tmux send-keys '${command}' # tmux type ${command}
 
-tmux send-keys ‘${command}’ C-m # tmux type ${command} and run by send key control + m
+tmux send-keys '${command}' C-m # tmux type ${command} and run by send key control + m
 
 ctrl+B then C # add new window.
 tmux new-window
@@ -55,20 +55,43 @@ tmux attach-session -t ${session_name} # tmux attach to session ${session_name}
 tmux setenv ${VARIABLE_NAME} ${variable_value}
 
 
+# kill all tmux session
+pkill -f tmux
 
 
 
 
+# tmux file example
+""" 
+#!/bin/bash
+tmux kill-session -t ${new_session_name}
 
-# tmux file example 
-tmux kill-session -t main
+tmux new-session -d -s ${new_session_name}
 
-tmux new-session -d -s main
 tmux split-window -v 
 tmux select-pane -t 0
 tmux split-window -h 
 tmux select-pane -t 2
 tmux split-window -h 
+
+tmux select-window -t 0
+tmux select-pane -t 0
+tmux send-keys '${command}' C-m
+
+tmux select-window -t 0
+tmux select-pane -t 1
+tmux send-keys '${command}' C-m
+
+tmux select-window -t 0
+tmux select-pane -t 2
+tmux send-keys '${command}' C-m
+
+tmux select-window -t 0
+tmux select-pane -t 3
+tmux send-keys '${command}' C-m
+
+tmux attach -t ${new_session_name}
+"""
 
 tmux new-window -n ${new_window_name}
 tmux split-window -v 
@@ -79,16 +102,16 @@ tmux split-window -h
 
 tmux select-window -t 0
 tmux select-pane -t 0
-tmux send-keys ‘${command}’ C-m
+tmux send-keys '${command}' C-m
 
 tmux select-window -t 0
 tmux select-pane -t 1
-tmux send-keys ‘${command}’ C-m
+tmux send-keys '${command}' C-m
 
 tmux select-window -t 0
 tmux select-pane -t 2
-tmux send-keys ‘${command}’ C-m
+tmux send-keys '${command}' C-m
 
 tmux select-window -t 0
 tmux select-pane -t 3
-tmux send-keys ‘${command}’ C-m
+tmux send-keys '${command}' C-m
