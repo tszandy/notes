@@ -24,3 +24,5 @@ async def get_all_users():
     async with get_connection() as conn:
         return conn.query('Select ..')
 
+
+from contextlib import suppress
