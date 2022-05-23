@@ -13,3 +13,4 @@ p = subprocess.Popen("Powershell Get-WindowsFeature -Name NET-Framework-Core|Con
 out,err = p.communicate()
 obj = json.loads(out)
 
+from subprocess import list2cmdline
