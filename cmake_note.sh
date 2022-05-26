@@ -12,3 +12,6 @@ Import Libraries (.lib most Windows, .dll.a on Cygwin, MinGW)
 
 Static libraries (.lib on windows .a on UNIX, Cygwin, MinGW)
 
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local
+
+# DCMAKE_INSTALL_PREFIX where cmake install software to.
