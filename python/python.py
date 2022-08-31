@@ -33,3 +33,6 @@ import re
 import tarfile
 import asyncio
 import locale
+
+# python dependency manager 
+poetry
