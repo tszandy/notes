@@ -50,6 +50,9 @@ ctrl + k then ctrl + s
 # open/close/focusing terminal
 ctrl + `
 
+# switch editor file
+ctrl + tab
+
 # split terminal
 ctrl + shift + 5
 

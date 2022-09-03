@@ -11,7 +11,7 @@ cygwin
 
 # local file search engine
 listary
-search everything
+everything
 
 # video player
 vlc media player
@@ -62,3 +62,25 @@ miktex
 # multimedia software player
 PotPlayer
 VLC media player
+
+# open-source utility used for writing image files such as .iso and .img files
+balenaEtcher
+
+# checks if a system running Windows is suitable for processing real-time audio and other tasks
+latencymon
+
+# open-source cross-platform web server solution stack package
+xampp
+
+# Quickly organize and optimize partitions on your internal and external disks
+paragon partition manager
+
+# E-book management
+calibre
+
+# Antivirus and VPN
+mcafee
+
+# Formatter formats SD Memory Card, SDHC Memory Card and SDXC Memory Card
+sd card formatter
+
