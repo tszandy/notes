@@ -67,6 +67,7 @@ stem(data)
 area(data)
 scatter(data,marksize,color)
 pie(data)
+pie(data,label)
 
 surf(data) # plot matrix in 3d graph with surface 
 mesh(data) # plot matrix in 3d graph
@@ -305,7 +306,10 @@ gcf
 # get current axes
 gca
 
-#plot subplot
+#plot subplot divide graph to m by n graph with index 1 to m*n
+axis_1 = subplot (m,n,1)
+axis_2 = subplot(m,n,[3,5])
+axis_3 = subplot(m,n,[2,4,6])
 ax1 = subplot(2,1,1)
 ax2 = subplot(2,1,2)
 plot_variable = plot(ax2,data)
@@ -339,3 +343,52 @@ delete(timer_variable)
 # excute callback when figure is delete
 figure_variable = figure()
 figure_variable.DeleteFcn = {@callback,input_variable}
+
+# show all properties of object
+properties(object)
+
+# command place in the loop to make sure the plot update at each iteration
+drawnow
+
+# save figure to file
+print(figure_variable, filename formattype_options, format_options)
+
+# matlab read image
+imread(filename)
+
+# turn on corresponding of data point 
+p1 = subplot(2,1,1)
+plot(p1,x,y1)
+p1 = subplot(2,1,2)
+plot(p1,x,y2)
+linkdata
+#brush on subplot 1 will show corresponding of data point in subplot 2
+
+# print out to command window
+display(string_variable)
+
+# store data as application data, obj is component object use to store the data, name is the name of the data, value is the value of the data.
+setappdata(obj,name,value)
+
+# get application data
+data = getappdata(obj,name)
+
+# guidata share data with the figure window
+#update data
+guidata(object_handle,data)
+# get data
+data = guidata(object_handle)
+
+# number of input to callback function
+'foo' # 0 
+@foo # 2, (src,event)
+{@foo,1,2,3} # 5 (src,event,1,2,3)
+
+# command to open GUIDE software in matlab to create GUI
+guide
+
+# rename callback function
+Property inspector
+
+# command to open App Designer software in matlab to create GUI 
+appdesigner
