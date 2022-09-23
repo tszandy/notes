@@ -1,3 +1,6 @@
+# get type of a variable
+class(variable)
+
 # help of command
 help command
 
@@ -162,9 +165,6 @@ flip(matrix,dim)
 # join table 
 newTableData = join(tableData1,tableData2)
 
-# get type of a variable
-class(variable)
-
 # string
 "abc"
 
@@ -281,6 +281,9 @@ which variable_name/function_name
 # display all instance of function or variable name.
 which variable_name/function_name -all
 
+# matlab always run built-in function
+builtin('disp',x)
+
 # clear variable from workspace
 clear variable_name
 
@@ -392,3 +395,89 @@ Property inspector
 
 # command to open App Designer software in matlab to create GUI 
 appdesigner
+
+# open simulink GUI
+simulink
+
+# function with mutiple argument in and out
+function varargout = function_name(varargin)
+    nargin # number of argument
+end
+
+classdef (ClassAttributes) ClassName < SuperClass
+    ...
+end
+
+# constructor
+classdef (ClassAttributes) ClassName < SuperClass
+    properties
+        variable_1
+        variable_2
+        variable_3
+    end
+    methods
+        function obj = ClassName(val_1,val_2,val_3)
+            obj.variable_1 = val_1
+            obj.variable_2 = val_2
+            obj.variable_3 = val_3
+        end
+    end
+end
+
+
+ClassAttributes : https://www.mathworks.com/help/matlab/matlab_oop/class-attributes.html
+
+classdef (attribute1 = value1, attribute2 = value2) ClassName < SuperClass1 & SuperClass2
+    ...
+end
+
+classdef ClassName
+    properties(PropertyAttributes)
+        PropertyName class = DefaultValue
+    end
+end
+
+PropertyAttributes : https://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html
+
+classdef ClassName
+    properties(SetAccess = private, GetAccess = public)
+        PropertyName
+    end
+    method
+        ...
+    end
+    method(Static)
+        function staticMethod(arg1,...)
+            ...
+        end
+    end
+end
+0..
+
+# use method from super_class
+function_name@super_class_name 
+
+# path folders, this type of folder when you want mutiple classes in one folder.
+
+# class folder, the folder name begins with an @ character followed by the class name. use this type of folder when you want to use mutiple files for on class definition.
+
+C MEX API : https://www.mathworks.com/help/releases/R2018b/matlab/mex-library.html
+C Matrix API: https://www.mathworks.com/help/matlab/cc-mx-matrix-library.html
+
+table of C MEX Function Source Code Examples: https://www.mathworks.com/help/matlab/matlab_external/table-of-mex-file-source-code-files.html
+
+# simulink update model
+set_param(model_name,"SimulationCommand","update")
+
+# run simulink model in debug mode
+sidebug(model_name)
+
+# set breakpoint at the time step right after the simulation time of 5 seconds
+tbreak 5
+
+# simulation enter into the interactive block probe mode
+probe
+
+# display the location of the simulation in the simulation loop
+where
+
