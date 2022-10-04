@@ -481,3 +481,5 @@ probe
 # display the location of the simulation in the simulation loop
 where
 
+# initial condition block 
+IC block
