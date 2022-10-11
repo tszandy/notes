@@ -483,3 +483,94 @@ where
 
 # initial condition block 
 IC block
+
+# variable-precision arithmetic
+vpa
+
+# view all the symbolic variables in the workspace
+syms
+
+# create symbolic variable x y z
+syms x y z
+
+# substitude variable 2 for x in expression y = a*x^2+b*x+c
+subs(y,x,2)
+
+# substitute a=3,b=2,c=1 into y=a*x^2+b*x+c
+subs(y,[a,b,c],[3,2,1])
+
+# plot symbolic variable y
+fplot(y)
+
+#turn on grid
+grid on
+
+# plot symbolic variable y from a to b
+fplot(y,[a,b])
+
+# define symbolic equation 4x+1=3
+syms x
+eqn = 4x==3
+
+# solve symbolic equation
+xsol = solve(eqn)
+
+# solve system of symbolic equation
+syms x y
+equ1 = x^2+y^2==1
+equ2 = x-y==1
+[xsol,ysol] = solve([equ1,equ2],[x,y])
+
+# expand a symbolic equation y
+y_expand = expand(y)
+
+# simplify a symbolic equation y
+y_simplify = simplify(y)
+
+# factor a symbolic equation y
+y_factor = factor(y)
+
+# assume x is real and take only real number solution
+assume(x,"real")
+
+# assume x is integer and take only integer number solution
+assume(x,"integer")
+
+# add additional assumptions that x is positive
+assumeAlso(x,"positive")
+
+# assume symbolic variable a > b
+assumeAlso(a>b)
+
+# get all assumptions of x
+x_assum = assumptions(x)
+
+# clear assumptions on x,y
+assume(x,"clear")
+assume([x,y],"clear")
+
+# create symbolic units collection u
+u = symunit
+
+# store d = 12 km and t = 2 hours
+d = 12*u.km
+t = 2 *u.hour
+
+# convert unit into SI unit
+SI_variable = unitConvert(previous_variable, "SI")
+
+# convert unit into km/hour
+speed = unitConvert(previous_variable,u.km/u.hour)
+
+# separate value and unit
+[value,units] = separateUnits(previous_variable)
+
+# create symbolic function that calculate area of circle
+syms r
+f(r) = pi * r^2
+*
+
+# fimplicit plots the line defined by an equation of two variables.
+syms x y
+eqn = x^2+y^2==25
+fimplicit(eqn) 
