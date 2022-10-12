@@ -570,7 +570,23 @@ syms r
 f(r) = pi * r^2
 *
 
-# fimplicit plots the line defined by an equation of two variables.
+# fimplicit plots 2d graph defined by an equation of two variables.
 syms x y
-eqn = x^2+y^2==25
-fimplicit(eqn) 
+f(x,y) = x^2+y^2
+fimplicit(f == 25) 
+
+# fcontour plot the function that equal different value c
+syms x y
+f(x,y) = x^2+y^2
+fcontour(f) 
+
+# fsurf plot the function in 3d 
+syms x y
+f(x,y) = x^2-y^2
+fsurf(f) 
+fsurf(f,[0,2])
+
+# fimplicit3 plots 3d graph defined by an equation of three variables.
+syms x y z
+f(x,y,z) = x^2+y^2-z^2
+fimplicit3(f == 1) 
