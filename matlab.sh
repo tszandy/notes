@@ -1,3 +1,13 @@
+# list a memory usage of variable
+whos
+
+# get max java runtime memory
+max = java.lang.Runtime.getRuntime.maxMemory
+
+# set java memory for all user to 120M
+C:\Program Files\MATLAB\R2022b\bin\java.opts
+-Xmx120m 
+
 # get type of a variable
 class(variable)
 

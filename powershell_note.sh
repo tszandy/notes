@@ -200,7 +200,10 @@ wmic diskdrive list
     | Clear-Disk -RemoveData -RemoveOEM -Confirm:$False -ErrorAction SilentlyContinue
 
 # find msi of installed package for windows
-wmic product where "Name like '$product_name'" get LocalPackage /format:list
+wmic product where "Name like '%%$product_name%%'" get LocalPackage /format:list
+
+# uninstall msi of installed package for windows
+wmic product where "Name like '%%$product_name%%'" call uninstall
 
 wmic # The Windows Management Instrumentation Command line (WMIC) is a software utility that allows users to performs Windows Management Instrumentation (WMI) operations with a command prompt.
 

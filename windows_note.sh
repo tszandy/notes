@@ -1,5 +1,5 @@
 # open app in administrator mode 
-ctrl + shif + left_click
+ctrl + shif + (left_click/Enter)
 
 # view/switch application
 alt + tab
