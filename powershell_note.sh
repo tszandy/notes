@@ -1,3 +1,14 @@
+# powershell set and get environment variable
+$path = [System.Environment]::GetEnvironmentVariable('Path', 'User')
+$array = $path -split (";")
+$array += "C:\Program Files\Java\jdk-19\bin"
+$new_path = $array -join ";"
+[Environment]::SetEnvironmentVariable('Path',$new_path,'User')
+
+# powershell get environment variable
+[System.Environment]::GetEnvironmentVariable('Path', 'Machine')
+[System.Environment]::GetEnvironmentVariable('Path', 'User')
+
 # powershell module
 .psm1
 
