@@ -84,3 +84,5 @@ mcafee
 # Formatter formats SD Memory Card, SDHC Memory Card and SDXC Memory Card
 sd card formatter
 
+# dll(dynamic link library) decompiler 
+dotpeek

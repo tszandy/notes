@@ -6,7 +6,15 @@ max = java.lang.Runtime.getRuntime.maxMemory
 
 # set java memory for all user to 120M
 C:\Program Files\MATLAB\R2022b\bin\java.opts
--Xmx120m 
+-Xmx120m # java maximum memory 
+-Xms120m # java minimum memory
+
+# query memory used by java
+java.lang.Runtime.getRuntime.freeMemory
+java.lang.Runtime.getRuntime.maxMemory
+
+# java display static and dynamic path
+javaclasspath
 
 # get type of a variable
 class(variable)
@@ -22,6 +30,9 @@ variable_name = ones(m,n)
 
 # matrix fill with 0 of shape (m,n)
 variable_name = zeros(m,n)
+
+# matrix fill with 0 of shape (m,n) with data type single 
+variable_name = zeros(m,n,"single")
 
 # uniform distribution of number from 0 to 1 of shape (m,n)
 variable_name = rand(m,n)
@@ -522,6 +533,18 @@ fplot(y,[a,b])
 syms x
 eqn = 4x==3
 
+#solve differential equation y''+2y'-y=3sin(t), y(0)=0, y'(5)=1
+syms y(t) = t;
+dy  = diff(y,t,1);
+d2y = diff(y,t,2);
+y0  = y(0) == 0;
+dy5 = dy(5) == 1;
+myODE = d2y+2*dy-y == 3 * sin*(t);
+myAnswer = dsolve(myODE,[y0,dy5]);
+
+# integral of function sin
+int(sin(x),x)
+
 # solve symbolic equation
 xsol = solve(eqn)
 
@@ -600,3 +623,61 @@ fsurf(f,[0,2])
 syms x y z
 f(x,y,z) = x^2+y^2-z^2
 fimplicit3(f == 1) 
+
+# optimization toolbox
+# declear a 16x1 vector variable with lowerbound 0.
+x = optimvar("x",16,"LowerBound",0)
+
+# declear a optimization problem
+problem = optimproblem;
+problem.Description = ""
+problem.Objective = f(x) # some function of x
+
+# define equality constraint and inequality constraint
+problem.Constraints.xConstraint = x==10
+problem.Constraints.xConstraint = x<10
+
+[sol,optval] = solve(problem,initialguess)
+
+# matlab types of crashes
+1. Segmentation Violation or Access Violation
+2. Assertion
+3. Abort/Terminate
+
+# where matlab crash dump store
+%temp% # windows
+~ # linux
+
+matlab_crash_dump.XXXX # matlab crash dump
+java.log.XXXX or hs_error_pidXXXX.log # java bug report
+
+. 'C:\Program Files\MATLAB\R2022b\bin\matlab.exe' -h # display all startup option
+. 'C:\Program Files\MATLAB\R2022b\bin\matlab.exe' -nosplash # start matlab with no splash.
+. 'C:\Program Files\MATLAB\R2022b\bin\matlab.exe' -softwareopengl # open matlab with software opengl instead of hardware opengl 
+# matlab always use software opengl
+. 'C:\Program Files\MATLAB\R2022b\bin\matlab.exe' -softwareopengl
+opengl('save','software')
+
+
+. 'C:\Program Files\MATLAB\R2022b\bin\matlab.exe' -nodesktop # open matlab without desktop
+
+C:\Users\${user_name}\Documents\MATLAB\startup.m # execute this file when matlab start
+C:\Users\${user_name}\Documents\MATLAB\finsh.m # execute this file when matlab close
+
+path # matlab command to get matlab environment path
+
+prefdir # store information about preferences and other information that persists between MATLAB sessions.
+
+isnumeric(x) # check if variable x is number
+
+
+doc ${function}       # open documentation page for ${function}
+docsearch ${function} # search documentation page for ${function}
+help ${function}      # display brief help information for ${function}
+lookup ${function}    # search brief help information for ${function}
+
+commandhistory # display command history
+
+publish # converts a MATLAB M-File to an HTML file
+builddocsearchdb # make custom documentation searchable in the help browser.
+
