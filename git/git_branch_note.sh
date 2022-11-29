@@ -26,5 +26,5 @@ git push origin --delete $branch_name
 git remote prune origin
 git fetch --prune
 
-# Git Reference logs
+# Git Reference logs (use for recover lost local commit, really useful when mess up with rebase)
 git reflog

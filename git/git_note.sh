@@ -16,5 +16,7 @@ git config --global alias.st status
 
 git config --global pull.rebase true
 
+git config --global rebase.autoStash true # git create temporary stash entry before the rebase operation begins, and apply it after it ends.
+
 # count git commit in HEAD
 git rev-list HEAD --count

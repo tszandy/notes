@@ -82,7 +82,9 @@ ctrl + shift + p -> CMake: Select a Kit
 
 # setting wrap long line into mutiple lines
 ctrl + shift + p -> user setting, search "editor.wordWrap" and turn on 
+option + z
 
 # one file toggle wrap long line into mutiple lines
 ctrl + shift + p -> view: toggle word wrap
+option + z
 
