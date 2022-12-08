@@ -80,11 +80,44 @@ ctrl + l
 #cmake select compiler
 ctrl + shift + p -> CMake: Select a Kit
 
-# setting wrap long line into mutiple lines
+# setting wrap long line into mutiple lines or unwrap mutiple lines into long line
 ctrl + shift + p -> user setting, search "editor.wordWrap" and turn on 
-option + z
+ctrl + shift + p -> view: toggle word wrap
+alt + z
 
-# one file toggle wrap long line into mutiple lines
+# prev tab
+alt + left_arrow
+
+# next tab
+alt + right_arrow
+
+# hide left panel
+control + b
+
+
+
+
+
+
+
+
+mac
+# setting wrap long line into mutiple lines or unwrap mutiple lines into long line
+ctrl + shift + p -> user setting, search "editor.wordWrap" and turn on 
 ctrl + shift + p -> view: toggle word wrap
 option + z
 
+# prev tab
+command + shift + [
+
+# next tab
+command + shift + ]
+
+# copy line up/down
+option + shift + up/down
+
+# move line up/down
+option + up/down
+
+# hide left panel
+command + b

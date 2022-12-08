@@ -6,6 +6,9 @@ docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:0.0
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
 # jenkin environment
+docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home jenkins/jenkins
+
+# jenkin environment
 docker run --name jenkin -u root -rm -d -p 8080:8080 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
 
 # ubuntu angular environment image
@@ -44,6 +47,8 @@ docker run --rm --name cpp -v /home/ice/leetcode/cpp_program:/home/wei/cpp_progr
 # mac cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 docker run --rm --name cpp -v /Users/weixie/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+
+
 
 #docker command 
 
