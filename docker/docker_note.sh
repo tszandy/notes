@@ -5,6 +5,12 @@ docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:0.0
 # ubuntu cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
+# nginx environment
+docker run --name some-nginx -d -p 8080:80 some-content-nginx
+
+# solr environment
+docker run -p 8983:8983 -t solr
+
 # jenkin environment
 docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home jenkins/jenkins
 
@@ -30,7 +36,6 @@ docker start -i python
 docker rm -f kali
 docker build -f Dockerfile_kali -t tszandy/kalilinux:0.01 . && docker run --name kali --net "host" -ti tszandy/kalilinux:0.01 /bin/bash
 docker run --name kali --net "host" -ti kalilinux/kali /bin/bash
->>>>>>> 9dbb82c (update python note)
 docker start -i kali
 
 # cpp environment image

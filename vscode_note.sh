@@ -1,4 +1,7 @@
 # windows
+# change command shortcut
+ctrl + shift + p ->"Preferences: Open Keyboard Shortcuts (JSON)"
+
 # use code in file explorer
 add "C:\Users\44498\AppData\Local\Programs\Microsoft VS Code" in environment path
 
@@ -102,6 +105,9 @@ control + b
 
 
 mac
+# change command shortcut
+command + shift + p ->"Preferences: Open Keyboard Shortcuts (JSON)"
+
 # setting wrap long line into mutiple lines or unwrap mutiple lines into long line
 ctrl + shift + p -> user setting, search "editor.wordWrap" and turn on 
 ctrl + shift + p -> view: toggle word wrap
