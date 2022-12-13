@@ -5,14 +5,27 @@ docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:0.0
 # ubuntu cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
+# gitlab environment
+export GITLAB_HOME=$HOME/gitlab
+sudo docker run --detach \
+  --hostname gitlab.example.com \
+  --publish 443:443 --publish 80:80 --publish 22:22 \
+  --name gitlab \
+  --restart always \
+  --volume $GITLAB_HOME/config:/etc/gitlab \
+  --volume $GITLAB_HOME/logs:/var/log/gitlab \
+  --volume $GITLAB_HOME/data:/var/opt/gitlab \
+  --shm-size 256m \
+  gitlab/gitlab-ee:latest
+
 # nginx environment
 docker run --name some-nginx -d -p 8080:80 some-content-nginx
 
 # solr environment
-docker run -p 8983:8983 -t solr
+docker run --name solr -p 8983:8983 -t solr
 
 # jenkin environment
-docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home jenkins/jenkins
+docker run --name jenkin -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home jenkins/jenkins
 
 # jenkin environment
 docker run --name jenkin -u root -rm -d -p 8080:8080 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
