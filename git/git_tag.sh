@@ -1,8 +1,11 @@
 # list git tag 
 git tag
 
-# tag a commit to $tag_name
+# tag current HEAD with $tag_name
 git tag $tag_name
+
+# tag commit_hash with $tag_name
+git tag ${commit_hash} $tag_name
 
 # push tag to remote
 git push ${remote_name} $tag_name

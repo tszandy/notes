@@ -59,6 +59,10 @@ PATH # a special environment variable that contains the command path
 man -k keyword # search for a manual page by keyword 
 ex: man -k sort
 
+0: stdin
+1: stdout
+2: stderr
+
 ls /fffffffff > f 2> e # send standard output to f and standard error to e, use the 2> syntax, 
 
 send the standard error to the same place as stdout with the >& notation 
