@@ -7,16 +7,18 @@ docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 .
 
 # gitlab environment
 export GITLAB_HOME=$HOME/gitlab
-sudo docker run --detach \
+docker run --detach \
   --hostname gitlab.example.com \
   --publish 443:443 --publish 80:80 --publish 22:22 \
   --name gitlab \
-  --restart always \
+  --restart no \
   --volume $GITLAB_HOME/config:/etc/gitlab \
   --volume $GITLAB_HOME/logs:/var/log/gitlab \
   --volume $GITLAB_HOME/data:/var/opt/gitlab \
   --shm-size 256m \
   gitlab/gitlab-ee:latest
+docker logs -f gitlab
+docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password # The password file will be automatically deleted in the first reconfigure run after 24 hours.
 
 # nginx environment
 docker run --name some-nginx -d -p 8080:80 some-content-nginx
@@ -68,3 +70,15 @@ docker run --rm --name cpp -v /home/ice/leetcode/cpp_program:/home/wei/cpp_progr
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 docker run --rm --name cpp -v /Users/weixie/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
+# docker mysql
+docker run --name=mysql  --restart on-failure -d mysql:latest
+docker logs mysql1 2>&1 | grep GENERATED
+docker exec -it mysql1 mysql -uroot -p
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
+docker exec -it mysql1 bash
+
+# docker desktop start a container at startup
+docker update --restart=always ${container_name}
+
+# docker desktop turn off start a container at startup
+docker update --restart=no ${container_name}

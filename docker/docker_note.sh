@@ -64,3 +64,5 @@ docker rmi $(docker images --filter “dangling=true” -q --no-trunc)
 
 # docker start a exist container 
 docker start -i ${container_name}
+
+docker logs -f ${container_name}

@@ -94,3 +94,5 @@ function name(parameter1, parameter2, parameter3) {
 
 isNaN(variable) # determine if a variable is NaN.
  
+
+# iterate through hashmap

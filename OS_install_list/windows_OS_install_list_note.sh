@@ -86,3 +86,6 @@ sd card formatter
 
 # dll(dynamic link library) decompiler 
 dotpeek
+
+# screen recording and steaming software
+obs (Open Broadcaster Software)
