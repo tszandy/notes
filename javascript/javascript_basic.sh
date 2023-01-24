@@ -96,3 +96,15 @@ isNaN(variable) # determine if a variable is NaN.
  
 
 # iterate through hashmap
+
+
+It is true that JavaScript supports overriding not overloading. When you define multiple functions 
+which has the same name, the last one defined will override all the previously defined ones and 
+every time when you invoke a function, the last defined one will get executed.
+
+def f1(arg1,arg2){
+  return arguments.length
+}
+
+f1.name # return function name in string
+eval('f1') # return function reference of function with name f1

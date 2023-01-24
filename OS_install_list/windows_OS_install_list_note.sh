@@ -89,3 +89,25 @@ dotpeek
 
 # screen recording and steaming software
 obs (Open Broadcaster Software)
+
+# a software that helps you to clean your registry with no hassle
+Outbyte PC Repair
+
+#  free malware and antivirus software that offers complete security for all your household devices in one simple to use Desktop and Smartphone application
+TotalAV
+
+# VPN
+NordVPN
+
+# data recovery software 
+Recuva
+
+# software product allows you to clone a smaller hard disk drive to a larger hard disk drive. It also allows you to clone HDD to SSD for increasing performance. This software product helps you to recover deleted data or backup your system.
+EaseUS Todo backup
+
+# a tool that helps you to increase download speeds by up to 5 times.
+Internet Download Manager
+
+# a small network monitoring program that can run in the background of your desktop or laptop.
+NirSoft
+
