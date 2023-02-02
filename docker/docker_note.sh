@@ -66,3 +66,15 @@ docker rmi $(docker images --filter “dangling=true” -q --no-trunc)
 docker start -i ${container_name}
 
 docker logs -f ${container_name}
+
+
+# docker list resources
+docker container ls -a
+docker container ls
+docker network ls
+docker images 
+docker volume ls
+
+# docker prune resources
+docker container prune
+docker network prune
