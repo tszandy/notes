@@ -19,3 +19,8 @@ REQUIREMENT	VERSIONS          ALLOWED
 *                             >=0.0.0
 1.*                           >=1.0.0 <2.0.0
 1.2.*                         >=1.2.0 <1.3.0
+
+a.b.c 
+a = major version
+b = minor version
+c = patch version

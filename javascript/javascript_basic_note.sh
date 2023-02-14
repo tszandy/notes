@@ -108,3 +108,20 @@ def f1(arg1,arg2){
 
 f1.name # return function name in string
 eval('f1') # return function reference of function with name f1
+
+
+Karma - Test Runner for Javascript
+
+Qunit - JavaScript unit testing framework.
+
+Funcunit - enhances assertion libraries like QUnit and Jasmine, enabling them to simulate user actions, easily test asynchronous behavior
+
+Grunt - JavaScript task runner
+
+
+# Object get length
+Object.keys(${object_variable}).length
+
+# access environment variable
+process.env.${environment_variable}
+

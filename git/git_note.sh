@@ -20,3 +20,7 @@ git config --global rebase.autoStash true # git create temporary stash entry bef
 
 # count git commit in HEAD
 git rev-list HEAD --count
+
+# search string from git history
+git log --patch  | less +/${searching_string}
+git rev-list --all | GIT_PAGER=cat xargs git grep '${searching_string}'

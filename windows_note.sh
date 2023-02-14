@@ -28,3 +28,9 @@ regsvr32 ${path_to_dll_file}
 regsvr32 /u /s ${path_to_dll_file}
 /u    unregister server calling dll unregister server.
 /s    silent; display no message boxes.
+
+# go to front of page
+ctrl + home
+
+# go to end of page
+ctrl + end
