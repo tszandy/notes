@@ -1,5 +1,7 @@
 Linux System
 
+ctrl + alt + f${n} # switch to tty${n} (n = 1-6) switch to gui n=7
+
 echo "${username}:${password}" | chpasswd # change password of username need root access
 
 usermod -aG sudo ${username} # add user to the sudo group

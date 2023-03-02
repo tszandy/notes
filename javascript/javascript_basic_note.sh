@@ -125,3 +125,12 @@ Object.keys(${object_variable}).length
 # access environment variable
 process.env.${environment_variable}
 
+# setTimeout is a function that run code after delay
+setTimeout(code)
+setTimeout(code, delay)
+
+setTimeout(functionRef)
+setTimeout(functionRef, delay)
+setTimeout(functionRef, delay, param1)
+setTimeout(functionRef, delay, param1, param2)
+setTimeout(functionRef, delay, param1, param2, /* … ,*/ paramN)

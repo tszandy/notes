@@ -97,8 +97,8 @@ alt + right_arrow
 # hide left panel
 control + b
 
-
-
+# Markdown: Open Preview
+command + shift + v
 
 
 
@@ -127,3 +127,6 @@ option + up/down
 
 # hide left panel
 command + b
+
+# Markdown: Open Preview
+ctrl + shift + v
