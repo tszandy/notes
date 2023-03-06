@@ -13,3 +13,6 @@ URL          - Uniform Resource Locator
 cgi          - Common Gateway Interface
 WSGI         - Web Server Gateway Interface
 apt          - Advanced Package Tool
+hdr          - high dynamic range
+sdr          - Standard Dynamic Range
+
