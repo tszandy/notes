@@ -130,3 +130,22 @@ command + b
 
 # Markdown: Open Preview
 ctrl + shift + v
+
+# vscode switch default terminal
+ctrl + shift + p -> "Terminal: Select Default Profile"
+
+# extension:
+JavaScript (ES6) code snippets
+Jupyter
+Maven for Java
+Extension Pack for Java
+Remote - SSH
+Ruby
+IntelliCode
+
+
+# remove all vscode extensions:
+uninstall vscode 
+remove folder: 
+%userprofile%\AppData\Roaming\Code
+%userprofile%\.vscode\

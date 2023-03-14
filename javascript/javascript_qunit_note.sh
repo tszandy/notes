@@ -44,3 +44,9 @@ assert.throws()
 assert.timeout()
 assert.true()
 assert.verifySteps()
+
+# qunit run only several tests, 
+change 
+QUnit.test 
+to 
+QUnit.test.only
