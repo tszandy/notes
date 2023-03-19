@@ -111,3 +111,6 @@ Internet Download Manager
 # a small network monitoring program that can run in the background of your desktop or laptop.
 NirSoft
 
+# Universal Database Tool
+DBeaver
+

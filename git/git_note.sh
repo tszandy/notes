@@ -24,3 +24,6 @@ git rev-list HEAD --count
 # search string from git history
 git log --patch  | less +/${searching_string}
 git rev-list --all | GIT_PAGER=cat xargs git grep '${searching_string}'
+
+# git clean local new directory
+git clean -fd

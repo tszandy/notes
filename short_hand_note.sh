@@ -16,4 +16,5 @@ apt          - Advanced Package Tool
 hdr          - high dynamic range
 sdr          - Standard Dynamic Range
 bq           - behavior question
+facet        - a particular aspect or feature of something.
 
