@@ -142,6 +142,10 @@ Extension Pack for Java
 Remote - SSH
 Ruby
 IntelliCode
+Scala Syntax (official)
+Scala (Metals)
+C/C++
+
 
 
 # remove all vscode extensions:

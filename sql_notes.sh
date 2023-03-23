@@ -159,3 +159,8 @@ SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (SELECT STATEMENT);
 
+# select case
+SELECT   ...,
+         CASE WHEN IDParent < 1 THEN ID ELSE IDPArent END AS ColumnName,
+         ...
+FROM     tableName

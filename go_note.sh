@@ -1,3 +1,6 @@
+# install go
+https://go.dev/doc/install
+
 Go Compiler, 
 The gc, 6g which is based on the plan 9 compiler toolchain
 The Three Architectures supported by Go are ARM(5), X86-64(6) and i386(8)
@@ -20,3 +23,4 @@ func main(){
 Instances of reference types in Go are created with the make() built-in function
 
 Functions in Go are declared using the func keyword. As with variable declarations, the return type goes at the end. This can be a single value, or a list of values.
+

@@ -4,7 +4,13 @@ How to create conscious model.
 
 What is the definition of conscious?
 
+What is the definition of subconscious?
+
+what is the definition of recognition?
+
 What is the definition of belief?
+
+what is interscetion between recognition and belief?
 
 How to organize and construct belief?
 

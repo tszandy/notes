@@ -229,3 +229,6 @@ Try{
 } catch {
     $_.ScriptStackTrace # trace back of code that throw exception.
 }
+
+# start folder in current directory
+ii .

@@ -1,3 +1,5 @@
+https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html#license-lightbox
+
 .java # java source code
 
 .class # java bytes code
@@ -30,3 +32,5 @@ import org.apache.poi.*
 https://www.slf4j.org/
 import org.slf4j.*
 
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+.\jdk-17.0.6_windows-x64_bin.msi /qb
