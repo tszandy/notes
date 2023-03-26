@@ -17,4 +17,9 @@ hdr          - high dynamic range
 sdr          - Standard Dynamic Range
 bq           - behavior question
 facet        - a particular aspect or feature of something.
-
+RDF          - Resource Description Framework
+RDBMS        - Relational database management system
+CAP          - Consistency, Avaliability, Partition Tolerance.
+AP           - access points
+ISR          - In-Sync Replicas
+HDFS         - Hadoop Distributed File System

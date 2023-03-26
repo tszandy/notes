@@ -23,16 +23,16 @@ SELECT * FROM Customers
 WHERE CustomerID=1;
 
 
-Operator	Description
-=	        Equal	
->	        Greater than	
-<	        Less than	
->=	        Greater than or equal	
-<=	        Less than or equal	
-<>	        Not equal. Note: In some versions of SQL this operator may be written as !=	
-BETWEEN	    Between a certain range	
-LIKE	    Search for a pattern	
-IN	        To specify multiple possible values for a column
+Operator       Description
+=              Equal    
+>              Greater than    
+<              Less than    
+>=             Greater than or equal    
+<=             Less than or equal    
+<>             Not equal. Note: In some versions of SQL this operator may be written as !=    
+BETWEEN        Between a certain range    
+LIKE           Search for a pattern    
+IN             To specify multiple possible values for a column
 
 SELECT * FROM Customers
 WHERE City LIKE 's%';
@@ -133,22 +133,22 @@ SELECT column1, column2, ...
 FROM table_name
 WHERE columnN LIKE pattern;
 
-LIKE Operator	                Description
-WHERE CustomerName LIKE 'a%'	Finds any values that start with "a"
-WHERE CustomerName LIKE '%a'	Finds any values that end with "a"
-WHERE CustomerName LIKE '%or%'	Finds any values that have "or" in any position
-WHERE CustomerName LIKE '_r%'	Finds any values that have "r" in the second position
-WHERE CustomerName LIKE 'a_%'	Finds any values that start with "a" and are at least 2 characters in length
-WHERE CustomerName LIKE 'a__%'	Finds any values that start with "a" and are at least 3 characters in length
-WHERE ContactName LIKE 'a%o'	Finds any values that start with "a" and ends with "o"
+LIKE Operator                     Description
+WHERE CustomerName LIKE 'a%'      Finds any values that start with "a"
+WHERE CustomerName LIKE '%a'      Finds any values that end with "a"
+WHERE CustomerName LIKE '%or%'    Finds any values that have "or" in any position
+WHERE CustomerName LIKE '_r%'     Finds any values that have "r" in the second position
+WHERE CustomerName LIKE 'a_%'     Finds any values that start with "a" and are at least 2 characters in length
+WHERE CustomerName LIKE 'a__%'    Finds any values that start with "a" and are at least 3 characters in length
+WHERE ContactName LIKE 'a%o'      Finds any values that start with "a" and ends with "o"
 
 # Wildcards
-Symbol	Description	                                                Example
-%	    Represents zero or more characters	                        bl% finds bl, black, blue, and blob
-_	    Represents a single character	                            h_t finds hot, hat, and hit
-[]	    Represents any single character within the brackets	        h[oa]t finds hot and hat, but not hit
-^	    Represents any character not in the brackets	            h[^oa]t finds hit, but not hot and hat
--	    Represents any single character within the specified range	c[a-b]t finds cat and cbt
+Symbol    Description                                                   Example
+%         Represents zero or more characters                            bl% finds bl, black, blue, and blob
+_         Represents a single character                                 h_t finds hot, hat, and hit
+[]        Represents any single character within the brackets           h[oa]t finds hot and hat, but not hit
+^         Represents any character not in the brackets                  h[^oa]t finds hit, but not hot and hat
+-         Represents any single character within the specified range    c[a-b]t finds cat and cbt
 
 # In
 SELECT column_name(s)

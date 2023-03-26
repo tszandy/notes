@@ -14,4 +14,7 @@ mvn gatling:recorder
 
 mvn gatling:test
 
-
+mvn clean gatling:help
+mvn clean gatling:verify
+mvn clean gatling:recorder
+mvn clean gatling:test

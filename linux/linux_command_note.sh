@@ -88,7 +88,7 @@ jobs # list suspend processes
 
 CTRL-C # kill processes
 
-running command in background	
+running command in background    
 you can detach a process from the shell and put it in the “background” with the ampersand (&) 
 The dark side of running background processes is that they may expect to work with the standard input (or worse, read directly from the terminal) 
 If a program tries to read something from the standard input when it’s in the background, it can freeze (try fg to bring it back) or terminate. Also,if the program writes to the standard output or standard error, the output can appear in the terminal window with no regard for anything else run- ning there, meaning that you can get unexpected output when you’re work- ing on something else. 
@@ -156,13 +156,13 @@ prw-r--r--   1 root root    0 Mar  3 19:17 fdata
 srw-rw-rw- 1 root root    0 Dec 18 07:43 log
 character is b, c, p, or s, the file is a device. These letters stand for block, character, pipe, and socket 
 Block device 
-	Programs access data from a block device in fixed chunks. The sda1 in the preceding example is a disk device 
+    Programs access data from a block device in fixed chunks. The sda1 in the preceding example is a disk device 
 Character device 
-	Character devices work with data streams. You can only read characters from or write characters to character devices, as previously demonstrated with /dev/null 
+    Character devices work with data streams. You can only read characters from or write characters to character devices, as previously demonstrated with /dev/null 
 Pipe device 
-	Named pipes are like character devices, with another process at the other end of the I/O stream instead of a kernel driver. 
+    Named pipes are like character devices, with another process at the other end of the I/O stream instead of a kernel driver. 
 Socket device 
-	Sockets are special-purpose interfaces that are frequently used for interprocess communication. 
+    Sockets are special-purpose interfaces that are frequently used for interprocess communication. 
 
 Not all devices have device files because the block and character device I/O interfaces are not appropriate in all cases 
 
@@ -637,12 +637,12 @@ In both cases, basename returns example
 
 script to convert GIF image files to the PNG format: 
 #!/bin/shfor file in *.gif; do 
-	# exit if there are no files 
-	if [ ! -f $file ]; then 
-		exit 
-	fi 
-	b=$(basename $file .gif)	echo Converting $b.gif to $b.png... 
-	giftopnm $b.gif | pnmtopng > $b.png 
+    # exit if there are no files 
+    if [ ! -f $file ]; then 
+        exit 
+    fi 
+    b=$(basename $file .gif)    echo Converting $b.gif to $b.png... 
+    giftopnm $b.gif | pnmtopng > $b.png 
 done 
 
 The sed program (sed stands for stream editor) is an automatic text editor that takes an input stream (a file or the standard input), alters it accord- ing to some expression, and prints the results to standard output. 
@@ -694,7 +694,7 @@ If you must use LD_LIBRARY_PATH to run some crummy program for which you don’t
 Avoiding LD_LIBRARY_PATH prevents most shared library problems. But one other significant problem that occasionally comes up with developers is that a library’s application programming interface (API) may change slightly from one minor version to another, breaking installed software. The best solutions here are preventive: Either use a consistent methodology to install shared libraries with -Wl,-rpath to create a runtime link path or simply use the static versions of obscure libraries. 
 make CC=clang 
 
-clean:	rm -f $(OBJS) myprog 
+clean:    rm -f $(OBJS) myprog 
 
 MYPACKAGE_INCLUDES=-I/usr/local/include/mypackage 
 MYPACKAGE_LIB=-L/usr/local/lib/mypackage -lmypackage 
@@ -710,8 +710,8 @@ BORING_OBJS=$(UTIL_OBJS) boring.o
 TRITE_OBJS=$(UTIL_OBJS) trite.o 
 PROGS=boring trite 
 all: $(PROGS)
-boring: $(BORING_OBJS)	$(CC) -o $@ $(BORING_OBJS) $(LDFLAGS) 
-trite: $(TRITE_OBJS)	$(CC) -o $@ $(TRITE_OBJS) $(LDFLAGS) 
+boring: $(BORING_OBJS)    $(CC) -o $@ $(BORING_OBJS) $(LDFLAGS) 
+trite: $(TRITE_OBJS)    $(CC) -o $@ $(TRITE_OBJS) $(LDFLAGS) 
 
 gdb program # start gdb on an executable named program 
 (gdb) run options # run program with the command-line  argument options 

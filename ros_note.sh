@@ -205,7 +205,7 @@ Using rossrv
 rossrv show ${service type}
 Ex: rossrv show beginner_tutorials/AddTwoInts
 
-rossrv show AddTwoInts	
+rossrv show AddTwoInts
 Output:
 [beginner_tutorials/AddTwoInts]:
 int64 a

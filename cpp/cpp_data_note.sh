@@ -1,13 +1,13 @@
 https://en.cppreference.com/w/cpp/language/types#char8_t
 
 # 1 byte
-bool , char , char8_t , unsigned char , signed char , __int8	
+bool, char, char8_t, unsigned char, signed char, __int8    
 # 2 bytes
-char16_t , __int16 , short , unsigned short , wchar_t , __wchar_t	
+char16_t, __int16, short, unsigned short, wchar_t, __wchar_t    
 # 4 bytes
-char32_t , float , __int32 , int , unsigned int , long , unsigned long	
+char32_t, float, __int32, int, unsigned int, long, unsigned long    
 # 8 bytes
-double , __int64 , long double , long long , unsigned long long	
+double, __int64, long double, long long, unsigned long long    
 
 # bool
     1 byte
