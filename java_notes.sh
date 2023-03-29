@@ -34,3 +34,6 @@ import org.slf4j.*
 
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 .\jdk-17.0.6_windows-x64_bin.msi /qb
+
+# java windows install location:
+C:\Program Files\Java

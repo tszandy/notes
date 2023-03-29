@@ -23,3 +23,5 @@ CAP          - Consistency, Avaliability, Partition Tolerance.
 AP           - access points
 ISR          - In-Sync Replicas
 HDFS         - Hadoop Distributed File System
+RLHF         - Reinforcement Learning from Human Feedback
+rdp          - Remote Desktop Protocol

@@ -3,7 +3,7 @@ docker build -f Dockerfile_ubuntu -t tszandy/ubuntu:0.01 .
 docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:0.01 /bin/bash
 
 # ubuntu cpp environment image
-docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
+docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.03 . 
 
 # gitlab environment
 export GITLAB_HOME=$HOME/gitlab
@@ -59,16 +59,16 @@ docker start -i kali
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
 # windows cpp environment image
-docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
-docker run --rm --name cpp -v C:\Users\44498\Desktop\leetcode\cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 .
+docker run --rm --name cpp -v C:\Users\44498\OneDrive\Desktop\program\leetcode\cpp_program:/home/ice/cpp_program -it tszandy/ubuntu_cpp:0.04 /bin/bash
 
 # ubuntu cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
-docker run --rm --name cpp -v /home/ice/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+docker run --rm --name cpp -v /home/ice/leetcode/cpp_program:/home/ice/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
 # mac cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
-docker run --rm --name cpp -v /Users/weixie/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+docker run --rm --name cpp -v /Users/weixie/leetcode/cpp_program:/home/ice/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
 # docker mysql
 docker run --name=mysql  --restart on-failure -d mysql:latest

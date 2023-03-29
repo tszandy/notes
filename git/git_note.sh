@@ -18,6 +18,9 @@ git config --global pull.rebase true
 
 git config --global rebase.autoStash true # git create temporary stash entry before the rebase operation begins, and apply it after it ends.
 
+# read git remote config file
+git config -e
+
 # count git commit in HEAD
 git rev-list HEAD --count
 
@@ -27,3 +30,9 @@ git rev-list --all | GIT_PAGER=cat xargs git grep '${searching_string}'
 
 # git clean local new directory
 git clean -fd
+
+# git List references in a remote repository
+git ls-remote
+
+
+-u, --set-upstream    set upstream for git pull/status
