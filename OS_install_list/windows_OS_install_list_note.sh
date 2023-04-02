@@ -13,9 +13,6 @@ cygwin
 listary
 everything
 
-# video player
-vlc media player
-
 # desktop remote control 
 teamviewer
 
@@ -59,7 +56,7 @@ git
 # open-source distribution of the TeX/LaTeX typesetting system for Microsoft Windows
 miktex
 
-# multimedia software player
+# multimedia software video player
 PotPlayer
 VLC media player
 
@@ -113,4 +110,7 @@ NirSoft
 
 # Universal Database Tool
 DBeaver
+
+# tool download video from youtube
+clipgrab
 

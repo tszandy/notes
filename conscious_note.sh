@@ -10,9 +10,14 @@ what is the definition of recognition?
 
 What is the definition of belief?
 
+how to construct belief system?
+probalistic knowledge base? deep belief network?
+
 what is interscetion between recognition and belief?
 
 How to organize and construct belief?
+
+how to dividi belief without lost information?
 
 How to build a model that can merge and divide belief?
 

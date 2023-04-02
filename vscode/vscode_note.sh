@@ -145,7 +145,8 @@ IntelliCode
 Scala Syntax (official)
 Scala (Metals)
 C/C++
-
+Go
+Diff Folders
 
 
 # remove all vscode extensions:

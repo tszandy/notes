@@ -1,3 +1,6 @@
+# git cheat sheet 
+https://dev.to/doabledanny/git-cheat-sheet-50-commands-free-pdf-and-poster-4gcn
+
 git pull = (git fetch + git merge) or (git fetch + git rebase)
 dependent on pull.rebase = false or true
 
