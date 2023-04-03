@@ -147,6 +147,8 @@ Scala (Metals)
 C/C++
 Go
 Diff Folders
+git history
+Draw.io Integration
 
 
 # remove all vscode extensions:
