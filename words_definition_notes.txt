@@ -1,4 +1,3 @@
-
 persuade   - to move by argument, entreaty, or expostulation to a belief, position, or course of action
 persuasive - tending to persuade
 pervasive  - existing in or spreading through every part of something
@@ -60,3 +59,86 @@ craft - skill in planning, making, or executing
 disparate - markedly distinct in quality or character
 separate - to become divided or detached
 exclamation - a sharp or sudden utterance
+omission - something neglected or left undone
+neglected - not given proper or necessary care or attention
+typography - letterpress printing
+passage - a way of exit or entrance : a road, path, channel, or course by which something passes
+imprecise - not precise , INEXACT, VAGUE
+delineate - to describe, portray, or set forth with accuracy or in detail
+portray - to describe in words,to make a picture of
+defer - withheld for or until a stated time
+exert - to put forth (strength, effort, etc.)
+endeavor - to attempt (something, such as the fulfillment of an obligation) by exertion of effort
+elaborate - planned or carried out with great care
+collaborate - to work jointly with others or together especially in an intellectual endeavor
+novice - a person admitted to probationary membership in a religious community
+akin - related by blood : descended from a common ancestor or prototype , essentially similar, related, or compatible
+kin - a group of persons of common ancestry : CLAN
+eradicate - to do away with as completely as if by pulling up by the roots
+adhere - to hold fast or stick by or as if by gluing, suction, grasping, or fusing
+adherence - the act, action, or quality of adhering
+serial - of, relating to, consisting of, or arranged in a series, rank, or row
+serialize - to arrange or publish in serial form
+reliance - the act of relying : the state of being reliant
+reply - to respond in words or writing
+accusation - a charge of wrongdoing
+accuse - to charge with a fault or offense : BLAME
+mitigating - to cause to become less harsh or hostile : MOLLIFY
+hostile - marked by malevolence : having or showing unfriendly feelings
+MOLLIFY - to soothe in temper or disposition : APPEASE
+speculative - marked by questioning curiosity
+specter - a visible disembodied spirit : GHOST
+manifest - easily understood or recognized by the mind : OBVIOUS
+churn - a container in which cream is stirred or shaken to make butter
+viral - of, relating to, or caused by a virus
+stumbling block - an obstacle to progress
+daunting - tending to overwhelm or intimidate
+overwhelm - UPSET, OVERTHROW
+intimidate - to make timid or fearful : FRIGHTEN
+FRIGHTEN - to make afraid : TERRIFY
+timid - lacking in courage or self-confidence
+subtle - DELICATE, ELUSIVE
+delicate - pleasing to the senses:
+elusive - tending to elude
+elude - to avoid adroitly : EVADE
+adroit - having or showing skill, cleverness, or resourcefulness in handling situations
+evade - to take refuge in escape or avoidance
+crept - past tense of creep
+creep - to go very slowly
+brittle - easily broken, cracked, or snapped
+nuance - a subtle distinction or variation
+conformity - correspondence in form, manner, or character : AGREEMENT
+toil - to work hard and long
+stagnation - a stagnant state or condition : a state or condition marked by lack of flow, movement, or development
+stagnant - not flowing in a current or stream;STALE
+stale - tasteless or unpalatable from age
+defect - an imperfection or abnormality that impairs quality, function, or utility : SHORTCOMING, FLAW
+ramification - the act or process of branching
+distaste - to feel aversion to
+disgusting - causing a strong feeling of dislike or disinclination : causing disgust
+consensus - general agreement : UNANIMITY
+unanimity - the quality or state of being unanimous
+unanimous - being of one mind : AGREEING
+lurk - to be concealed but capable of being discovered
+discrepancy - the quality or state of disagreeing or being at variance
+magnified - to enlarge in fact or in appearance
+detriment - a cause of injury or damage
+marginalized - relegated to a marginal position within a society or group
+marginal - of, relating to, or situated at a margin or border
+margin - the outside limit and adjoining surface of something : EDGE
+lucrative - producing wealth : PROFITABLE
+profitable - affording profits : yielding advantageous returns or results
+personnel - a body of persons usually employed 
+precedent - prior in time, order, arrangement, or significance
+nebulous - of, relating to, or resembling a nebula : NEBULAR
+nebula - any of numerous clouds of gas or dust in interstellar space
+sped - special education
+vigilant - alertly watchful especially to avoid danger
+bloated - overfilled and extended with liquid, gas, food, etc.
+vested - fully and unconditionally guaranteed as a legal right, benefit, or privilege
+incentive - something that incites or has a tendency to incite to determination or action
+rampant - marked by a menacing wildness, extravagance, or absence of restraint
+incentivized - to provide with an incentive
+reminiscent - tending to remind : SUGGESTIVE
+
+

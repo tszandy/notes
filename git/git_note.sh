@@ -39,3 +39,7 @@ git ls-remote
 
 
 -u, --set-upstream    set upstream for git pull/status
+
+
+set GIT_SSH=C:\PuTTY\plink.exe
+

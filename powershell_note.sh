@@ -232,3 +232,11 @@ Try{
 
 # start folder in current directory
 ii .
+# short cut
+ctrl + shift + t   # new tab 
+ctrl + tab         # next tab
+ctrl + shift + tab # prev tab
+
+# quit install msi file
+msiexec.exe /i file_name.msi /qb
+ 

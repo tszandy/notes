@@ -104,7 +104,7 @@ command + shift + v
 
 
 
-mac
+# mac
 # change command shortcut
 command + shift + p ->"Preferences: Open Keyboard Shortcuts (JSON)"
 
