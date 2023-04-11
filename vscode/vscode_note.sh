@@ -95,10 +95,10 @@ alt + left_arrow
 alt + right_arrow
 
 # hide left panel
-control + b
+ctrl + b
 
 # Markdown: Open Preview
-command + shift + v
+ctrl + shift + v
 
 
 
@@ -129,7 +129,7 @@ option + up/down
 command + b
 
 # Markdown: Open Preview
-ctrl + shift + v
+command + shift + v
 
 # vscode switch default terminal
 ctrl + shift + p -> "Terminal: Select Default Profile"

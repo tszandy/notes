@@ -24,3 +24,11 @@ How to build a model that can merge and divide belief?
 Self improvement feedback loop. How to define good or bad?
 
 Does the past define us? How to define memory? How to construct belief and self improve from memory.
+
+collect all learning method of human.
+
+creativity learning
+
+how to think and how to not think.
+
+

@@ -25,3 +25,4 @@ ISR          - In-Sync Replicas
 HDFS         - Hadoop Distributed File System
 RLHF         - Reinforcement Learning from Human Feedback
 rdp          - Remote Desktop Protocol
+TL;DR        - Too long; Didn't read
