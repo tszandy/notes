@@ -18,3 +18,8 @@ mvn clean gatling:help
 mvn clean gatling:verify
 mvn clean gatling:recorder
 mvn clean gatling:test
+
+
+mvn gatling:test -Dgatling.runMultipleSimulations=true
+mvn gatling:test -Dgatling.simulationClass=${simulation_path}
+

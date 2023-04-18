@@ -784,3 +784,33 @@ ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
         -n namespace -s signature_file [-r revocation_file]
 example:
 ssh-keygen -b 2048 -t rsa
+
+
+split [options] [file] [prefix]
+Option	Description
+-a	Set suffix length.
+-b	Determines size per output file.
+-C	Determines the maximum size per output file.
+-d	Changes default suffixes to numeric values.
+-e	Omits creating empty output files.
+-l	Creates files with a specific number of output lines.
+-n	Generates a specific number of output files.
+--verbose	Displays a detailed output.
+
+sed OPTIONS... [SCRIPT] [INPUTFILE...]
+-b, --binary	Open input files in binary mode to consider lines to end at a line feed.
+--debug	Switch to debug mode to print input in canonical form and annotate program execution.
+--follow-symlinks	Edit the ultimate destination if the specified file is a symbolic link. It only works when combined with the -i option.
+--help	Display the usage information.
+--i, --in-place [=SUFFIX]	Perform edits in-place by overwriting the original file.
+--posix	Disable all extensions to POSIX sed to simplify writing portable scripts.
+--version	Display the version of sed running on the system.
+-E, -r, --regexp-extended	Use extended regular expressions.
+-e script, --expression=script	Add a specified script to run with the commands.
+-f script-file	Add the contents of a specified script-file to run with the commands.
+-l N, --line-length=N	Define the desired line-wrap length for the l command (default value is 70).
+-n, --quiet, --silent	Disable output printing.
+-s, --separate	View specified files as separate, not as a single continuous long stream.
+--sandbox	Disable running external programs and operate only on input files on the command line.
+-u, --unbuffered	Minimalize input and output buffer.
+-z, --null-data, --zero-terminated	View input as a set of lines where each ends with a zero byte.

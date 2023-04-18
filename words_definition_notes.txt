@@ -1,8 +1,8 @@
-persuade   - to move by argument, entreaty, or expostulation to a belief, position, or course of action
+persuade - to move by argument, entreaty, or expostulation to a belief, position, or course of action
 persuasive - tending to persuade
-pervasive  - existing in or spreading through every part of something
-presence   - the fact or condition of being present
-cinema     - a motion-picture theater
+pervasive - existing in or spreading through every part of something
+presence - the fact or condition of being present
+cinema - a motion-picture theater
 theater - a building or area for dramatic performances
 deepen - to make deep or deeper
 notion - an individual's conception or impression of something known, experienced, or imagined
@@ -141,7 +141,113 @@ rampant - marked by a menacing wildness, extravagance, or absence of restraint
 incentivized - to provide with an incentive
 reminiscent - tending to remind : SUGGESTIVE
 meteorology - a science that deals with the atmosphere and its phenomena and especially with weather and weather forecasting
-
+intermittent - coming and going at intervals : not continuous
+humility - freedom from pride or arrogance : the quality or state of being humble
+endorse - to recommend (something, such as a product or service) usually for financial compensation
+phenomenon - a rare or significant fact or event
+slaving away - to work very hard at something
+astonished - feeling or showing great surprise or wonder : ASTOUNDED, AMAZED
+fame - to make famous
+fortune - RICHES, WEALTH; a very large sum of money
+enthusiast - a person who is ardently attached to a cause, object, or pursuit
+enthusiasm - strong excitement of feeling : ARDOR
+solicit - ask for or try to obtain (something) from someone.
+exasperated - having or showing strong feelings of irritation or annoyance
+forfeit - to lose or lose the right to especially by some error, offense, or crime
+misstep - a wrong step
+vetted - having been subjected to evaluation or appraisal : critically reviewed and evaluated for official approval or acceptance
+doom - JUDGMENT, DECISION
+disperse - to spread or distribute from a fixed or constant source: such as
+maroon - to put ashore on a desolate island or coast and leave to one's fate
+slog - to hit hard : BEAT
+absurd - ridiculously unreasonable, unsound, or incongruous
+goof - a silly or stupid person
+analogy - a comparison of two otherwise unlike things based on resemblance of a particular aspect
+fabulous - WONDERFUL, MARVELOUS
+swing - to suspend so as to permit swaying or turning
+swaths - any kind of path someone makes.
+hammering - a metal sphere thrown for distance in the hammer throw
+realm - SPHERE, DOMAIN; a primary marine or terrestrial biogeographic division of the earth's surface
+omniscient - having infinite awareness, understanding, and insight
+infallible - incapable of error : UNERRING
+plausible - superficially fair, reasonable, or valuable but often specious
+implausible - not plausible : provoking disbelief
+nasty - INDECENT, OBSCENE
+humble - not proud or haughty : not arrogant or assertive
+haughty - blatantly and disdainfully proud : having or showing an attitude of superiority and contempt for people or things perceived to be inferior
+arrogant - exaggerating or disposed to exaggerate one's own worth or importance often by an overbearing manner
+pillar - a solid mass of coal, rock, or ore left standing to support a mine roof
+empathize - to experience empathy
+empathy - the action of understanding, being aware of, being sensitive to, and vicariously experiencing the feelings, thoughts, and experience of another of either the past or present without having the feelings, thoughts, and experience fully communicated in an objectively explicit manner
+ego - the self especially as contrasted with another self or the world
+hostility - deep-seated usually mutual ill will
+utterly - completely and without qualification; absolutely.
+baffled - extremely confused or puzzled
+petty - having little or no importance or significance
+imbue - to permeate or influence as if by dyeing
+permeate - to diffuse through or penetrate something
+dye - a soluble or insoluble coloring matter
+tactful - having or showing tact
+tact - a keen sense of what to do or say in order to maintain good relations with others or avoid offense
+juggle - to engage in manipulation especially in order to achieve a desired end
+dejectedly - low in spirits : DEPRESSED
+inevitable - incapable of being avoided or evaded
+motto - a sentence, phrase, or word inscribed on something as appropriate to or indicative of its character or use
+innovative - characterized by, tending to, or introducing innovations
+deliberately - with full awareness of what one is doing : in a way that is intended or planned
+incentive - something that incites or has a tendency to incite to determination or action
+debunked - to expose the sham (see SHAM entry 1 sense 2) or falseness of
+sham - an imitation or counterfeit purporting to be genuine
+post mortem - done, occurring, or collected after death
+propose - to form or put forward a plan or intention
+influence - the power or capacity of causing an effect in indirect or intangible ways : SWAY
+sway - the action or an instance of swaying or of being swayed : an oscillating, fluctuating, or sweeping motion
+bizarre - strikingly out of the ordinary
+maddeningly - tending to craze
+craze - to make insane or as if insane
+wishy washy - lacking in character or determination : INEFFECTUAL
+notorious - generally known and talked of
+rubric - an authoritative rule
+thrive - o grow vigorously : FLOURISH
+flourish - to grow luxuriantly
+ambiguity - the quality or state of being ambiguous especially in meaning
+ambiguous - doubtful or uncertain especially from obscurity or indistinctness
+incompetent - lacking the qualities needed for effective action
+fragmentation - the act or process of fragmenting or making fragmentary
+skew - to take an oblique course
+novice - BEGINNER, TYRO
+tyro - a beginner in learning
+ramp up - BUILDUP, INCREASE
+parrot - a person who sedulously echoes another's words
+mimicry - an instance of mimicking
+superstition - a belief or practice resulting from ignorance, fear of the unknown, trust in magic or chance, or a false conception of causation
+lurch - to roll or tip abruptly : PITCH
+abrupt - lacking smoothness or continuity
+pitch - any of various bituminous substances
+tribal - of, relating to, or characteristic of a tribe
+tribe - a social group composed chiefly of numerous families, clans, or generations having a shared ancestry and language
+reluctant - feeling or showing aversion, hesitation, or unwillingness
+aversion - a settled dislike : ANTIPATHY
+synonyms - one of two or more words or expressions of the same language that have the same or nearly the same meaning in some or all senses
+grandstanding - a usually roofed stand for spectators at a racecourse or stadium
+embrace - to take in or include as a part, item, or element of a more inclusive whole
+stagnant - not advancing or developing
+intranet - a network operating like the World Wide Web but having access restricted to a limited group of authorized users (such as employees of a company)
+reap - OBTAIN, WIN
+defuse - to remove the fuse from (a mine, a bomb. etc.)
+platitude - a remark or statement, especially one with a moral content, that has been used too often to be interesting or thoughtful.
+kudos - praise given for achievement
+canonical - of, relating to, or forming a canon
+canon - a regulation or dogma decreed by a church council
+tailored - fashioned or fitted to resemble a tailor's work
+idioms - the language peculiar to a people or to a district, community, or class : DIALECT
+dialect - a variety of a language used by the members of a group
+idiomatic - of, relating to, or conforming to idiom
+monorepo - a version controlled code repository that holds many projects
+drastically - in a drastic manner : severely or seriously
+drastic - acting rapidly or violently
+hinder - to make slow or difficult the progress of : HAMPER
+monolithic - cast as a single piece
 
 
 

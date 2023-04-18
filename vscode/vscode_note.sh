@@ -149,7 +149,7 @@ Go
 Diff Folders
 git history
 Draw.io Integration
-
+docker
 
 # remove all vscode extensions:
 uninstall vscode 
