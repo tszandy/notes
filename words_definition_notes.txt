@@ -110,7 +110,7 @@ nuance - a subtle distinction or variation
 conformity - correspondence in form, manner, or character : AGREEMENT
 toil - to work hard and long
 stagnation - a stagnant state or condition : a state or condition marked by lack of flow, movement, or development
-stagnant - not flowing in a current or stream;STALE
+stagnant - not flowing in a current or stream, STALE
 stale - tasteless or unpalatable from age
 defect - an imperfection or abnormality that impairs quality, function, or utility : SHORTCOMING, FLAW
 ramification - the act or process of branching
@@ -248,6 +248,10 @@ drastically - in a drastic manner : severely or seriously
 drastic - acting rapidly or violently
 hinder - to make slow or difficult the progress of : HAMPER
 monolithic - cast as a single piece
-
-
-
+sporadic - occurring occasionally, singly, or in irregular or random instances
+monolith - a single great stone often in the form of an obelisk or column
+monolithic -  of, relating to, or resembling a monolith : HUGE, MASSIVE
+reconcile - to restore to friendship or harmony
+dialect - a regional variety of language distinguished by features of vocabulary, grammar, and pronunciation from other regional varieties and constituting together with them a single language
+minutia - a minute or minor detail —usually used in plural
+dynamite - an explosive that is made of nitroglycerin absorbed in a porous material and that often contains ammonium nitrate or cellulose nitrate

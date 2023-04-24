@@ -1,116 +1,77 @@
 # windows os install list
 
-# clone computer system drive
-Macrium Reflect
+Macrium Reflect # clone computer system drive
 
-# compress and uncompress file
-bandizip
+bandizip # compress and uncompress file
 
-# linux command in windows
-cygwin
+cygwin # linux command in windows
 
-# local file search engine
-listary
-everything
+listary, everything # local file search engine
 
-# desktop remote control 
-teamviewer
+teamviewer # desktop remote control 
 
-# used to make any application topmost
-deskpins
+deskpins # used to make any application topmost
 
-# uninstall software
-geek
+geek # uninstall software
 
-# Open Source Video Transcoder
-handbreak
+handbreak # Open Source Video Transcoder
 
-# open-source text and source code editor
-atom
-VSCode
-sublime
+atom, VSCode, sublime # open-source text and source code editor
 
-# Free File Synchronization, Backup, Data Replication sync file between two location
-synctoy
-Allway Sync
-syncios
+synctoy # sync between two folders
 
-# Open-source KVM(keyboard video mouse) software
-barrier
+Allway Sync # Free File Synchronization, Backup, Data Replication sync file between two location https://allway-sync.en.uptodown.com/windows/versions
 
-# video editor software
-DaVinci Resolve
+barrier # Open-source KVM(keyboard video mouse) software
 
-# OS-level virtualization to deliver software
-docker
+DaVinci Resolve # video editor software
 
-# Create images, mount various types of virtual discs together with VHDs and TrueCrypt files
-DAEMON Tools Lite
+docker # OS-level virtualization to deliver software
 
-# configure and tweak the Boot Configuration Data
-EasyBCD
+DAEMON Tools Lite # Create images, mount various types of virtual discs together with VHDs and TrueCrypt files
 
-# version control
-git
+EasyBCD # configure and tweak the Boot Configuration Data
 
-# open-source distribution of the TeX/LaTeX typesetting system for Microsoft Windows
-miktex
+git # version control
 
-# multimedia software video player
-PotPlayer
-VLC media player
+miktex # open-source distribution of the TeX/LaTeX typesetting system for Microsoft Windows
 
-# open-source utility used for writing image files such as .iso and .img files
-balenaEtcher
+PotPlayer, VLC media player # multimedia software video player
 
-# checks if a system running Windows is suitable for processing real-time audio and other tasks
-latencymon
+balenaEtcher # open-source utility used for writing image files such as .iso and .img files
 
-# open-source cross-platform web server solution stack package
-xampp
+latencymon # checks if a system running Windows is suitable for processing real-time audio and other tasks
 
-# Quickly organize and optimize partitions on your internal and external disks
-paragon partition manager
+xampp # open-source cross-platform web server solution stack package
 
-# E-book management
-calibre
+paragon partition manager # Quickly organize and optimize partitions on your internal and external disks
 
-# Antivirus and VPN
-mcafee
+calibre # E-book management
 
-# Formatter formats SD Memory Card, SDHC Memory Card and SDXC Memory Card
-sd card formatter
+mcafee # Antivirus and VPN
 
-# dll(dynamic link library) decompiler 
-dotpeek
+sd card formatter # Formatter formats SD Memory Card, SDHC Memory Card and SDXC Memory Card
 
-# screen recording and steaming software
-obs (Open Broadcaster Software)
+dotpeek # dll(dynamic link library) decompiler 
 
-# a software that helps you to clean your registry with no hassle
-Outbyte PC Repair
+obs (Open Broadcaster Software) # screen recording and steaming software
 
-#  free malware and antivirus software that offers complete security for all your household devices in one simple to use Desktop and Smartphone application
-TotalAV
+Outbyte PC Repair # a software that helps you to clean your registry with no hassle
 
-# VPN
-NordVPN
+TotalAV #  free malware and antivirus software that offers complete security for all your household devices in one simple to use Desktop and Smartphone application
 
-# data recovery software 
-Recuva
+NordVPN # VPN
 
-# software product allows you to clone a smaller hard disk drive to a larger hard disk drive. It also allows you to clone HDD to SSD for increasing performance. This software product helps you to recover deleted data or backup your system.
-EaseUS Todo backup
+Recuva # data recovery software 
 
-# a tool that helps you to increase download speeds by up to 5 times.
-Internet Download Manager
+EaseUS Todo backup # software product allows you to clone a smaller hard disk drive to a larger hard disk drive. It also allows you to clone HDD to SSD for increasing performance. This software product helps you to recover deleted data or backup your system.
 
-# a small network monitoring program that can run in the background of your desktop or laptop.
-NirSoft
+Internet Download Manager # a tool that helps you to increase download speeds by up to 5 times.
 
-# Universal Database Tool
-DBeaver
+NirSoft # a small network monitoring program that can run in the background of your desktop or laptop.
 
-# tool download video from youtube
-clipgrab
+DBeaver # Universal Database Tool
 
+clipgrab # tool download video from youtube
+
+linux reader # Access files and folders on Ext, UFS, HFS, ReiserFS, or APFS file systems from Windows

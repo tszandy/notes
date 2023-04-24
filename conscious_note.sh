@@ -25,10 +25,15 @@ Self improvement feedback loop. How to define good or bad?
 
 Does the past define us? How to define memory? How to construct belief and self improve from memory.
 
+<<<<<<< HEAD
 collect all learning method of human.
 
 creativity learning
 
 how to think and how to not think.
 
+=======
+
+maybe conscious is generative model, we can simulate a model that is similar to one and other but not exactly the same.
+>>>>>>> eca0fb1 (update_notes)
 

@@ -10,3 +10,7 @@ command + option + b # bookmark manager
 command + y # history
 command + option + left_arrow  # jump to previous tab
 command + option + right_arrow # jump to next tab
+
+# extension 
+Keepa # Amazon Price Tracker
+uBlock Origin # ads blocker

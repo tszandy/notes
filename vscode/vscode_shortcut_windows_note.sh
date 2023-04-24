@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # windows
 # change command shortcut
 ctrl + shift + p ->"Preferences: Open Keyboard Shortcuts (JSON)"
@@ -96,66 +95,11 @@ alt + left_arrow
 alt + right_arrow
 
 # hide left panel
-ctrl + b
-
-# Markdown: Open Preview
-ctrl + shift + v
-
-
-
-
-
-# mac
-# change command shortcut
-command + shift + p ->"Preferences: Open Keyboard Shortcuts (JSON)"
-
-# setting wrap long line into mutiple lines or unwrap mutiple lines into long line
-ctrl + shift + p -> user setting, search "editor.wordWrap" and turn on 
-ctrl + shift + p -> view: toggle word wrap
-option + z
-
-# prev tab
-command + shift + [
-
-# next tab
-command + shift + ]
-
-# copy line up/down
-option + shift + up/down
-
-# move line up/down
-option + up/down
-
-# hide left panel
-command + b
+control + b
 
 # Markdown: Open Preview
 command + shift + v
 
 # vscode switch default terminal
-ctrl + shift + p -> "Terminal: Select Default Profile"
+command + shift + p -> "Terminal: Select Default Profile"
 
-=======
->>>>>>> eca0fb1 (update_notes)
-# extension:
-JavaScript (ES6) code snippets
-Jupyter
-Maven for Java
-Extension Pack for Java
-Remote - SSH
-Ruby
-IntelliCode
-Scala Syntax (official)
-Scala (Metals)
-C/C++
-Go
-Diff Folders
-git history
-Draw.io Integration
-docker
-
-# remove all vscode extensions:
-uninstall vscode 
-remove folder: 
-%userprofile%\AppData\Roaming\Code
-%userprofile%\.vscode\
