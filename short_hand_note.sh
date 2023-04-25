@@ -26,3 +26,10 @@ HDFS         - Hadoop Distributed File System
 RLHF         - Reinforcement Learning from Human Feedback
 rdp          - Remote Desktop Protocol
 TL;DR        - Too long; Didn't read
+gRPC         - a modern open source high performance Remote Procedure Call (RPC) framework that can run in any environment.
+RPG          - Remote Procedure Call
+xmlns        - An XML namespace is a collection of names that can be used as element or attribute names in an XML document. 
+xsi          - the namespace prefix used by convention for the XML Schema instance namespace
+
+
+

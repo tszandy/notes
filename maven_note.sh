@@ -1,4 +1,4 @@
-# This command generates the dependency tree of the maven project.
+##### This command generates the dependency tree of the maven project.
 mvn dependency:tree
 
 # This command cleans the maven project by deleting the target directory
@@ -22,10 +22,10 @@ mvn deploy
 # This command validates the maven project that everything is correct and all the necessary information is available.
 mvn validate
 
-# This command analyzes the maven project to identify the unused declared and used undeclared dependencies. 
+##### This command analyzes the maven project to identify the unused declared and used undeclared dependencies. 
 mvn dependency:analyze
 
-# Maven archetypes is a maven project templating toolkit.
+##### Maven archetypes is a maven project templating toolkit.
 mvn archetype:generate
 
 # This command generates a site for the project.
