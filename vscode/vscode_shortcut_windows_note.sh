@@ -103,3 +103,5 @@ command + shift + v
 # vscode switch default terminal
 command + shift + p -> "Terminal: Select Default Profile"
 
+# edit top tab size so there are more tabs displayed
+ctrl + , -> "Tab Sizing" -> "shrink"

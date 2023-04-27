@@ -37,3 +37,5 @@ https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 
 # java windows install location:
 C:\Program Files\Java
+
+InterruptedException

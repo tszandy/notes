@@ -255,3 +255,43 @@ reconcile - to restore to friendship or harmony
 dialect - a regional variety of language distinguished by features of vocabulary, grammar, and pronunciation from other regional varieties and constituting together with them a single language
 minutia - a minute or minor detail —usually used in plural
 dynamite - an explosive that is made of nitroglycerin absorbed in a porous material and that often contains ammonium nitrate or cellulose nitrate
+interfere - to act reciprocally so as to augment, diminish, or otherwise affect one another
+overwhelm - UPSET, OVERTHROW
+apprentice - one who is learning by practical experience under skilled workers a trade, art, or calling
+apt - having a tendency : LIKELY
+convenient - suited to personal comfort or to easy performance
+convention - AGREEMENT, CONTRACT
+merely - nothing more than : ONLY
+only - alone in a class or category : SOLE, unquestionably the best : PEERLESS, having no brother or sister
+vacuously - devoid of serious occupation : IDLE
+idle - not occupied or employed, having no employment : INACTIVE
+limerick - a light or humorous verse form of five chiefly anapestic verses of which lines 1, 2, and 5 are of three feet and lines 3 and 4 are of two feet with a rhyme scheme of aabba
+interoperate - to operate together
+seam - the joining of two pieces (as of cloth or leather) by sewing usually near the edge
+seamless - PERFECT, FLAWLESS
+blend - MIX
+mix - to combine with another
+legible - capable of being read or deciphered : PLAIN
+concise - marked by brevity of expression or statement : free from all elaboration and superfluous detail
+precise - exactly or sharply defined or stated
+malleable - capable of being extended or shaped by beating with a hammer or by the pressure of rollers
+accomplish - to succeed in reaching (a stage in a progression)
+flexible - apable of being flexed : PLIANT
+flex - to bend especially repeatedly
+bend - to turn or force from straight or even to curved or angular
+bazaar - a place for the sale of goods
+cathedra - a bishop's official throne
+bishop - a Mormon high priest presiding over a ward or over all other bishops and over the Aaronic priesthood
+proliferate - to grow by rapid production of new parts, cells, buds, or offspring
+immensely - to a very great or immense degree or extent : EXCEEDINGLY, ENORMOUSLY
+immense - marked by greatness especially in size or degree
+brevity - shortness of duration
+interoperability - ability of a system (such as a weapons system) to work with or use the parts or equipment of another system
+repetitive - REPETITIOUS
+repetitious - characterized or marked by repetition
+repetition - the act or an instance of repeating or being repeated
+repeating - to say or state again
+reiterating - to make or do again
+
+
+
