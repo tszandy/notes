@@ -104,3 +104,9 @@ deploy                    done in an integration or release environment, copies 
 Phases are executed in a specific order. This means that if we run a specific phase using the command:
 mvn <PHASE>
 It won't only execute the specified phase, but all the preceding phases as well.
+
+Maven SCM
+
+Maven Wagon
+
+Maven Doxia

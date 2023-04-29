@@ -10,6 +10,7 @@ git ct -m "message"
 
 git config --global -l 
 git config --global user.email "444980834@qq.com"
+git config --global user.email "xwddn1994@gmail.com"
 git config --global user.name "Wei Xie"
 
 git config --global alias.co checkout

@@ -5,6 +5,10 @@ ctrl + shift + p ->"Preferences: Open Keyboard Shortcuts (JSON)"
 # use code in file explorer
 add "C:\Users\44498\AppData\Local\Programs\Microsoft VS Code" in environment path
 
+# mac
+# use code in terminal
+control + shift + p -> "Shell Command: Install 'code' command in PATH"
+
 # copy line up/down
 alt + shift + up/down
 
