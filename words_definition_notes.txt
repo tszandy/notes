@@ -12,6 +12,7 @@ vital - of the utmost importance
 articulated - having sections connected by joints that allow each section to bend or turn independently in different directions
 broaden - to make broader
 comprehensive - covering completely or broadly
+comprehension - the action or capability of understanding something
 autobiography - the biography of a person narrated by that person, a usually written account of a person's life in their own words
 biography - a usually written history of a person's life
 aesthetic - a particular theory or conception of beauty or art : a particular taste for or approach to what is pleasing to the senses and especially sight
@@ -250,7 +251,7 @@ hinder - to make slow or difficult the progress of : HAMPER
 monolithic - cast as a single piece
 sporadic - occurring occasionally, singly, or in irregular or random instances
 monolith - a single great stone often in the form of an obelisk or column
-monolithic -  of, relating to, or resembling a monolith : HUGE, MASSIVE
+monolithic - of, relating to, or resembling a monolith : HUGE, MASSIVE
 reconcile - to restore to friendship or harmony
 dialect - a regional variety of language distinguished by features of vocabulary, grammar, and pronunciation from other regional varieties and constituting together with them a single language
 minutia - a minute or minor detail —usually used in plural
@@ -299,5 +300,144 @@ illuminate - to enlighten spiritually or intellectually;to make clear : ELUCIDAT
 wrestling - a sport or contest in which two unarmed individuals struggle hand to hand with each attempting to subdue or unbalance the other
 vantage - a position giving a strategic advantage, commanding perspective, or comprehensive view
 analogy - a comparison of two otherwise unlike things based on resemblance of a particular aspect
-
-
+lattice - a regular geometrical arrangement of points or objects over an area or in space
+thrust - to push or drive with force : SHOVE
+erode - to diminish or destroy by degrees
+witty - quick or ready to see or express illuminating or amusing relationships or insights
+irreverent - lacking proper respect or seriousness
+devastatingly - causing great damage or harm
+curated - carefully chosen and thoughtfully organized or presented
+revive - to restore to consciousness or life
+pontificatie - to speak or express opinions in a pompous or dogmatic way
+prosper - to succeed in an enterprise or activity
+intricate - difficult to resolve or analyze
+exploit - DEED, ACT
+perpetuating - to make perpetual or cause to last indefinitely
+perpetual - continuing forever : EVERLASTING
+everlasting - lasting or enduring through all time : ETERNAL
+eternal - having infinite duration : EVERLASTING
+promulgating - to make (an idea, belief, etc.) known to many people by open declaration :PROCLAIM
+insidious - having a gradual and cumulative effect : SUBTLE
+mitigate - to cause to become less harsh or hostile : MOLLIFY
+requisite - needed for a particular purpose : ESSENTIAL, NECESSARY
+inadequate - not adequate : not enough or good enough : INSUFFICIENT
+adequate - sufficient for a specific need or requirement
+resilient - characterized or marked by resilience: such as
+resilience - the capability of a strained body to recover its size and shape after deformation caused especially by compressive stress
+impeccable - free from fault or blame : FLAWLESS
+aforementioned - mentioned previously
+disenfranchised - deprived of some right, privilege, or immunity
+aptitude - a natural ability : TALENT
+discernment - the quality of being able to grasp and comprehend what is obscure : skill in discerning
+lofty - elevated in character and spirit : NOBLE
+wield - to handle (something, such as a tool) especially effectively
+innate - existing in, belonging to, or determined by factors present in an individual from birth : NATIVE, INBORN
+prosperity - the state of being prosperous
+prosperous - successful in material terms; flourishing financially
+ethnic - of or belonging to a population group or subgroup made up of people who share a common cultural background or descent
+inclusive - including or covering all the services, facilities, or items normally expected or required
+exclusive - excluding or not admitting other things
+disproportionate - too large or too small in comparison with something else
+disparate - essentially different in kind; not allowing comparison
+egregious - outstandingly bad; shocking
+integrity - the quality of being honest and having strong moral principles; moral uprightness
+attain - succeed in achieving (something that one desires and has worked for)
+adjective - a word or phrase naming an attribute, added to or grammatically related to a noun to modify or describe it.
+attribute - a quality or feature regarded as a characteristic or inherent part of someone or something
+inherent - existing in something as a permanent, essential, or characteristic attribute
+proponent - a person who advocates a theory, proposal, or project
+detractor - a person who disparages someone or something
+disparage - regard or represent as being of little worth
+quantifiable - able to be expressed or measured as a quantity
+actionable - able to be done or acted on; having practical value
+slate - a list of candidates for election to a post or office, typically a group sharing a set of political views
+institutional - of, in, or like an institution or institutions
+institution - a society or organization founded for a religious, educational, social, or similar purpose
+attrition - the action or process of gradually reducing the strength or effectiveness of someone or something through sustained attack or pressure
+aspiring - directing one's hopes or ambitions toward becoming a specified type of person
+thrive - (of a child, animal, or plant) grow or develop well or vigorously
+retention - the continued possession, use, or control of something
+relegate - consign or dismiss to an inferior rank or position
+exemplary - serving as a desirable model; representing the best of its kind
+antisemitic - hostile to or prejudiced against Jewish people
+homophobic - having or showing a dislike of or prejudice against gay people
+disenfranchise - deprive (someone) of the right to vote
+nascent - (especially of a process or organization) just coming into existence and beginning to display signs of future potential
+customary - according to the customs or usual practices associated with a particular society, place, or set of circumstances
+malaise - a general feeling of discomfort, illness, or uneasiness whose exact cause is difficult to identify
+incompetence - inability to do something successfully; ineptitude
+micromanage - control every part, however small, of (an enterprise or activity)
+pushover - a person who is easy to overcome or influence
+urge - try earnestly or persistently to persuade (someone) to do something
+disastrous - causing great damage
+butler - the chief manservant of a house.
+household - a house and its occupants regarded as a unit
+bureaucratic - of, relating to, or having the characteristics of a bureaucracy or a bureaucrat
+bureaucracy - a system of administration marked by officialism, red tape, and proliferation
+tempting - appealing to or attracting someone, even if wrong or inadvisable
+antagonistic - showing or feeling active opposition or hostility toward someone or something
+humane - having or showing compassion or benevolence
+rote - mechanical or habitual repetition of something to be learned
+mule - the offspring of a donkey and a horse (strictly, a male donkey and a female horse), typically sterile and used as a beast of burden.
+flourished - (of a person, animal, or other living organism) grow or develop in a healthy or vigorous way, especially as the result of a particularly favorable environment
+anachronistic - belonging to a period other than that being portrayed
+nurturing - care for and encourage the growth or development
+anachronism - a thing belonging or appropriate to a period other than that in which it exists, especially a thing that is conspicuously old-fashioned
+forge - create (a relationship or new conditions)
+adamant - refusing to be persuaded or to change one's mind
+stammer - speak with sudden involuntary pauses and a tendency to repeat the initial letters of words
+cathartic - providing psychological relief through the open expression of strong emotions; causing catharsis
+laud - praise (a person or their achievements) highly, especially in a public context
+litany -  a tedious recital or repetitive series
+cement - attach with cement
+usurp -  take the place of (someone in a position of power) illegally
+volition - the faculty or power of using one's will
+peril - serious and immediate danger
+enraged - very angry; furious
+rage - violent, uncontrollable anger
+foray - a sudden attack or incursion into enemy territory, especially to obtain something; a raid
+reciprocate -  respond to (a gesture or action) by making a corresponding one
+consensus - a general agreement
+adage - a proverb or short statement expressing a general truth
+mediocre - of only moderate quality; not very good
+monumental - of or serving as a monument
+premise - a previous statement or proposition from which another is inferred or follows as a conclusion
+mundane - lacking interest or excitement; dull
+egomaniac - a person who is obsessively egotistical or self-centered
+maniac - a person exhibiting extreme symptoms of wild behavior, especially when violent and dangerous
+cultivate - try to acquire or develop (a quality, sentiment, or skill)
+inquiry - an act of asking for information
+territorial - relating to a particular territory, district, or locality
+skepticism -  skeptical attitude; doubt as to the truth of something
+cynicism - an inclination to believe that people are motivated purely by self-interest; skepticism
+vocally - by expressing opinions or feelings freely or loudly
+gear - equipment that is used for a particular purpose
+hapless - (especially of a person) unfortunate
+infectiously - (of a disease or disease-causing organism) likely to be transmitted to people, organisms, etc., through the environment.
+panic - sudden uncontrollable fear or anxiety, often causing wildly unthinking behavior
+Socrates - ancient Athenian philosopher. As represented in the writings of his disciple Plato, he engaged in dialogue with others in an attempt to reach understanding and ethical concepts by exposing and dispelling error (the Socratic method). Charged with introducing strange gods and corrupting the young, he committed suicide as required.
+catalyst - something that accelerates a chemical reaction
+gauge - an instrument or device for measuring the magnitude, amount, or contents of something, typically with a visual display of such information:
+ramble -  walk for pleasure, typically without a definite route
+merit - the quality of being particularly good or worthy, especially so as to deserve praise or reward
+vehemence - the display of strong feeling; passion
+anecdote - a short amusing or interesting story about a real incident or person
+amateur - a person who engages in a pursuit, especially a sport, on an unpaid rather than a professional basis
+welfare - the health, happiness, and fortunes of a person or group
+grungy - grimy; dirty
+exhaustion - a state of extreme physical or mental fatigue
+dumbstruck - so shocked or surprised as to be unable to speak
+advocating - a person who publicly supports or recommends a particular cause or policy
+pry - inquire too closely into a person's private affairs
+miscellaneous - (of items or people gathered or considered together) of various types or from different sources
+subpar - below an average level.
+hysterically - with wildly uncontrolled emotion
+naivete - the quality of being naive; lack of experience, wisdom, or judgment
+frivolous - not having any serious purpose or value
+rut - a long, deep track made by the repeated passage of the wheels of vehicles
+Intrinsic - belonging naturally; essential
+Extrinsic - not part of the essential nature of someone or something; coming or operating from outside
+autonomy - the right or condition of self-government
+mastery - comprehensive knowledge or skill in a subject or accomplishment;control or superiority over someone or something
+stake - a share or interest in a business, situation, or system
+ample - enough or more than enough; plentiful

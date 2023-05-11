@@ -814,3 +814,5 @@ sed OPTIONS... [SCRIPT] [INPUTFILE...]
 --sandbox	Disable running external programs and operate only on input files on the command line.
 -u, --unbuffered	Minimalize input and output buffer.
 -z, --null-data, --zero-terminated	View input as a set of lines where each ends with a zero byte.
+
+find . |grep "\._"
