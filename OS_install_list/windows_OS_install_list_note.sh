@@ -75,3 +75,11 @@ DBeaver # Universal Database Tool
 clipgrab # tool download video from youtube
 
 linux reader # Access files and folders on Ext, UFS, HFS, ReiserFS, or APFS file systems from Windows
+
+Postman # an API Platform for developers to design, build, test and iterate their APIs
+
+PeerBlock # a free and open-source personal firewall that blocks packets coming from, or going to, a maintained list of black listed hosts
+
+GIMP # photot editor
+
+bandicam # recording software
