@@ -1,8 +1,8 @@
-Jenkins
+Jenkins # free
 
-Gitlab
+Gitlab # free
 
-Docker
+Docker # free for personal use
 
 CircleCI
 
