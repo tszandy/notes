@@ -1,6 +1,7 @@
 # echo colorfull text
 # Reset
 Color_Off='\033[0m'       # Text Reset
+NC='\033[0m'       # Text Reset
 
 # Regular Colors
 Black='\033[0;30m'        # Black
