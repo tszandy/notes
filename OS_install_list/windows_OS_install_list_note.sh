@@ -22,6 +22,8 @@ synctoy # sync between two folders
 
 Allway Sync # Free File Synchronization, Backup, Data Replication sync file between two location https://allway-sync.en.uptodown.com/windows/versions
 
+syncios # mobile device management and mobile data transfer software
+
 barrier # Open-source KVM(keyboard video mouse) software
 
 DaVinci Resolve # video editor software
@@ -82,4 +84,9 @@ PeerBlock # a free and open-source personal firewall that blocks packets coming 
 
 GIMP # photot editor
 
-bandicam # recording software
+bandicam # Screen Recorder software
+
+VcXsrv # an open-source display server for Microsoft Windows
+
+Virtual Box # powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use
+
