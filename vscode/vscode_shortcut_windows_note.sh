@@ -1,6 +1,9 @@
 # windows
+# run select text in active terminal
+ctrl + k  ctrl +s -> "Terminal: Run Selected Text in Active Terminal"
+
 # change command shortcut
-ctrl + shift + p ->"Preferences: Open Keyboard Shortcuts (JSON)"
+ctrl + shift + p -> "Preferences: Open Keyboard Shortcuts (JSON)"
 
 # use code in file explorer
 add "C:\Users\44498\AppData\Local\Programs\Microsoft VS Code" in environment path

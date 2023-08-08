@@ -34,3 +34,6 @@ ctrl + home
 
 # go to end of page
 ctrl + end
+
+# Capture Screenshots Win 10
+win + shift + s
