@@ -1,3 +1,7 @@
+# install ruby
+https://rubyinstaller.org/downloads/
+
+
 irb # interactive ruby test ruby command
 
 puts "string"  # print string and switch to new line

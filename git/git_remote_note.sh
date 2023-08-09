@@ -1,5 +1,6 @@
 # git remote - Manage set of tracked repositories
 # git add remote link 
+git remote add ${remote_name} ${remote_repository_url}
 git remote add ${remote_name} git@github.com:tszandy/${repository}.git
 git remote add origin git@github.com:tszandy/${repository}.git
 
