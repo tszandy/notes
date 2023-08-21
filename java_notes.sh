@@ -1,3 +1,6 @@
+# use to debug hunging
+java mission control
+
 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html#license-lightbox
 
 .java # java source code
