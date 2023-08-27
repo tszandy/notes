@@ -37,3 +37,15 @@ ctrl + end
 
 # Capture Screenshots Win 10
 win + shift + s
+
+# create new virtual desktop
+ctrl + win + d
+
+# close currect desktop
+ctrl + win + f4
+
+# switch desktop
+ctrl + win + (left/right)
+
+# move window to other screen
+win + shift + (left/right)
