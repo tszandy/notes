@@ -1,3 +1,5 @@
+rvm # ruby version managerment software
+
 # debian 11 install ruby version manager
 sudo apt update
 sudo apt install curl
@@ -7,7 +9,6 @@ curl -sSL https://get.rvm.io | bash -s stable
 
 # install ruby
 https://rubyinstaller.org/downloads/
-
 
 irb # interactive ruby test ruby command
 

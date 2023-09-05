@@ -1,5 +1,6 @@
 # use to debug hunging
 java mission control
+javax swing # Swing is a GUI widget toolkit for Java
 
 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html#license-lightbox
 

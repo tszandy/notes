@@ -15,4 +15,8 @@
         "command": "workbench.action.terminal.toggleTerminal",
         "when":    "terminalViewShowing"
     },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.runSelectedText"
+    }
 ]

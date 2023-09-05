@@ -49,3 +49,6 @@ ctrl + win + (left/right)
 
 # move window to other screen
 win + shift + (left/right)
+
+# host file location
+c:\Windows\System32\Drivers\etc\hosts
