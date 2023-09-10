@@ -25,3 +25,6 @@ uninstall vscode
 remove folder: 
 %userprofile%\AppData\Roaming\Code
 %userprofile%\.vscode\
+
+# vscode temp file localtion 
+%APPDATA%\Code\User\history

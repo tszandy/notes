@@ -44,3 +44,6 @@ git ls-remote
 
 set GIT_SSH=C:\PuTTY\plink.exe
 
+
+# Git Reference logs (use for recover lost local commit, really useful when mess up with rebase)
+git reflog
