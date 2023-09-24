@@ -19,6 +19,7 @@ matlab-formatter
 Octave Debugger # debug Octave and Matlab code in VS Code
 Dependency Analytics
 JAR Viewer
+Playwright Test for VSCode
 
 # remove all vscode extensions:
 uninstall vscode 
