@@ -60,6 +60,9 @@ ctrl + k then ctrl + s
 # open/close/focusing terminal
 ctrl + `
 
+# open new terminal
+ctrl + shift + `
+
 # switch editor file
 ctrl + tab
 
@@ -112,3 +115,9 @@ command + shift + p -> "Terminal: Select Default Profile"
 
 # edit top tab size so there are more tabs displayed
 ctrl + , -> "Tab Sizing" -> "shrink"
+
+# terminal focus prev
+ctrl + page_up
+
+# terminal focus next
+ctrl + page_down
