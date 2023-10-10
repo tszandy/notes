@@ -91,3 +91,6 @@ VcXsrv # an open-source display server for Microsoft Windows
 Virtual Box # powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use
 
 Easy Window Switcher # use alt+` to switch in the same application
+
+ZoomIt # ZoomIt is a screen zoom, annotation, and recording tool for technical presentations and demos.
+

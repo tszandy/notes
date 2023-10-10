@@ -14,3 +14,11 @@
             Add items to "Edit items" box
 
 
+# save results as artifact
+"Configuration Page" -> "General Settings" -> "Artifact paths" 
+${build_path} -> ${host_path}
+# example
+target/* => test_report
+
+# unique build folder
+"Configuration Page" -> "Version Control Settings" -> "Checkout directory" -> select "Custom path" -> %teamcity.agent.home.dir%\${project_name}\%build.counter%
