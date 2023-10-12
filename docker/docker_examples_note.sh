@@ -51,6 +51,7 @@ docker start -i kali
 
 # cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:latest . 
+docker run --rm --name cpp -it tszandy/ubuntu_cpp:latest /bin/bash
 
 # windows cpp environment image
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:latest .

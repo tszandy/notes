@@ -4,6 +4,7 @@ https://javadoc.io/doc/com.microsoft.playwright/playwright/latest/index.html
 
 npm init playwright@latest
 
+# show playwright version
 npm playwright -v
 
 # show all the options
