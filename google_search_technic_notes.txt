@@ -1,0 +1,12 @@
+# search for specific term (quote)
+"${search_terms}"
+
+# search in title
+intitle: ${search_terms}
+
+# search all in title
+allintitle: ${search_terms}
+
+# search in text
+intext: ${search_terms}
+

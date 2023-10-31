@@ -29,3 +29,6 @@ remove folder:
 
 # vscode temp file localtion 
 %APPDATA%\Code\User\history
+
+# remove all break point shortcut title:
+"Remove All Breakpoints"

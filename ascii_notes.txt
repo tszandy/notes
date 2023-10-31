@@ -1,0 +1,5 @@
+LF (character : \n, Unicode : U+000A, ASCII : 10, hex : 0x0a): This is simply the '\n' character which we all know from our early programming days. This character is commonly known as the ‘Line Feed’ or ‘Newline Character’.
+
+CR (character : \r, Unicode : U+000D, ASCII : 13, hex : 0x0d) : This is simply the 'r' character. This character is commonly known as ‘Carriage Return’.
+
+tab: &#9;
