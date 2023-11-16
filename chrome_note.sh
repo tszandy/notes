@@ -5,6 +5,7 @@ ctrl + pageup   # jump to previous tab
 ctrl + pagedown # jump to next tab
 ctrl + shift + pageup # Move tabs left
 ctrl + shift + pagedown # Move tabs right
+ctrl + u # view page source
 
 # mac 
 pageup = fn + up

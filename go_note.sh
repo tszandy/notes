@@ -1,8 +1,14 @@
 # install go
 https://go.dev/doc/install
 
+# go Standard library
+https://pkg.go.dev/std
+
 # go windows localtion
 C:\Program Files\Go
+
+# go mac location
+/usr/local/go/bin/go
 
 Go Compiler, 
 The gc, 6g which is based on the plan 9 compiler toolchain
@@ -22,6 +28,9 @@ import "fmt"
 func main(){
     fmt.Printf("Hello World!\n")
 }
+
+# Format package
+fmt
 
 Instances of reference types in Go are created with the make() built-in function
 
@@ -117,3 +126,6 @@ Additional help topics:
         vcs             controlling version control with GOVCS
 
 Use "go help <topic>" for more information about that topic.
+
+# install module
+go get ${module_path}

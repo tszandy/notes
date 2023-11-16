@@ -121,3 +121,12 @@ ctrl + page_up
 
 # terminal focus next
 ctrl + page_down
+
+# in editor select line
+ctrl + l
+
+# in editor select word and select the next same word
+ctrl + d
+
+# in editor select current word and search 
+ctrl + f
