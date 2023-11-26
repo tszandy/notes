@@ -26,7 +26,16 @@ This means that creating a goroutine is as expensive as creating a thread in C. 
 package main
 import "fmt"
 func main(){
-    fmt.Printf("Hello World!\n")
+        var a bool = true     // Boolean
+        var b int = 5         // Integer
+        var c float32 = 3.14  // Floating point number
+        var d string = "Hi!"  // String
+
+        fmt.Println("Boolean: ", a)
+        fmt.Println("Integer: ", b)
+        fmt.Println("Float:   ", c)
+        fmt.Println("String:  ", d)        
+        fmt.Printf("Hello World!\n")
 }
 
 # Format package

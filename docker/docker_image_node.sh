@@ -16,3 +16,6 @@ jenkins/jenkins
 
 # kali linux
 kalilinux/kali
+
+# Vector database
+Milvus

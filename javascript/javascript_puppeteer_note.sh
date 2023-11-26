@@ -1,3 +1,5 @@
+npm install puppeteer
+
 const puppeteer = require('puppeteer');
 
 # get maximum screen browser
