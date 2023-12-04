@@ -1,0 +1,22 @@
+Code Generator
+
+Idea Generator
+
+Documentation Summarizer
+
+Language Translation
+
+Code Explainer
+
+Email Writer
+
+Text Classification
+
+Sentiment Analysis
+
+Language Modeling
+
+Speech recognition
+
+Content Recommendation
+
