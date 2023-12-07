@@ -10,8 +10,3 @@ const argv = yargs(hideBin(process.argv))
     .help("help")
     .alias("help","H")
     .argv
-
-type
-"string"
-"boolean"
-""

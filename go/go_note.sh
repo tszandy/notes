@@ -138,3 +138,9 @@ Use "go help <topic>" for more information about that topic.
 
 # install module
 go get ${module_path}
+go get github.com/playwright-community/playwright-go
+
+go run github.com/playwright-community/playwright-go/cmd/playwright@latest install --with-deps
+# Or
+go install github.com/playwright-community/playwright-go/cmd/playwright@latest
+playwright install --with-deps

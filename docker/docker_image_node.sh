@@ -19,3 +19,6 @@ kalilinux/kali
 
 # Vector database
 Milvus
+
+# mongo database
+mongo:latest

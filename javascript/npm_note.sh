@@ -58,3 +58,8 @@ npm install <github username>/<github project>
 
 aliases: i, isntall, add
 common options: [--save-prod|--save-dev|--save-optional] [--save-exact] [--no-save]
+
+
+In global mode (ie, with -g or --global appended to the command), it installs the current package context (ie, the current working directory) as a global package.
+
+With the --production flag (or when the NODE_ENV environment variable is set to production), npm will not install modules listed in devDependencies. To install all modules listed in both dependencies and devDependencies when NODE_ENV environment variable is set to production, you can use --production=false.

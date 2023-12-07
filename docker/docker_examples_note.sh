@@ -13,6 +13,10 @@ docker run --name solr8.5.2 -p 8983:8983 -t solr:8.5.2
 # jenkin environment
 docker run --name jenkin -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home jenkins/jenkins
 
+# docker mongo database
+docker run --name=mongodb -d -p 27017:27017 mongo:latest
+docker exec -it mongodb mongo
+
 # ubuntu angular environment image
 docker rm -f angular
 docker build -f Dockerfile_angular -t tszandy/ubuntu_angular:latest . && docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:latest /bin/bash

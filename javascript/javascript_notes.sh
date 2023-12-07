@@ -2,9 +2,12 @@
 
 
 .mjs # ES modules file
+import fs from "fs";
+export { function };
 
 .cjs # CommonJS file
-
+const fs = require("fs");
+module.exports = { function1, function2 };
 
 
 const set_variable = new Set();
