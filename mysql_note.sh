@@ -15,11 +15,23 @@ desc user;
 explain user;
 
 DROP DATABASE test;
+DROP TABLE test;
 
-CREATE USER ‘dbmanager’ IDENTIFIED BY ‘password’;
+# get script to delete tables with PREFIX
+SELECT CONCAT('DROP TABLE `', TABLE_NAME,'`;') 
+FROM INFORMATION_SCHEMA.TABLES 
+WHERE TABLE_NAME LIKE 'PREFIX%';
 
-CREATE DATABASE BWM;
-GRANT ALL PRIVILEGES ON bwm.* TO dbmanager;
+
+SELECT CONCAT('DROP TABLE `', TABLE_NAME,'`;') 
+FROM INFORMATION_SCHEMA.TABLES 
+WHERE table_schema = '${database_name}';
+
+
+CREATE USER ${user_name} IDENTIFIED BY '${password}';
+
+CREATE DATABASE ${database_name};
+GRANT ALL PRIVILEGES ON ${database_name}.* TO ${user_name};
 
 CREATE TABLE service(
     service_name    VARCHAR(100)   NOT NULL,
