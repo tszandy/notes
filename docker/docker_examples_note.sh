@@ -15,7 +15,7 @@ docker run --name jenkin -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenk
 
 # docker mongo database
 docker run --name=mongodb -d -p 27017:27017 mongo:latest
-docker exec -it mongodb mongo
+docker exec -it mongodb mongosh
 
 # ubuntu angular environment image
 docker rm -f angular
