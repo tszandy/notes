@@ -1,3 +1,15 @@
+https://www.baeldung.com/linux/bre-ere-pcre-syntax
+
+# Extended Regular Expressions (ERE)
+https://en.wikibooks.org/wiki/Regular_Expressions/POSIX-Extended_Regular_Expressions
+
+# Basic Regular Expressions (BRE)
+https://www.gnu.org/software/sed/manual/html_node/BRE-syntax.html
+
+# Perl Compatible Regular Expressions (PCRE)
+https://mariadb.com/kb/en/pcre/
+
+
 ?                   The question mark indicates zero or one occurrences of the preceding element. For example, colou?r matches both "color" and "colour".
 *                   The asterisk indicates zero or more occurrences of the preceding element. For example, ab*c matches "ac", "abc", "abbc", "abbbc", and so on.
 +                   The plus sign indicates one or more occurrences of the preceding element. For example, ab+c matches "abc", "abbc", "abbbc", and so on, but not "ac".

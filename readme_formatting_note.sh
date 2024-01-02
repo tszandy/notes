@@ -6,7 +6,7 @@
 
 [pip](https://pip.pypa.io/en/stable/)
 
-# code snap 
+# code snippet 
 ```bash
 pip install sklearn
 ```

@@ -2,7 +2,11 @@ https://github.com/microsoft/playwright
 https://playwright.dev/docs/intro
 https://javadoc.io/doc/com.microsoft.playwright/playwright/latest/index.html
 
+# initialize playwright project
 npm init playwright@latest
+
+# install playwright command globally
+npm install -g playwright 
 
 # show playwright version
 npm playwright -v

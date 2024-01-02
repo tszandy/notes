@@ -21,3 +21,7 @@ ctrl + shift + pagedown # Move tabs right
 # extension 
 Keepa # Amazon Price Tracker
 uBlock Origin # ads blocker
+
+
+# chrome DOM function
+$.innerText
