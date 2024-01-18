@@ -4,7 +4,7 @@ fs.writeFile()
 fs.readFile()
 
 fs.writeFileSync()
-fs.readFileSync()
+fs.readFileSync(filePath,{encoding:"utf8"})
 
 fs.existsSync()
 

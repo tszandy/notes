@@ -2,6 +2,8 @@ npm init --yes # initialize npm package manager document.
 
 npm install -g grunt-cli
 
+npm install -g nodemon
+
 npm install ${package_name} --save-dev
 
 npm install ${package_name} --save
