@@ -25,3 +25,6 @@ uBlock Origin # ads blocker
 
 # chrome DOM function
 $.innerText
+
+# chrome javascript select elements with name tr
+$("tr")
