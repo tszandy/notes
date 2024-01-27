@@ -1,0 +1,3 @@
+OWASP AI Security
+https://owasp.org/www-project-ai-security-and-privacy-guide/
+

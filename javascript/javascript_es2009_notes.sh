@@ -1,0 +1,88 @@
+# Javascript 2009(ES5)
+
+interface Array<T>
+interface ArrayBuffer
+interface ArrayBufferConstructor
+interface ArrayBufferTypes
+interface ArrayBufferView
+interface ArrayConstructor
+interface ArrayLike<T>
+interface Boolean
+interface BooleanConstructor
+interface CallableFunction extends Function
+interface Collator
+interface CollatorOptions
+interface ConcatArray<T>
+interface DataView
+interface DataViewConstructor
+interface Date
+interface DateConstructor
+interface DateTimeFormat
+interface DateTimeFormatOptions
+interface Error
+interface ErrorConstructor
+interface EvalError extends Error
+interface EvalErrorConstructor extends ErrorConstructor
+interface Float32Array
+interface Float32ArrayConstructor
+interface Float64Array
+interface Float64ArrayConstructor
+interface Function
+interface FunctionConstructor
+interface IArguments
+interface ImportAssertions
+interface ImportAttributes
+interface ImportCallOptions
+interface ImportMeta
+interface Int16Array
+interface Int16ArrayConstructor
+interface Int32Array
+interface Int32ArrayConstructor
+interface Int8Array
+interface Int8ArrayConstructor
+interface JSON
+interface Math
+interface NewableFunction extends Function
+interface Number
+interface NumberConstructor
+interface NumberFormat
+interface NumberFormatOptions
+interface Object
+interface ObjectConstructor
+interface Promise<T>
+interface PromiseLike<T>
+interface PropertyDescriptor
+interface PropertyDescriptorMap
+interface RangeError extends Error
+interface RangeErrorConstructor extends ErrorConstructor
+interface ReadonlyArray<T>
+interface ReferenceError extends Error
+interface ReferenceErrorConstructor extends ErrorConstructor
+interface RegExp
+interface RegExpConstructor
+interface RegExpExecArray extends Array<string>
+interface RegExpMatchArray extends Array<string>
+interface ResolvedCollatorOptions
+interface ResolvedDateTimeFormatOptions
+interface ResolvedNumberFormatOptions
+interface String
+interface StringConstructor
+interface Symbol
+interface SyntaxError extends Error
+interface SyntaxErrorConstructor extends ErrorConstructor
+interface TemplateStringsArray extends ReadonlyArray<string>
+interface ThisType<T>
+interface TypedPropertyDescriptor<T>
+interface TypeError extends Error
+interface TypeErrorConstructor extends ErrorConstructor
+interface Uint16Array
+interface Uint16ArrayConstructor
+interface Uint32Array
+interface Uint32ArrayConstructor
+interface Uint8Array
+interface Uint8ArrayConstructor
+interface Uint8ClampedArray
+interface Uint8ClampedArrayConstructor
+interface URIError extends Error
+interface URIErrorConstructor extends ErrorConstructor
+interface WeakKeyTypes

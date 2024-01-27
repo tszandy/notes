@@ -33,6 +33,17 @@ remove folder:
 # remove all break point shortcut title:
 "Remove All Breakpoints"
 
+# vscode remove dumplicated
+1. Control + shift + P
+2. Sort Lines Ascending
+3. Control + F
+4. Toggle "Replace mode"
+5. Toggle "Use Regular Expression" (the icon with the .* symbol)
+6. In the search field, type ^(.*)(\n\1)+$
+7. In the "replace with" field, type $1
+8. Click the Replace All button ("Replace All").
+
+
 code --help
 Visual Studio Code 1.85.1
 
@@ -138,3 +149,4 @@ Subcommands
   tunnel       Make the current machine accessible from vscode.dev or other
                machines through a secure tunnel
   serve-web    Run a server that displays the editor UI in browsers.
+

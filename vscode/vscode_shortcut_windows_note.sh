@@ -1,14 +1,22 @@
 # windows
+# Preferences: Open Keyboard Shortcuts
+ctrl + k	ctrl + s
+
 # run select text in active terminal
-ctrl + k  ctrl +s -> "Terminal: Run Selected Text in Active Terminal"
+ctrl + k	ctrl + s -> "Terminal: Run Selected Text in Active Terminal"
 
 # change command shortcut
 ctrl + shift + p -> "Preferences: Open Keyboard Shortcuts (JSON)"
 
+# Go to File...
+ctrl + p
+
+# Show All Commands
+ctrl + shift + p
+
 # use code in file explorer
 add "C:\Users\44498\AppData\Local\Programs\Microsoft VS Code" in environment path
 
-# mac
 # use code in terminal
 control + shift + p -> "Shell Command: Install 'code' command in PATH"
 
@@ -24,7 +32,10 @@ ctrl + shift + k
 # split editor screen right
 ctrl + \
 
-# jumping to the definition
+# split editor screen down
+ctrl + k	ctrl + \
+
+# Go to Definition
 F12
 
 # peek the definition

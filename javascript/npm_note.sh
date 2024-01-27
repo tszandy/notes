@@ -16,7 +16,11 @@ npm uninstall ${package_name}
 
 Usage: npm <command>
 
+# install typescript 
+npm install typescript --save-dev
 
+# run typescript compiler 
+npx tsc
 
 where <command> is one of:
     access, adduser, audit, bin, bugs, c, cache, ci, cit,

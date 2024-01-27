@@ -9,14 +9,23 @@ export { function };
 const fs = require("fs");
 module.exports = { function1, function2 };
 
+# set variable
+var set_variable = new Set();
+set_variable.add(1)
+set_variable.add(2)
 
-const set_variable = new Set();
 set_variable.add(element);
 Array.from(set_variable);
 
-const map_variable = new Map();
+# map variable
+var map_variable = new Map();
+map_variable.set(1,1)
+map_variable.set(2,2)
+
 map_variable.set(key,value);
 map_variable.get(key);
 map_variable.keys();
 Array.from(map_variable.keys());
 
+# get typeof variable
+typeof(variable)

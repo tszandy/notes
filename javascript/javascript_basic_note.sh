@@ -6,6 +6,8 @@ alert("Hi there!"); # Writing into an alert box
 
 prompt("Hi! How are you?");
 
+
+# variables types
 var # Declares a variable
 
 let # Declares a block variable
