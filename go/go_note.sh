@@ -24,7 +24,11 @@ This means that creating a goroutine is as expensive as creating a thread in C. 
 
 
 package main
-import "fmt"
+import (
+        "fmt"
+        "log"
+        "net/http"
+)
 func main(){
         var a bool = true     // Boolean
         var b int = 5         // Integer

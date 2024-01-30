@@ -22,3 +22,8 @@ Milvus
 
 # mongo database
 mongo:latest
+
+# Apollo GraphQL Server
+
+# go image
+golang:1.21.3
