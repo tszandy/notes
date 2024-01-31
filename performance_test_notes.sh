@@ -3,6 +3,9 @@ https://testguild.com/load-testing-tools/
 JMeter
 Taurus 
 Locust 
+https://github.com/GoogleChrome/web-vitals
+https://addyosmani.com/blog/puppeteer-recipes/
+https://www.youtube.com/watch?v=EMpxEo7tEUA
 
 
 

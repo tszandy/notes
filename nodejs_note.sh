@@ -1,7 +1,7 @@
 # ubuntu install node
-apt update
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-apt install -y nodejs
+apt-get update
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+apt-get install -y nodejs
 
 # mac install node
 brew install node@14
