@@ -21,6 +21,7 @@ ctrl + shift + pagedown # Move tabs right
 # extension 
 Keepa # Amazon Price Tracker
 uBlock Origin # ads blocker
+Pesticide # This extension inserts the Pesticide CSS into the current page, outlining each element to better see placement on the page.
 
 
 # chrome DOM function
