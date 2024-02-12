@@ -1,4 +1,11 @@
+# flexible, scalable, open-source way to build solutions for data-intensive applications
 opensearch
+
+# open source enterprise search platform built on Apache Lucene
 solr
+
+# distributed, RESTful search and analytics engine capable of addressing a growing number of use cases
 elasticsearch
+
+# code intelligence platform makes it easy for devs to write, fix, and maintain code
 sourcegraph
