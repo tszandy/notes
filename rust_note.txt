@@ -1,0 +1,11 @@
+https://www.rust-lang.org/learn/get-started
+
+
+# dependency
+actix-web
+uuid 
+serde is a framework for serializing and deserializing Rust data structures efficiently and generically.
+aws-config
+aws-sdk-dynamodb
+env_logger
+log
