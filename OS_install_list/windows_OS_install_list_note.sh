@@ -94,3 +94,5 @@ Easy Window Switcher # use alt+` to switch in the same application
 
 ZoomIt # ZoomIt is a screen zoom, annotation, and recording tool for technical presentations and demos.
 
+fonetool # windows iphone transfer tool
+

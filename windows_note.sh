@@ -52,3 +52,16 @@ win + shift + (left/right)
 
 # host file location
 c:\Windows\System32\Drivers\etc\hosts
+
+# show all the network share inside this computer
+net share
+
+# connect a network drive
+net use G: \\10.0.0.117\d /Persistent:Yes
+net use G: /delete
+
+# share a folder
+right click a folder -> go to "Share with"
+
+# credential manager
+"Control Panel" -> "Credential Manager"
