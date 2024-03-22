@@ -34,3 +34,5 @@ how to think and how to not think.
 maybe conscious is generative model, we can simulate a model that is similar to one and other but not exactly the same.
 
 genetic algorithm might be the key to merge and mutate belief.
+
+featured graph coarsening

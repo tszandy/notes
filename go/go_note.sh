@@ -42,8 +42,15 @@ func main(){
         fmt.Printf("Hello World!\n")
 }
 
-# Format package
+# package
 fmt
+https://pkg.go.dev/fmt
+
+flag
+https://pkg.go.dev/flag
+
+sync 
+https://pkg.go.dev/sync
 
 Instances of reference types in Go are created with the make() built-in function
 
@@ -148,3 +155,13 @@ go run github.com/playwright-community/playwright-go/cmd/playwright@latest insta
 # Or
 go install github.com/playwright-community/playwright-go/cmd/playwright@latest
 playwright install --with-deps
+
+
+range []int{1,2,3}
+
+Gofmt is a tool that automatically formats Go source code.
+
+
+array 
+The type [n]T is an array of n values of type T.
+var a [10]int # declares a variable a as an array of ten integers.
