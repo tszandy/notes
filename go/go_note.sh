@@ -52,6 +52,14 @@ https://pkg.go.dev/flag
 sync 
 https://pkg.go.dev/sync
 
+log
+https://pkg.go.dev/log
+
+os
+https://pkg.go.dev/os
+
+
+
 Instances of reference types in Go are created with the make() built-in function
 
 Functions in Go are declared using the func keyword. As with variable declarations, the return type goes at the end. This can be a single value, or a list of values.
@@ -91,8 +99,10 @@ goimports
 # initalize go module
 go mod init ${module_name}
 
-
-
+# start a go project and create a go hello world
+go mod init main
+go build go_hello_world.go
+./go_hello_world
 
 Go is a tool for managing Go source code.
 
