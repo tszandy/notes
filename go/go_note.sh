@@ -175,3 +175,6 @@ Gofmt is a tool that automatically formats Go source code.
 array 
 The type [n]T is an array of n values of type T.
 var a [10]int # declares a variable a as an array of ten integers.
+
+
+# interface represent any type in go

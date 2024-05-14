@@ -29,3 +29,12 @@ Array.from(map_variable.keys());
 
 # get typeof variable
 typeof(variable)
+
+
+# clone array
+array=[1,2,3]
+clone_array=[...array]
+
+
+# logging package
+winston

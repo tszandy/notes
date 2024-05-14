@@ -43,6 +43,12 @@ ctrl + shift + p -> user setting, search "editor.wordWrap" and turn on
 ctrl + shift + p -> view: toggle word wrap
 option + z
 
+# open/close/focusing terminal
+ctrl + `
+
+# open new terminal
+ctrl + shift + `
+
 # Open Prev Editor
 command + shift + [
 
