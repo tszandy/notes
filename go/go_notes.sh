@@ -1,7 +1,7 @@
 # install go
 https://go.dev/doc/install
 
-# go Standard library
+# golang Standard library
 https://pkg.go.dev/std
 
 # go windows localtion
@@ -43,7 +43,8 @@ func main(){
 }
 
 # package
-fmt
+fmt 
+file://./go_fmt_notes.sh
 https://pkg.go.dev/fmt
 
 flag
@@ -94,7 +95,9 @@ goplay
 dlv
 staticcheck
 gopls
-goimports
+goimports # go get golang.org/x/tools/cmd/goimports
+golint
+gofmt # a tool that automatically formats Go source code.
 
 # initalize go module
 go mod init ${module_name}
@@ -169,12 +172,43 @@ playwright install --with-deps
 
 range []int{1,2,3}
 
-Gofmt is a tool that automatically formats Go source code.
+The length and capacity of a slice s can be obtained using the expressions len(s) and cap(s).
 
 
-array 
+# datatype slice
+Slices are similar to arrays, but are more powerful and flexible. Like arrays, slices are also used to store multiple values of the same type in a single variable. However, unlike arrays, the length of a slice can grow and shrink as you see fit.
+
+# datatype array 
 The type [n]T is an array of n values of type T.
 var a [10]int # declares a variable a as an array of ten integers.
 
+# arrays have a fixed size, while slices are dynamically-sized and provide more flexibility
 
 # interface represent any type in go
+
+# Constants
+true false iota nil
+
+
+# iota
+const (
+    _  = iota             // ignore the first value by assigning to blank identifier
+    KB = 1 << (10 * iota) // 1 << (10*1) = 1024
+    MB = 1 << (10 * iota) // 1 << (10*2) = 1048576
+    GB = 1 << (10 * iota) // 1 << (10*3) = 1073741824
+)
+
+func main() {
+    fmt.Println(KB) // Output: 1024
+    fmt.Println(MB) // Output: 1048576
+    fmt.Println(GB) // Output: 1073741824
+}
+const (
+    x = iota // x = 0
+    y = iota // y = 1
+)
+
+const (
+    a = iota // a = 0
+    b = iota // b = 1
+)

@@ -13,3 +13,6 @@ dot_clean -m .
 
 # mac zip huge folder
 zip -r ${target_name}.zip ${folder_name}
+
+# copy current path into pasteboard
+pwd|pbcopy

@@ -6,3 +6,6 @@ Package http provides HTTP client and server implementations.
 # helloWorldHandler is a function
 http.HandleFunc("/helloworld", helloWorldHandler)
 
+func helloWorldHandler(w http.ResponseWriter, r *http.Request){
+    
+}

@@ -118,6 +118,9 @@ alt + right_arrow
 # hide left panel
 control + b
 
+# View: Open Previous Editor
+command + option + left arrow
+
 # Markdown: Open Preview
 command + shift + v
 
