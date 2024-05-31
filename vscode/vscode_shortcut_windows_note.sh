@@ -8,6 +8,9 @@ ctrl + k	ctrl + s -> "Terminal: Run Selected Text in Active Terminal"
 # change command shortcut
 ctrl + shift + p -> "Preferences: Open Keyboard Shortcuts (JSON)"
 
+# open all default command shortcut 
+ctrl + shift + p ->"Preferences: Open Default Keyboard Shortcuts (JSON)"
+
 # Go to File...
 ctrl + p
 

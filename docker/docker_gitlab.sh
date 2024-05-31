@@ -13,6 +13,9 @@ docker run --detach \
 docker logs -f gitlab
 docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password # The password file will be automatically deleted in the first reconfigure run after 24 hours.
 
+docker start gitlab
+
+docker stop gitlab 
 
 # gitlab backup 
 docker exec -it gitlab gitlab-rake gitlab:backup:create

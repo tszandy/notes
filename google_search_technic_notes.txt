@@ -10,3 +10,5 @@ allintitle: ${search_terms}
 # search in text
 intext: ${search_terms}
 
+# search in website
+site:${website_url}

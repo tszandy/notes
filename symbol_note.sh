@@ -11,4 +11,7 @@
 \ # back slash
 / # forward slash
 @ # at sign
- 
+' # single quote
+" # double quote
+` # back quote 
+~ # tilde
