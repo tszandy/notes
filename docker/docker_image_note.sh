@@ -6,6 +6,7 @@ ubuntu:18.04
 
 # gitlab 
 gitlab/gitlab-ee:latest
+gitlab/gitlab-ce:latest
 
 # solr search engine Apache Solr is the popular, blazing-fast, open source search platform built on Apache Lucene™.
 solr
