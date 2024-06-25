@@ -4,6 +4,10 @@ fmt.Print("")
 fmt.Printf("")
 fmt.Println("")
 
+fmt.Error("")
+fmt.Errorf("")
+fmt.Errorln("")
+
 func Fprint(w io.Writer, a ...any) (n int, err error)
 func Fprintf(w io.Writer, format string, a ...any) (n int, err error)
 func Fprintln(w io.Writer, a ...any) (n int, err error)

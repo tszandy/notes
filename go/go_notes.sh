@@ -4,6 +4,9 @@ https://go.dev/doc/install
 # golang Standard library
 https://pkg.go.dev/std
 
+# golang sub-repo
+https://pkg.go.dev/golang.org/x
+
 # go windows localtion
 C:\Program Files\Go
 
