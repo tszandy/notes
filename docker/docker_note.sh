@@ -35,6 +35,9 @@ docker image prune
 docker container prune
 docker rm $(docker ps -aq)
 
+# docker rm all docker containers match ${partial_name}
+docker rm $(docker ps -aq --filter ${partial_name})
+
 # docker attach to a container with detach-key ctrl-a
 docker attach ${container_name_or_id} --detach-keys "ctrl-a"
 
