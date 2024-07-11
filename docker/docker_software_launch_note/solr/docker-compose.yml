@@ -1,0 +1,8 @@
+---
+version: '3'
+name: solr
+services:
+  solr-node:
+    image: solr:8.5.2
+    ports:
+      - 8983:8983

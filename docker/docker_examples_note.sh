@@ -5,11 +5,6 @@ docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:lat
 # nginx environment
 docker run --name some-nginx -d -p 8080:80 some-content-nginx
 
-# solr environment
-docker run --name solr -p 8983:8983 -t solr
-
-docker run --name solr8.5.2 -p 8983:8983 -t solr:8.5.2
-
 # jenkin environment
 docker run --name jenkin -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home jenkins/jenkins
 

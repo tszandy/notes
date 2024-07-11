@@ -41,6 +41,8 @@ New-Item
 Set-Location # change directory equivalent cd 
 
 Set-Alias
+# example 
+Set-Alias -Name list -Value Get-ChildItem
 
 Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match $name}
 
@@ -239,4 +241,14 @@ ctrl + shift + tab # prev tab
 
 # quit install msi file
 msiexec.exe /i file_name.msi /qb
- 
+
+# bashrc like script
+$profile
+
+# get powershell execute script policy
+Get-ExecutionPolicy
+Get-ExecutionPolicy -List
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Restricted -Force
+

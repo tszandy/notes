@@ -11,3 +11,5 @@ docker logs -f jenkins
 docker start jenkins
 
 docker stop jenkins
+
+docker rm jenkins

@@ -2,6 +2,8 @@
 nginx:alpine
 
 # ubuntu base image
+ubuntu:24.10
+ubuntu:22.04
 ubuntu:18.04
 
 # gitlab 

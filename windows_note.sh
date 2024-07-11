@@ -51,7 +51,7 @@ ctrl + win + (left/right)
 win + shift + (left/right)
 
 # host file location
-c:\Windows\System32\Drivers\etc\hosts
+code c:/Windows/System32/Drivers/etc/hosts
 
 # show all the network share inside this computer
 net share
