@@ -20,7 +20,8 @@ jenkins/jenkins:lts
 jenkins/jenkins:latest
 
 # kali linux
-kalilinux/kali
+kalilinux/kali-last-release
+kalilinux/kali-rolling
 
 # Vector database Milvus
 bitnami/milvus:2.4.2-debian-12-r1
@@ -74,3 +75,6 @@ emqx:latest
 
 # vector database
 opensearchproject/opensearch:latest
+
+# open source cached software
+memcached:latest
