@@ -1,3 +1,5 @@
+node-inspector
+
 assert	Provides a set of assertion tests
 buffer	To handle binary data
 child_process	To run a child process
