@@ -85,3 +85,5 @@ docker container prune
 docker network prune
 
 
+# keep container up
+tail -f /dev/null

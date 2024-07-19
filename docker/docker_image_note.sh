@@ -78,3 +78,7 @@ opensearchproject/opensearch:latest
 
 # open source cached software
 memcached:latest
+
+# mysql
+mysql:latest
+mysql/mysql-server:8.0
