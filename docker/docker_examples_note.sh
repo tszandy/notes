@@ -49,13 +49,6 @@ docker run --rm --name cpp -v /home/ice/leetcode/cpp_program:/home/ice/cpp_progr
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:latest . 
 docker run --rm --name cpp -v /Users/weixie/leetcode/cpp_program:/home/ice/cpp_program -it tszandy/ubuntu_cpp:latest /bin/bash
 
-# docker mysql
-docker run --name=mysql  --restart on-failure -d mysql:latest
-docker logs mysql1 2>&1 | grep GENERATED
-docker exec -it mysql1 mysql -uroot -p
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
-docker exec -it mysql1 bash
-
 # docker desktop start a container at startup
 docker update --restart=always ${container_name}
 

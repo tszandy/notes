@@ -1,0 +1,7 @@
+name:
+  mysql
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: example
