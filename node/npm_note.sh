@@ -13,6 +13,12 @@ npm install ${package_name} --save
 
 npm install ${package_name}@${package_version} --save
 
+# list local dependency
+npm list
+
+# list global dependency
+npm list -g
+
 "npm install" === "npm i"
 
 npm uninstall ${package_name}

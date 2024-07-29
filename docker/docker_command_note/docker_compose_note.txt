@@ -1,3 +1,5 @@
+docker-compose ps
+
 Usage:  docker compose [OPTIONS] COMMAND
 
 Docker Compose

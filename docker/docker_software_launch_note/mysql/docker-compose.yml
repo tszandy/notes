@@ -1,7 +1,15 @@
-name:
-  mysql
+name: mysql
 services:
   mysql:
+    container_name: mysql
+    restart: always
     image: mysql:latest
+    ports:
+      - 3306:3306
+      - 33060:33060
     environment:
       MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:

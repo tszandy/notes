@@ -29,101 +29,99 @@ function folderExists(filePath) {
     }
 }
 
+const { parse } = require("csv-parse");
+// read csv file
+fs.createReadStream(${csv_file_path})
+    .pipe(parse({ delimiter: ",", from_line: 2 }))
+    .on("data", function (row){
+        console.log(row)
+    })
 
-
-function __promisify__
-function __promisify__<TBuffer extends NodeJS.ArrayBufferView>
-function access
-function accessSync
-function appendFile
-function appendFileSync
-function behaves like [`realpath
-function callback
-function chmod
-function chmodSync
-function chown
-function chownSync
-function close
-function closeFd
-function closeSync
-function copyFile
-function copyFileSync
-function cp
-function cpSync
-function createReadStream
-function createWriteStream
-function exists
-function existsSync
-function fchmod
-function fchmodSync
-function fchown
-function fchownSync
-function fdatasync
-function fdatasyncSync
-function fstat
-function fstatSync
-function fsync
-function fsyncSync
-function ftruncate
-function ftruncateSync
-function futimes
-function futimesSync
-function lchmod
-function lchmodSync
-function lchown
-function lchownSync
-function link
-function linkSync
-function lstat
-function lutimes
-function lutimesSync
-function mkdir
-function mkdirSync
-function mkdtemp
-function mkdtempSync
-function native
-function open
-function openAsBlob
-function opendir
-function opendirSync
-function openSync
-function read
-function read<TBuffer extends NodeJS.ArrayBufferView>
-function readdir
-function readdirSync
-function readFile
-function readFileSync
-function readlink
-function readlinkSync
-function readSync
-function readv
-function readvSync
-function realpath
-function realpathSync
-function rename
-function renameSync
-function rm
-function rmdir
-function rmdirSync
-function rmSync
-function stat
-function statfs
-function statfsSync
-function symlink
-function symlinkSync
-function truncate
-function truncateSync
-function unlink
-function unlinkSync
-function unwatchFile
-function utimes
-function utimesSync
-function watch
-function watchFile
-function write
-function write<TBuffer extends NodeJS.ArrayBufferView>
-function writeFile
-function writeFileSync
-function writeSync
-function writev
-function writevSync
+fs.access
+fs.accessSync
+fs.appendFile
+fs.appendFileSync
+fs.chmod
+fs.chmodSync
+fs.chown
+fs.chownSync
+fs.close
+fs.closeSync
+fs.copyFile
+fs.copyFileSync
+fs.cp
+fs.cpSync
+fs.createReadStream
+fs.createWriteStream
+fs.exists
+fs.existsSync
+fs.fchmod
+fs.fchmodSync
+fs.fchown
+fs.fchownSync
+fs.fdatasync
+fs.fdatasyncSync
+fs.fstat
+fs.fstatSync
+fs.fsync
+fs.fsyncSync
+fs.ftruncate
+fs.ftruncateSync
+fs.futimes
+fs.futimesSync
+fs.lchmod
+fs.lchmodSync
+fs.lchown
+fs.lchownSync
+fs.link
+fs.linkSync
+fs.lstat
+fs.lutimes
+fs.lutimesSync
+fs.mkdir
+fs.mkdirSync
+fs.mkdtemp
+fs.mkdtempSync
+fs.open
+fs.openAsBlob
+fs.opendir
+fs.opendirSync
+fs.openSync
+fs.read
+fs.readdir
+fs.readdirSync
+fs.readFile
+fs.readFileSync
+fs.readlink
+fs.readlinkSync
+fs.readSync
+fs.readv
+fs.readvSync
+fs.realpath
+fs.realpathSync
+fs.rename
+fs.renameSync
+fs.rm
+fs.rmdir
+fs.rmdirSync
+fs.rmSync
+fs.stat
+fs.statfs
+fs.statfsSync
+fs.symlink
+fs.symlinkSync
+fs.truncate
+fs.truncateSync
+fs.unlink
+fs.unlinkSync
+fs.unwatchFile
+fs.utimes
+fs.utimesSync
+fs.watch
+fs.watchFile
+fs.write
+fs.writeFile
+fs.writeFileSync
+fs.writeSync
+fs.writev
+fs.writevSync
