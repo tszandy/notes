@@ -1,3 +1,5 @@
+anonymous volumes
+
 Usage:  docker volume COMMAND
 
 Manage volumes

@@ -18,3 +18,6 @@ kubectl get namespaces
 
 kubectl create namespace test
 Kubectl get pods -n test
+
+# Kompose
+Kompose is a conversion tool for Docker Compose to container orchestrators such as Kubernetes (or OpenShift).

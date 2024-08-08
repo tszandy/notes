@@ -1,4 +1,3 @@
-version: '3'
 name: jenkins
 services:
   jenkins:
@@ -7,6 +6,6 @@ services:
       - 8080:8080
       - 50000:50000
     volumes:
-      - jenkins-home-data:/var/jenkins_home
+      - data:/var/jenkins_home
 volumes:
-  jenkins-home-data:
+  data:

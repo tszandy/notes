@@ -1,5 +1,6 @@
+name: gitlab-ce
 services:
-  rabbitmq:
+  gitlab-ce:
     image: gitlab/gitlab-ce:latest
     container_name: 'gitlab-ce'
     ports:
@@ -7,11 +8,11 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - gitlab-config:/etc/gitlab
-      - gitlab-logs:/var/log/gitlab
-      - gitlab-data:/var/opt/gitlab
+      - config:/etc/gitlab
+      - log:/var/log/gitlab
+      - data:/var/opt/gitlab
 
 volumes:
-  gitlab-config:
-  gitlab-logs:
-  gitlab-data:
+  config:
+  log:
+  data:

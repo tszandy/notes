@@ -1,5 +1,3 @@
----
-version: '3'
 name: opensearch
 services:
   opensearch-node1:

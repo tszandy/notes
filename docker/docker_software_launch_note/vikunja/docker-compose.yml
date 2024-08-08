@@ -1,4 +1,3 @@
-version: '3'
 name: vikunja
 services:
   vikunja:
@@ -14,7 +13,7 @@ services:
     ports:
       - 3456:3456
     volumes:
-      - vikunja-files:/app/vikunja/files
+      - files:/app/vikunja/files
     depends_on:
       db:
         condition: service_healthy
@@ -28,12 +27,12 @@ services:
       MYSQL_PASSWORD: changeme
       MYSQL_DATABASE: vikunja
     volumes:
-      - vikunja-db:/var/lib/mysql
+      - db:/var/lib/mysql
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "mysqladmin ping -h localhost -u $$MYSQL_USER --password=$$MYSQL_PASSWORD"]
       interval: 2s
       start_period: 30s
 volumes:
-  vikunja-files:
-  vikunja-db:
+  files:
+  db:
