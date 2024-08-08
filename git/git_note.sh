@@ -44,6 +44,8 @@ git clean -fd
 # git List references in a remote repository
 git ls-remote
 
+# it allows you to ask Git to remember how you’ve resolved a hunk conflict so that the next time it sees the same conflict, Git can resolve it for you automatically.
+git rerere
 
 -u, --set-upstream    set upstream for git pull/status
 

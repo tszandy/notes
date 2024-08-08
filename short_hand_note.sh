@@ -1,4 +1,4 @@
-dom          - document object modol
+dom          - document object model
 ng           - angular
 lts          - long term support
 pom          - project object modol
