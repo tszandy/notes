@@ -19,6 +19,7 @@ docker inspect -f ${container_name_or_id}
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ${container_name_or_id}
 
 #docker run base ubuntu in detach mode --rm remove container when unrunning -d detach -t tty protocol -i stdin interacitive
+docker run --rm -ti --name ubuntu ubuntu:18.04
 docker run --rm -dti --name ubuntu ubuntu:18.04
 
 #docker run nvidia ubuntu runtime --gpus attached all gpu 

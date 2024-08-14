@@ -1,3 +1,6 @@
+# docker ubuntu environemnt image with current $UID and $GID
+docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -f Dockerfile -t tszandy/ubuntu:latest .
+
 # docker ubuntu environment image
 docker build -f Dockerfile_ubuntu -t tszandy/ubuntu:latest . 
 docker run --rm --name ubuntu -v ${PWD}:/home/ice/program -it tszandy/ubuntu:latest /bin/bash
