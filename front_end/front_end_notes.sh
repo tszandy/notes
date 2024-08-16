@@ -16,3 +16,6 @@ https://www.youtube.com/@Hyperplexed
 
 # esbuild
 https://esbuild.github.io/
+
+# nextjs
+https://nextjs.org/docs
