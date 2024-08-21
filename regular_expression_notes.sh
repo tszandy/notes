@@ -45,9 +45,8 @@ $                   Matches the ending position of the string or the position ju
 \z                  Matches the end of a string (but not an internal line).
 [^…]                Matches every character except the ones inside brackets.
 
-
-
-
+# The (?<=...) syntax is a lookbehind assertion used in regular expressions (regex). It allows you to match a pattern only if it is preceded by another pattern, without including the preceding pattern in the match itself.
+(?<=...) 
 
 
 字符  描述
