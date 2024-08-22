@@ -1,8 +1,20 @@
 # linux find string in all files under current path
 grep -rnw . -e "String"
 
+# invert matching
+-v
 
+# Prints only the matching part of the lines.
+-o
 
+# perl regular expression
+-P
+
+# suppress all normal output
+-q
+
+# suppress error messages
+-s
 
 GREP(1)                     General Commands Manual                    GREP(1)
 

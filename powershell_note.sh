@@ -245,6 +245,11 @@ msiexec.exe /i file_name.msi /qb
 # bashrc like script
 $profile
 
+# create alias 
+Function ws{
+    cd ${workspace_dir_path}
+}
+
 # get powershell execute script policy
 Get-ExecutionPolicy
 Get-ExecutionPolicy -List

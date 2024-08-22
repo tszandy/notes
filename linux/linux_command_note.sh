@@ -786,17 +786,6 @@ example:
 ssh-keygen -b 2048 -t rsa
 
 
-split [options] [file] [prefix]
-Option	Description
--a	Set suffix length.
--b	Determines size per output file.
--C	Determines the maximum size per output file.
--d	Changes default suffixes to numeric values.
--e	Omits creating empty output files.
--l	Creates files with a specific number of output lines.
--n	Generates a specific number of output files.
---verbose	Displays a detailed output.
-
 sed OPTIONS... [SCRIPT] [INPUTFILE...]
 -b, --binary	Open input files in binary mode to consider lines to end at a line feed.
 --debug	Switch to debug mode to print input in canonical form and annotate program execution.
