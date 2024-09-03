@@ -16,7 +16,12 @@
         "when":    "terminalViewShowing"
     },
     {
-        "key": "shift+enter",
-        "command": "workbench.action.terminal.runSelectedText"
+        "key":     "shift+enter",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when":    "!searchInputBoxFocus && !notebookCellListFocused || inlineChatFocused"
     },
+    {
+        "key":     "alt+b",
+        "command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+    }
 ]

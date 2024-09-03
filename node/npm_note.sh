@@ -13,6 +13,9 @@ npm install ${package_name} --save
 
 npm install ${package_name}@${package_version} --save
 
+# npm remove local package
+rm -rf node_modules/
+
 # list local dependency
 npm list
 
