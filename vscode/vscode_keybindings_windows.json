@@ -18,7 +18,7 @@
     {
         "key":     "shift+enter",
         "command": "workbench.action.terminal.runSelectedText",
-        "when":    "!searchInputBoxFocus && !notebookCellListFocused || inlineChatFocused"
+        "when":    "!notebookCellListFocused || inlineChatFocused"
     },
     {
         "key":     "alt+b",

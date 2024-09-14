@@ -1,5 +1,8 @@
-# install powershell
+# install poetry (windows powershell)
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+
+# install poetry (linux)
+wget -qO- https://install.python-poetry.org | python3 -
 
 # poetry create new package
 poetry new ${package_name}
