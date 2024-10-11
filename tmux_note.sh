@@ -6,6 +6,13 @@ tmux split-window -h
 ctrl+B then “ # Split windows top down.
 tmux split-window -v
 
+ctrl+B then Left-Arrow # move to left window
+ctrl+B then Right-Arrow # move to right window
+ctrl+B then Up-Arrow # move to up window
+ctrl+B then Down-Arrow # move to down window
+
+tmux # Start Session
+tmux new -s ${session_name}
 tmux new-session -s ${session_name} 
 
 tmux select-window -t 0 # tmux select window 0

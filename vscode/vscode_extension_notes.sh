@@ -11,6 +11,7 @@ IntelliCode
 Scala Syntax (official)
 Scala (Metals)
 C/C++
+C/C++ Extension Pack
 Go
 Diff Folders
 git history
@@ -55,3 +56,5 @@ Polacode # Polaroid for your code
 Code Spell Checker # Spelling checker for source code
 Markdown Preview Enhanced # Markdown Preview Enhanced ported to vscode
 Bookmarks # Mark lines and jump to them
+LaTeX Workshop # Latex extension
+Template String Converter # js convert normal string to template string

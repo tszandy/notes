@@ -1,3 +1,9 @@
+# vscode UI layout
+https://code.visualstudio.com/docs/getstarted/userinterface
+
+# different action for the code
+command + shift + p -> "Emmet"
+
 # remove all vscode extensions:
 uninstall vscode 
 remove folder: 
@@ -9,6 +15,9 @@ remove folder:
 
 # remove all break point shortcut title:
 "Remove All Breakpoints"
+
+# enable code len for different programming language
+"Open user setting" -> "code len"
 
 # vscode remove dumplicated
 1. Control + shift + P
