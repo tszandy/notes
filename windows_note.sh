@@ -57,7 +57,7 @@ code c:/Windows/System32/Drivers/etc/hosts
 net share
 
 # connect a network drive
-net use Z: \\Desktop-av9j78m\d /Persistent:Yes
+net use Z: \\Desktop-av9j78m\d "" /user:Guest /persistent:no
 net use Z: /delete
 
 # share a folder
