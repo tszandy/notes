@@ -4,8 +4,8 @@ ctrl + up
 # mac lock
 ctrl + command + q
 
-# mac page down
-fn + down arrow
+# mac page up/down
+fn + up/down arrow
 
-# mac end 
-fn + right arrow
+# mac home/end 
+fn + left/right arrow

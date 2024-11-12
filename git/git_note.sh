@@ -65,10 +65,10 @@ git reflog
 [includeIf "gitdir:~/projects/ws/"]
     path = ~/projects/ws/.gitconfig
 
-# rebase dev branch onto main branch
-incoming is dev
-current is main
+# current: branch1, rebase target branch2
+current is branch2
+incoming is branch1
 
-# merge main branch onto dev branch
-incoming is main
-current is dev
+# current branch1, merge target branch2
+current is branch1
+incoming is branch2
