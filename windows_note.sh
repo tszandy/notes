@@ -58,10 +58,12 @@ net share
 
 # connect a network drive
 net use Z: \\Desktop-av9j78m\d "" /user:Guest /persistent:yes
-net use Z: /delete
-
 net use Y: \\Weis-Mac-mini.local\disk_2 /Persistent:Yes
+net use X: \\Weis-Mac-mini.local\disk_3 /Persistent:Yes
+
+net use Z: /delete
 net use Y: /delete
+net use X: /delete
 
 # share a folder
 right click a folder -> go to "Share with"
