@@ -11,5 +11,7 @@ services:
       - 443:443
       - 1194:1194/udp
     volumes:
-      - openvpn-data1:/openvpn
+      - openvpn-data:/openvpn
     restart: unless-stopped
+volumes:
+  openvpn-data:
