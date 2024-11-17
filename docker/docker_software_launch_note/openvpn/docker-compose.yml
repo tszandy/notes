@@ -1,12 +1,15 @@
-version: '2'
+---
+version: "2.1"
 services:
-  openvpn:
+  openvpn-as:
+    image: openvpn/openvpn-as
+    container_name: openvpn-as
     cap_add:
-     - NET_ADMIN
-    image: kylemanna/openvpn
-    container_name: openvpn
+      - NET_ADMIN
     ports:
-     - "1194:1194/udp"
-    restart: always
+      - 943:943
+      - 443:443
+      - 1194:1194/udp
     volumes:
-     - ./openvpn-data/conf:/etc/openvpn
+      - openvpn-data1:/openvpn
+    restart: unless-stopped
