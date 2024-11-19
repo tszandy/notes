@@ -1,3 +1,6 @@
+rsync -av --backup --suffix=".modified" source/ destination/
+
+
 rsync  version 3.1.2  protocol version 31
 Copyright (C) 1996-2015 by Andrew Tridgell, Wayne Davison, and others.
 Web site: http://rsync.samba.org/
