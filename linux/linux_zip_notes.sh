@@ -1,0 +1,1 @@
+zip -ur archive.zip myfolder/
