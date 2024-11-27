@@ -1,4 +1,10 @@
 rsync -av --backup --suffix=".modified" source/ destination/
+rsync -av --backup --backup-dir=/path/to/backup/dir /source/dir/ /destination/dir/
+rsync -av --backup --suffix=$(date +_%Y%m%d%H%M%S) /source/dir/ /destination/dir/
+
+-a: Archive mode to preserve attributes.
+-v: Verbose output to show progress.
+--checksum can be slower for large files or many files because rsync has to calculate and compare checksums for all files.
 
 rsync -av /path/to/source/ /path/to/destination/
 
