@@ -242,3 +242,19 @@ Rosdep
 rosdep install ${package}
 
 
+# ros tmux
+tmux rename-window -t 0 main
+tmux new-window -n activate -d 'source activate bert & python'
+
+tmux rename-window -t 0 main
+tmux new-window -n roscore -d roscore
+
+tmux rename-window -t 0 main
+tmux new-window -n roscore -d roscore
+tmux new-window -n rosrun-turtle-GUI -d rosrun turtlesim turtlesim_node __name:=my_turtle
+tmux new-window -n rosrun-turtle-operation rosrun turtlesim turtle_teleop_key
+
+tmux rename-window -t 0 main
+tmux new-window -n roscore -d roscore
+tmux new-window -n ros_visualize -d rosrun using_markers basic_shapes
+tmux new-window -n rosrun-turtle-operation rosrun turtlesim turtle_teleop_key
