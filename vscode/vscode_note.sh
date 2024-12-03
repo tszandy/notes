@@ -10,6 +10,15 @@ remove folder:
 %userprofile%\AppData\Roaming\Code
 %userprofile%\.vscode\
 
+# Open vscode setting
+ctrl + shift + p -> "Preferences: Open Settings (UI)"
+
+# Open Keyboard Shortcuts
+ctrl + k , ctrl + s
+
+# devcontainer
+ctrl + shift + p -> "Dev Containers: Add Dev Container Configuration Files…"
+
 # vscode temp file localtion 
 %APPDATA%\Code\User\history
 

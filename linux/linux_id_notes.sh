@@ -1,3 +1,12 @@
+# Print user and group information
+id
+
+# Print user id
+id -u
+
+# Print group id
+id -g
+
 Usage: id [OPTION]... [USER]
 Print user and group information for the specified USER,
 or (when USER omitted) for the current user.
