@@ -56,7 +56,8 @@ set GIT_SSH=C:\PuTTY\plink.exe
 # Git Reference logs (use for recover lost local commit, really useful when mess up with rebase)
 git reflog
 
-
+# run garbage collection
+git gc 
 
 # conditional configs
 [includeIf "gitdir:~/projects/work/"]

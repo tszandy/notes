@@ -8,4 +8,5 @@ Vault and Terraform
 rabbitmq
 memcached
 redis
-
+tabby
+bruno

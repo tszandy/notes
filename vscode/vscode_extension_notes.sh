@@ -58,6 +58,7 @@ Markdown Preview Enhanced # Markdown Preview Enhanced ported to vscode
 Bookmarks # Mark lines and jump to them
 LaTeX Workshop # Latex extension
 Template String Converter # js convert normal string to template string
+Bazel # Bazel BUILD integration
 
 # c++ extensions
 C/C++
@@ -66,3 +67,4 @@ clangd
 CMake Tools
 Makefile Tools
 vGDB
+
