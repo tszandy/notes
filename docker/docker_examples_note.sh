@@ -17,7 +17,7 @@ docker exec -it mongodb mongosh
 
 # ubuntu angular environment image
 docker rm -f angular
-docker build -f Dockerfile_angular -t tszandy/ubuntu_angular:latest . && docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:latest /bin/bash
+docker build -f Dockerfile_angular -t tszandy/ubuntu_angular:latest .
 docker run --name angular -p 0.0.0.0:4200:4200 -ti tszandy/ubuntu_angular:latest /bin/bash
 docker start -i angular
 
@@ -26,14 +26,14 @@ docker run -it --name kali --net "host" kalilinux/kali /bin/bash
 
 # ubuntu python environment image
 docker rm -f python
-docker build -f Dockerfile_python -t tszandy/ubuntu_python:latest . && docker run --name python -ti tszandy/ubuntu_python:latest /bin/bash
+docker build -f Dockerfile_python -t tszandy/ubuntu_python:latest .
 docker run --name python -ti tszandy/ubuntu_python:latest /bin/bash
 docker start -i python
 
 # kali images
 docker rm -f kali
-docker build -f Dockerfile_kali -t tszandy/kalilinux:latest . && docker run --name kali --net "host" -ti tszandy/kalilinux:latest /bin/bash
-docker run --name kali --net "host" -ti kalilinux/kali /bin/bash
+docker build -f Dockerfile_kali -t tszandy/kalilinux:latest .
+docker run --name kali --net "host" -ti tszandy/kalilinux:latest /bin/bash
 docker start -i kali
 
 # cpp environment image

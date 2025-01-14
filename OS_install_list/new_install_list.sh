@@ -10,7 +10,12 @@ nodemon:
     npm install -g nodemon
 
 bazel:
-    choco install bazel
+    Windows:
+        choco install bazel
+    Mac:
+        brew update
+        brew install bazel
+
 
 chrome:
     Linux:
@@ -112,6 +117,10 @@ tmux
     Linux:
         sudo apt update
         sudo apt install tmux -y
+
+redis:
+    Mac:
+        brew install redis
 
 git auto-complete
     curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash

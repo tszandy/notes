@@ -56,7 +56,7 @@ sd card formatter # Formatter formats SD Memory Card, SDHC Memory Card and SDXC 
 
 dotpeek # dll(dynamic link library) decompiler 
 
-obs (Open Broadcaster Software) # screen recording and steaming software
+OBS Studio (Open Broadcaster Software) # open source screen recording and steaming software
 
 Outbyte PC Repair # a software that helps you to clean your registry with no hassle
 
