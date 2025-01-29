@@ -36,3 +36,13 @@ maybe conscious is generative model, we can simulate a model that is similar to 
 genetic algorithm might be the key to merge and mutate belief.
 
 featured graph coarsening
+
+what is mirror neuron and how does it works.
+
+Cognitive Abilities level?
+    1. Self-Awareness
+    2. Language
+    3. Abstract Thinking
+
+Interactive with environment?
+
