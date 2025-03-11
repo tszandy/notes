@@ -10,3 +10,4 @@ memcached
 redis
 tabby
 bruno
+mlflow
