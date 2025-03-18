@@ -10,6 +10,9 @@ https://pkg.go.dev/golang.org/x
 # go windows localtion
 C:\Program Files\Go
 
+# default go path
+export gopath="$home/go"
+
 # go mac location
 /usr/local/go/bin/go
 

@@ -45,6 +45,9 @@ docker attach ${container_name_or_id} --detach-keys "ctrl-a"
 # docker execute command line in a container
 docker exec -it ${container_name_or_id} /bin/bash
 
+# Remove all unused data, including stopped containers, networks not used by at least one container, dangling images, and build cache
+docker system prune -a
+
 # docker network
 docker network ls
 docker network create ${network_name}
