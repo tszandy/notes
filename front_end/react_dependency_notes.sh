@@ -7,6 +7,9 @@ npm install --save-dev esbuild
 
 esbuild sass
 
+esbuild src/scripts/script.js --bundle --minify --outfile=dist/bundle.js
+
+esbuild src/scripts/script.js --bundle --minify --sourcemap --outfile=dist/bundle.js
 
 npm install --save-dev esbuild-sass-plugin
 
