@@ -10,6 +10,9 @@ remove folder:
 %userprofile%\AppData\Roaming\Code
 %userprofile%\.vscode\
 
+# tab shrink
+ctrl + , -> search "workbench.editor.tabSizing"-> set to "shrink"
+
 # Open vscode setting
 ctrl + shift + p -> "Preferences: Open Settings (UI)"
 
