@@ -22,6 +22,12 @@ git remote set-head origin $branch_name
 # delete a branch $branch_name locally
 git br -d $branch_name
 
+# search all the local branch that contains the commit $commit
+git br --contains ${commit}
+
+# search all the remote branch that contains the commit $commit
+git br -r --contains ${commit}
+
 # delete a branch $branch_name remotelly
 git push origin --delete $branch_name
 

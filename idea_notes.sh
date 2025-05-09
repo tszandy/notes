@@ -1,0 +1,1 @@
+How to build a software/dependency that is easily seperable and scalable. 

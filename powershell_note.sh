@@ -242,6 +242,9 @@ ctrl + shift + tab # prev tab
 # quit install msi file
 msiexec.exe /i file_name.msi /qb
 
+# quit install exe file
+Start-Process -FilePath file_name.exe -ArgumentList "/quiet /norestart" -Wait
+
 # bashrc like script
 $profile
 
