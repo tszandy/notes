@@ -7,6 +7,8 @@ docker compose up -d
 
 docker compose down
 
-docker volume rm gitlab-ce_gitlab-config
-docker volume rm gitlab-ce_gitlab-data
-docker volume rm gitlab-ce_gitlab-logs
+http://localhost/
+
+docker volume rm gitlab-ce_config
+docker volume rm gitlab-ce_data
+docker volume rm gitlab-ce_log

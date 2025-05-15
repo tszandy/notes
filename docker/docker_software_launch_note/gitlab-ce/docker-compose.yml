@@ -7,6 +7,8 @@ services:
       - 22:22
       - 80:80
       - 443:443
+    environment:
+      GITLAB_ROOT_PASSWORD: jrmecFc58TRJPxe
     volumes:
       - config:/etc/gitlab
       - log:/var/log/gitlab

@@ -72,8 +72,6 @@ Internet Download Manager # a tool that helps you to increase download speeds by
 
 NirSoft # a small network monitoring program that can run in the background of your desktop or laptop.
 
-DBeaver # Universal Database Tool
-
 clipgrab # tool download video from youtube
 
 linux reader # Access files and folders on Ext, UFS, HFS, ReiserFS, or APFS file systems from Windows
@@ -96,3 +94,6 @@ ZoomIt # ZoomIt is a screen zoom, annotation, and recording tool for technical p
 
 fonetool # windows iphone transfer tool
 
+pgAdmin # a free software project released under the PostgreSQL licence
+
+DBeaver # Universal Database Tool
