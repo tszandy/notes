@@ -2,6 +2,7 @@ name: solr
 services:
   solr-node:
     image: solr:8.5.2
+    container_name: solr
     ports:
       - 8983:8983
     volumes:

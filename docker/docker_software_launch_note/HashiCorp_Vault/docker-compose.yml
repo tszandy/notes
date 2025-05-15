@@ -1,4 +1,3 @@
-name: hashicorp_vault
 services:
   vault:
     image: hashicorp/vault:latest
@@ -11,7 +10,7 @@ services:
     cap_add:
       - IPC_LOCK
     volumes:
-      - ./vault-data:/vault/file
+      - data:/vault/file
     command: server -dev
 volumes:
-  vault-data:
+  data:
