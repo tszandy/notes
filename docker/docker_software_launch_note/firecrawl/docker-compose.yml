@@ -1,0 +1,16 @@
+services:
+  firecrawl:
+    image: mcp/firecrawl:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - NODE_ENV=production
+      # Add API_KEY if the service requires it:
+      # - API_KEY=your-secret-api-key
+    volumes:
+      - firecrawl_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  firecrawl_data:

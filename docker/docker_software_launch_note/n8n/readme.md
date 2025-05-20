@@ -6,3 +6,5 @@ docker compose up -d
 docker compose down
 
 docker compose config
+
+http://localhost:5678
