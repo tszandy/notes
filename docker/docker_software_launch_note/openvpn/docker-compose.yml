@@ -11,5 +11,4 @@ services:
     volumes:
       - openvpn-data:/openvpn
     restart: unless-stopped
-volumes:
   openvpn-data:

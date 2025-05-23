@@ -1,21 +1,25 @@
+notes
+cd docker/docker_software_launch_note/openvpn
+
+# Start OpenVPN server process
+docker-compose up -d
+
+# address
+https://localhost:943/admin
+
+# username 
+openvpn
+
+# password
+the password can be found in the docker logs (on the first initial run):
+
+
 # Initialize the configuration files and certificates
 docker-compose run --rm openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM
 docker-compose run --rm openvpn ovpn_initpki
 
 # Fix ownership (depending on how to handle your backups, this may not be needed)
 sudo chown -R $(whoami): ./openvpn-data
-
-notes
-cd docker/docker_software_launch_note/openvpn
-# Start OpenVPN server process
-docker-compose up -d
-
-# address
-https://localhost:943/admin 
-# username 
-openvpn
-# password
-the password can be found in the docker logs (on the first initial run):
 
 # To get an interactive shell:
 docker exec -it openvpn-as /bin/bash

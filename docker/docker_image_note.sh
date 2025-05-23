@@ -22,6 +22,7 @@ jenkins/jenkins:latest
 # kali linux
 kalilinux/kali-last-release
 kalilinux/kali-rolling
+kalilinux/kali
 
 # Vector database Milvus
 bitnami/milvus:2.4.2-debian-12-r1
@@ -82,3 +83,9 @@ memcached:latest
 # mysql
 mysql:latest
 mysql/mysql-server:8.0
+
+
+hashicorp/vault:latest
+
+
+releases-docker.jfrog.io/jfrog/artifactory-oss:latest
