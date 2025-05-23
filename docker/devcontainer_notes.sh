@@ -1,3 +1,8 @@
+# how to use devcontainer
+./devcontainer/devcontainer.json
+https://code.visualstudio.com/docs/devcontainers/tutorial
+
+
 docker pull mcr.microsoft.com/devcontainers/base:alpine
 docker pull mcr.microsoft.com/devcontainers/base:alpine-3.20
 docker pull mcr.microsoft.com/devcontainers/base:alpine-3.19

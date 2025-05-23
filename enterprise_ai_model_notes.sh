@@ -21,5 +21,6 @@ sesame # https://www.sesame.com/
 smithery # https://smithery.ai/
 windsurf # https://windsurf.com/
 
+filmora # https://filmora.wondershare.com/
 
 Cherry Studio # https://www.cherry-ai.com/
