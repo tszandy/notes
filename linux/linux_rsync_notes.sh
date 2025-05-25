@@ -1,6 +1,7 @@
 rsync -av --backup --suffix=".modified" source/ destination/
 rsync -av --backup --backup-dir=/path/to/backup/dir /source/dir/ /destination/dir/
 rsync -av --backup --suffix=$(date +_%Y%m%d%H%M%S) /source/dir/ /destination/dir/
+rsync -av --backup --dry-run /source/dir/ /destination/dir/
 
 -a: Archive mode to preserve attributes.
 -v: Verbose output to show progress.
