@@ -9,3 +9,7 @@ fn + up/down arrow
 
 # mac home/end 
 fn + left/right arrow
+
+# show mount drive
+mount
+df -h
