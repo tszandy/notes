@@ -245,8 +245,8 @@ msiexec.exe /i file_name.msi /qb
 # quit install exe file
 Start-Process -FilePath file_name.exe -ArgumentList "/quiet /norestart" -Wait
 
-# bashrc like script
-$profile
+# bashrc like script (powershell)
+code $profile
 
 # create alias 
 Function ws{
