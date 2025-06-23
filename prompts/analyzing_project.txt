@@ -1,0 +1,15 @@
+# use augment code
+Please analyze the overall architecture and features of this project:
+1. Technical Architecture Overview
+Adopted design patterns and architectural styles
+Main technology stack and dependencies
+Module division and organizational structure
+2. Code Quality Assessment
+Code style consistency
+Test coverage status
+Documentation completeness
+Potential technical debt
+3. Code Organization and Modularity
+Analysis of Coupling between Modules
+Rationality of Interface Design
+Scalability and Maintainability Evaluation

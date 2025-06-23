@@ -1,4 +1,5 @@
 abridge # https://www.abridge.com/
+augment # https://www.augmentcode.com/
 bolt # https://bolt.new/
 chatgpt # https://chatgpt.com/
 claude # https://claude.ai/login?returnTo=%2F%3F#pricing
