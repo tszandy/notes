@@ -6,3 +6,5 @@ docker compose up -d
 docker compose down
 
 http://localhost:8081
+
+docker logs jfrog > ~/logs/jfrog.log
