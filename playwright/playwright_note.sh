@@ -303,3 +303,5 @@ npx playwright test --grep "@smoke"
 # skip test with tag @smoke
 npx playwright test --grep-invert "@smoke"
 
+# run test with ui 
+npx playwright test --ui

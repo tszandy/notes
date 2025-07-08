@@ -1,4 +1,4 @@
-node-inspector
+node-inspector	debugging tool for Node.js applications. It allows developers to debug their Node.js code using the Chrome Developer Tools
 
 assert	Provides a set of assertion tests
 buffer	To handle binary data

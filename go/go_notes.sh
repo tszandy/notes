@@ -101,6 +101,9 @@ go mod init main
 go build go_hello_world.go
 ./go_hello_world
 
+# go remove unused versions
+go mod tidy
+
 Go is a tool for managing Go source code.
 
 Usage:

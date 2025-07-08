@@ -84,6 +84,8 @@ memcached:latest
 mysql:latest
 mysql/mysql-server:8.0
 
+# postgres
+postgres:15
 
 hashicorp/vault:latest
 
