@@ -68,3 +68,4 @@ CMake Tools
 Makefile Tools
 vGDB
 
+GraphQL for VSCode # GraphQL syntax highlighting, linting, auto-complete, and more!

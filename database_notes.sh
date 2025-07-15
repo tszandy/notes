@@ -3,6 +3,7 @@ mysql
 mariadb
 
 postgresql
+    pgadmin
 
 cockroachdb
 
@@ -17,3 +18,7 @@ APOLLO
 HASURA
 Prisma
 PostGraphile
+
+
+# tools
+dbeaver 
