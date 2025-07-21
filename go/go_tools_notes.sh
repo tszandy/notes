@@ -34,3 +34,8 @@ golangci-lint run
 go get golang.org/dl/go.1.15.6
 go1.15.6 download
 go1.15.6 build
+
+
+# postgreSQL Driver
+pgx : preferred for performance, advanced features, and newer projects.
+lib/pq: still popular but mostly in maintenace mode.

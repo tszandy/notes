@@ -1,3 +1,6 @@
+# This command prints the effective POM of the project, which is the result of merging the POM with all its parent POMs and applying all the profiles.
+mvn help:effective-pom
+
 ##### This command generates the dependency tree of the maven project.
 mvn dependency:tree
 

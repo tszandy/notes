@@ -1,0 +1,161 @@
+# Go 1.24 Standard Library Packages
+
+The following is a list of standard library packages available in Go 1.24, as provided by the Go programming language. These packages are part of the core library that comes with the Go installation and are maintained to ensure compatibility and reliability. For a comprehensive list and detailed documentation, refer to the official Go documentation at [pkg.go.dev](https://pkg.go.dev/std).
+
+## Standard Library Packages
+
+- `archive/tar` - Support for reading and writing tar archives
+- `archive/zip` - Support for reading and writing ZIP archives
+- `bufio` - Buffered I/O operations
+- `builtin` - Documentation for built-in types, variables, and functions
+- `bytes` - Functions for manipulating byte slices
+- `compress/bzip2` - Support for bzip2 compression
+- `compress/flate` - Support for flate compression (used in gzip and zlib)
+- `compress/gzip` - Support for gzip compression
+- `compress/lzw` - Support for LZW compression
+- `compress/zlib` - Support for zlib compression
+- `container/heap` - Heap data structure implementation
+- `container/list` - Doubly-linked list implementation
+- `container/ring` - Circular list implementation
+- `context` - Managing deadlines, cancellation signals, and request-scoped values
+- `crypto` - Cryptographic algorithms and utilities
+- `crypto/aes` - AES encryption
+- `crypto/cipher` - Standard block cipher modes
+- `crypto/des` - DES and Triple DES encryption
+- `crypto/dsa` - Digital Signature Algorithm
+- `crypto/ecdsa` - Elliptic Curve Digital Signature Algorithm
+- `crypto/ed25519` - Ed25519 digital signatures
+- `crypto/elliptic` - Elliptic curve cryptography
+- `crypto/hmac` - HMAC keyed-hash message authentication
+- `crypto/md5` - MD5 hash algorithm
+- `crypto/rand` - Cryptographically secure random numbers
+- `crypto/rc4` - RC4 encryption
+- `crypto/rsa` - RSA encryption
+- `crypto/sha1` - SHA-1 hash algorithm
+- `crypto/sha256` - SHA-256 hash algorithm
+- `crypto/sha512` - SHA-512 hash algorithm
+- `crypto/subtle` - Subtle cryptographic operations
+- `crypto/tls` - TLS (Transport Layer Security) support
+- `crypto/x509` - X.509 certificate parsing and verification
+- `crypto/x509/pkix` - X.509 Public Key Infrastructure
+- `database/sql` - Database access with SQL
+- `database/sql/driver` - Interfaces for SQL database drivers
+- `debug/dwarf` - DWARF debugging information
+- `debug/elf` - ELF file format support
+- `debug/macho` - Mach-O file format support
+- `debug/pe` - PE (Portable Executable) file format support
+- `embed` - Embedding files into Go programs
+- `encoding` - Common encoding interfaces
+- `encoding/ascii85` - ASCII85 (base85) encoding
+- `encoding/asn1` - ASN.1 encoding and decoding
+- `encoding/base32` - Base32 encoding
+- `encoding/base64` - Base64 encoding
+- `encoding/binary` - Binary encoding and decoding
+- `encoding/csv` - CSV file reading and writing
+- `encoding/gob` - Go-specific encoding for data serialization
+- `encoding/hex` - Hexadecimal encoding
+- `encoding/json` - JSON encoding and decoding
+- `encoding/pem` - PEM encoding and decoding
+- `encoding/xml` - XML encoding and decoding
+- `errors` - Error handling utilities
+- `expvar` - Exporting variables for monitoring
+- `flag` - Command-line flag parsing
+- `fmt` - Formatted I/O
+- `go/ast` - Abstract syntax tree for Go source code
+- `go/build` - Go build system information
+- `go/constant` - Constant value representation
+- `go/doc` - Documentation extraction from Go source
+- `go/format` - Formatting Go source code
+- `go/importer` - Importer for Go packages
+- `go/parser` - Parsing Go source code
+- `go/printer` - Printing Go syntax trees
+- `go/scanner` - Scanning Go source code
+- `go/token` - Tokens for Go source code
+- `go/types` - Type checking for Go
+- `hash` - Hash function interfaces
+- `hash/adler32` - Adler-32 checksum
+- `hash/crc32` - CRC-32 checksum
+- `hash/crc64` - CRC-64 checksum
+- `hash/fnv` - FNV hash algorithms
+- `hash/maphash` - Non-cryptographic hash for maps
+- `html` - HTML escaping and unescaping
+- `html/template` - HTML templating
+- `image` - Image processing
+- `image/color` - Color models
+- `image/draw` - Image drawing
+- `image/gif` - GIF image support
+- `image/jpeg` - JPEG image support
+- `image/png` - PNG image support
+- `index/suffixarray` - Suffix array for substring searches
+- `io` - Basic I/O interfaces
+- `io/fs` - Filesystem interfaces
+- `io/ioutil` - Deprecated I/O utilities (use `io` or `os`)
+- `log` - Simple logging
+- `log/slog` - Structured logging
+- `math` - Basic mathematical functions
+- `math/big` - Arbitrary-precision arithmetic
+- `math/bits` - Bit manipulation functions
+- `math/cmplx` - Complex number operations
+- `math/rand` - Pseudo-random number generation
+- `math/rand/v2` - Improved random number generation
+- `mime` - MIME type handling
+- `mime/multipart` - MIME multipart message parsing
+- `mime/quotedprintable` - Quoted-printable encoding
+- `net` - Networking primitives (TCP, UDP, etc.)
+- `net/http` - HTTP client and server implementations
+- `net/http/cgi` - CGI (Common Gateway Interface) support
+- `net/http/fcgi` - FastCGI support
+- `net/http/httptest` - HTTP testing utilities
+- `net/http/httptrace` - HTTP request tracing
+- `net/http/pprof` - Performance profiling over HTTP
+- `net/mail` - Email parsing
+- `net/netip` - IP address manipulation
+- `net/rpc` - Remote procedure call
+- `net/rpc/jsonrpc` - JSON-RPC over TCP
+- `net/smtp` - SMTP client implementation
+- `net/textproto` - Text-based protocol parsing
+- `net/url` - URL parsing
+- `os` - Operating system interfaces
+- `os/exec` - Executing external commands
+- `os/signal` - Signal handling
+- `os/user` - User account information
+- `path` - Path manipulation
+- `path/filepath` - File path manipulation
+- `reflect` - Runtime reflection
+- `regexp` - Regular expression support
+- `regexp/syntax` - Regular expression syntax parsing
+- `runtime` - Runtime system interaction
+- `runtime/cgo` - Cgo support
+- `runtime/debug` - Debugging utilities
+- `runtime/metrics` - Runtime metrics
+- `runtime/pprof` - Performance profiling
+- `runtime/trace` - Execution tracing
+- `sort` - Sorting and searching
+- `strconv` - String conversion utilities
+- `strings` - String manipulation
+- `sync` - Synchronization primitives
+- `sync/atomic` - Atomic operations
+- `syscall` - Low-level system calls
+- `testing` - Testing framework
+- `testing/fstest` - Filesystem testing
+- `testing/iotest` - I/O testing
+- `testing/quick` - Quick testing utilities
+- `testing/synctest` - Concurrent code testing
+- `text/scanner` - Text scanning
+- `text/tabwriter` - Tabular text output
+- `text/template` - Text templating
+- `text/template/parse` - Text template parsing
+- `time` - Time and date handling
+- `unicode` - Unicode support
+- `unicode/utf16` - UTF-16 encoding
+- `unicode/utf8` - UTF-8 encoding
+- `unique` - Unique value handling
+
+## Notes
+
+- This list includes packages available in the Go 1.24 standard library as of its release in February 2025.
+- The `math/rand/v2` package is a newer version of `math/rand` with improvements, such as removing the deprecated `Read` method and unconditional random seeding for global functions.[](https://tip.golang.org/doc/go1.22)
+- The `testing/synctest` package is a new experimental package for testing concurrent code, introduced in Go 1.24.[](https://go.dev/doc/go1.24)
+- Some packages, such as `crypto/aes`, `crypto/sha256`, and `crypto/sha512`, have been updated to support FIPS 140-3 compliance through the Go Cryptographic Module.[](https://go.dev/doc/go1.24)
+- For detailed documentation and usage examples, visit [pkg.go.dev/std](https://pkg.go.dev/std).
+- To programmatically list standard packages, you can use the command `go list std` in a terminal or leverage the `golang.org/x/tools/go/packages` package in a Go program.[](https://stackoverflow.com/questions/55807322/can-i-list-all-standard-go-packages)

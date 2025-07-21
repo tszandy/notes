@@ -805,3 +805,6 @@ sed OPTIONS... [SCRIPT] [INPUTFILE...]
 -z, --null-data, --zero-terminated	View input as a set of lines where each ends with a zero byte.
 
 find . |grep "\._"
+
+
+ncdu # ncdu stands for NCurses Disk Usage. It's a fast, terminal-based disk usage analyzer that provides a visual overview of disk space usage.

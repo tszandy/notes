@@ -101,7 +101,7 @@ go mod init main
 go build go_hello_world.go
 ./go_hello_world
 
-# go remove unused versions
+# go mod tidy removes dependencies that are no longer necessary from the go.mod file and the go.sum file.
 go mod tidy
 
 Go is a tool for managing Go source code.

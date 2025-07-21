@@ -127,3 +127,10 @@ git auto-complete
     if [ -f ~/.git-completion.bash ]; then
         . ~/.git-completion.bash
     fi
+
+yarn
+    Mac:
+        brew install yarn
+    Linux:
+        sudo apt update
+        sudo apt install -y yarn
