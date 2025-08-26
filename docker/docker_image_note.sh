@@ -69,6 +69,9 @@ arangodb:latest
 ros:latest
 
 # Redis is an open source key-value store that functions as a data structure server.
+redis:6
+redis:7
+redis:8
 redis:latest
 
 # The most scalable open-source MQTT broker for IoT, IIoT, connected vehicles, and more.
@@ -78,6 +81,7 @@ emqx:latest
 opensearchproject/opensearch:latest
 
 # open source cached software
+memcached:1.6
 memcached:latest
 
 # mysql
@@ -86,8 +90,13 @@ mysql/mysql-server:8.0
 
 # postgres
 postgres:15
+postgres:16
+postgres:17
+postgres:18
+postgres:latest
 
+# HashiCorp Vault - tool for managing secrets and protecting sensitive data
 hashicorp/vault:latest
 
-
+# JFrog Artifactory OSS is an open-source universal artifact repository manager for managing binaries and dependencies.
 releases-docker.jfrog.io/jfrog/artifactory-oss:latest
