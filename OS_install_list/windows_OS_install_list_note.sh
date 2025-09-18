@@ -97,3 +97,5 @@ fonetool # windows iphone transfer tool
 pgAdmin # a free software project released under the PostgreSQL licence
 
 DBeaver # Universal Database Tool
+
+HWInfo64 # Hardware information and diagnostic tool for Windows systems
