@@ -43,3 +43,17 @@ Commands:
   version     Show the Docker Compose version information
 
 Run 'docker compose COMMAND --help' for more information on a command.
+
+
+Available Restart Policies
+| Policy             | Behavior                                                                                                         |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| **no** (default)   | Never restart the container.                                                                                     |
+| **always**         | Always restart the container if it stops (even after Docker daemon restart).                                     |
+| **on-failure**     | Restart only if the container exits with a non-zero exit code. (Optional: `on-failure:N` to limit retries.)      |
+| **unless-stopped** | Always restart unless the container is explicitly stopped by the user (`docker stop`). Survives daemon restarts. |
+
+| Policy             | Behavior if container **exits/crashes** | Behavior if **Docker daemon restarts** | Behavior if **you stop the container manually (`docker stop`)**                   |
+| ------------------ | --------------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------- |
+| **always**         | ✅ Restart automatically                 | ✅ Restart automatically                | ✅ Restart automatically (even if you explicitly stopped it before daemon restart) |
+| **unless-stopped** | ✅ Restart automatically                 | ✅ Restart automatically                | ❌ **Will NOT restart** after daemon restart if you manually stopped it            |
