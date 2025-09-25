@@ -807,4 +807,5 @@ sed OPTIONS... [SCRIPT] [INPUTFILE...]
 find . |grep "\._"
 
 
-ncdu # ncdu stands for NCurses Disk Usage. It's a fast, terminal-based disk usage analyzer that provides a visual overview of disk space usage.
+df -h # Display disk space usage in human-readable format
+sudo ncdu -x # ncdu stands for NCurses Disk Usage. It's a fast, terminal-based disk usage analyzer that provides a visual overview of disk space usage.
