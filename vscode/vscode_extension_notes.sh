@@ -1,4 +1,6 @@
 # extension:
+Git Graph
+Gitlens # Visualize code authorship at a glance via Git blame annotations
 JavaScript (ES6) code snippets
 JavaScript and TypeScript Nightly
 JavaScript Debugger (Nightly) # An extension for debugging Node.js programs and Chrome.
@@ -24,8 +26,6 @@ Dependency Analytics
 JAR Viewer
 Playwright Test for VSCode
 Git Temporal
-Git Graph
-Gitlens # Visualize code authorship at a glance via Git blame annotations
 Rainbow CSV
 Paste JSON as Code
 Path Autocomplete
