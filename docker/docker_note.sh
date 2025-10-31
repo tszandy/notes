@@ -95,3 +95,16 @@ docker system prune
 
 # keep container up
 tail -f /dev/null
+
+
+# move docker root path to other localtion.
+cd /etc/docker
+sudo nano daemon.json
+{
+  "data-root": "/new/path/to/docker"
+}
+sudo systemctl stop docker
+sudo rsync -aP /var/lib/docker/ /new/path/to/docker
+sudo systemctl start docker
+sudo systemctl status docker
+docker info | grep "Docker Root Dir"

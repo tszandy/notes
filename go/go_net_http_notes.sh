@@ -73,6 +73,30 @@ s := &http.Server{
 log.Fatal(s.ListenAndServe())
 ```
 
+### Using http.NewServeMux
+To create a new `ServeMux` instance:
+
+```go
+mux := http.NewServeMux()
+
+// Register a handler for the root path
+mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintln(w, "Welcome to the home page!")
+})
+
+// Register a handler for /hello
+mux.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintln(w, "Hello, world!")
+})
+
+// Start the server on port 8080
+fmt.Println("Server is running at http://localhost:8080/")
+err := http.ListenAndServe(":8080", mux)
+if err != nil {
+    fmt.Println("Error starting server:", err)
+}
+```
+
 ## HTTP/2 Support
 Starting with Go 1.6, the `http` package provides transparent HTTP/2 support for HTTPS connections.
 
@@ -104,3 +128,5 @@ GODEBUG=http2debug=2   # Enable even more verbose logs with frame dumps
 
 ### Advanced HTTP/2 Configuration
 For complex configurations or lower-level HTTP/2 features, import the `golang.org/x/net/http2` package and use its `ConfigureTransport` or `ConfigureServer` functions. This takes precedence over the `net/http` package's built-in HTTP/2 support.
+
+
