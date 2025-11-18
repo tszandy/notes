@@ -6,6 +6,11 @@ ubuntu:24.10
 ubuntu:22.04
 ubuntu:18.04
 
+# debian
+debian:12
+debian:11
+debian:10
+
 # gitlab 
 gitlab/gitlab-ee:latest
 gitlab/gitlab-ce:latest
@@ -13,6 +18,7 @@ gitlab/gitlab-ce:latest
 # solr search engine Apache Solr is the popular, blazing-fast, open source search platform built on Apache Lucene™.
 solr
 solr:8.5.2
+solr:9.9.0
 solr:latest
 
 # CI/CD 
@@ -100,3 +106,8 @@ hashicorp/vault:latest
 
 # JFrog Artifactory OSS is an open-source universal artifact repository manager for managing binaries and dependencies.
 releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+
+# RabbitMQ is an open source message broker software that implements the Advanced Message Queuing Protocol (AMQP).
+rabbitmq:latest
+rabbitmq:3-management
+rabbitmq:4-management
