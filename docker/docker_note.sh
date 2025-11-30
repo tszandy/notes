@@ -3,6 +3,9 @@ https://docs.docker.com/engine/reference/commandline/cli/
 https://docs.docker.com/compose/reference/
 https://docs.docker.com/engine/reference/commandline/dockerd/
 
+#docker 
+docker status
+
 #docker list all containers
 docker ps -a
 
