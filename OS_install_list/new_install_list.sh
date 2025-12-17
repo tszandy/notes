@@ -87,13 +87,26 @@ golang
     sudo tar -C /usr/local -xzf go1.23.2.src.tar.gz
 
 gvm (Go Version Manager)
-    Linux:
+    Linux/Mac:
         bash <(curl -s https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
         source ~/.gvm/scripts/gvm
+    bashrc:
+        echo '[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"' >> ~/.bashrc
+    zshrc:
+        echo '[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"' >> ~/.zshrc
+    List Installed go versions:
+        gvm list
+    Remove go version:
+        gvm uninstall go1.22
+    List Available go versions:
+        gvm listall
     Install go:
-        gvm install go1.22.2
+        gvm install go1.22.12
+        gvm install go1.24.10
     Use go:
-        gvm use go1.22.2
+        gvm use go1.22.12
+        gvm use go1.24.10
+        gvm use go1.24.10 --default
 
 gosec
     go install github.com/securego/gosec/v2/cmd/gosec@latest

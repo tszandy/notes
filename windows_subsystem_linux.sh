@@ -1,3 +1,7 @@
+wsl --update
+wsl --set-default-version 2
+wsl --install -d Ubuntu
+
 # Lists distributions (Show detailed information about all distributions.)
 wsl -l -v
 
