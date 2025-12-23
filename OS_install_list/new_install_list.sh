@@ -5,6 +5,11 @@ node:
         sudo apt update
         curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
         sudo apt install -y nodejs
+    Mac:
+        brew install nvm
+        echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc && echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc
+        nvm install 22.17.0
+        nvm use 22.17.0
 
 nodemon:
     npm install -g nodemon
