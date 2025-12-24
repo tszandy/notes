@@ -16,3 +16,7 @@ PermitRootLogin prohibit-password
 sudo systemctl reload ssh
 sudo systemctl reload sshd
 
+# check current PasswordAuthentication status
+sudo sshd -T | grep -i passwordauthentication
+sudo sshd -T | grep -i PubkeyAuthentication
+sudo sshd -T | grep -i PermitRootLogin
