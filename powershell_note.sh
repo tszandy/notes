@@ -1,3 +1,6 @@
+# bashrc like script (powershell)
+code $profile
+
 # powershell set and get environment variable
 $path = [System.Environment]::GetEnvironmentVariable('Path', 'User')
 $array = $path -split (";")
@@ -244,9 +247,6 @@ msiexec.exe /i file_name.msi /qb
 
 # quit install exe file
 Start-Process -FilePath file_name.exe -ArgumentList "/quiet /norestart" -Wait
-
-# bashrc like script (powershell)
-code $profile
 
 # create alias 
 Function ws{
