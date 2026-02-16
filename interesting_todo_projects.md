@@ -1,3 +1,6 @@
+- [ ] create a website that balance the user and game creator
+- [ ] learn more about game and advertisement company
+- [ ] 
 - [ ] todo list app
 - [ ] how to teach LLM to do planing with history, how to index and retrieve history, how to compress history, how to state this problem and how to systematicly optimize this problem.
 - [ ] large system optimize at large scale. small agent solving issue with available options.
