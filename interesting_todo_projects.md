@@ -1,3 +1,6 @@
+- [ ] create a monitoring system to extract information, valid information and visualize information.
+- [ ] clustering the information.
+- [ ] 
 - [ ] create a website that balance the user and game creator
 - [ ] learn more about game and advertisement company
 - [ ] 
