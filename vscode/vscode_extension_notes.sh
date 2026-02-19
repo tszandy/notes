@@ -71,3 +71,5 @@ vGDB
 GraphQL for VSCode # GraphQL syntax highlighting, linting, auto-complete, and more!
 
 Cline # Autonomous coding agent right in your IDE, capable of creating/editing files, running commands, using the browser, and more with your permission every step of the way.
+
+markdownlint # Markdown linting and style checking for Visual Studio Code
