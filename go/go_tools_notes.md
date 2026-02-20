@@ -90,3 +90,12 @@ This document provides a quick overview of popular Go libraries for connecting t
 - **Use `pgx`** for performance and full PostgreSQL feature set.  
 - **Use `lib/pq`** only for legacy projects.  
 - **Use `GORM`** if you prefer an ORM with abstractions over SQL queries.  
+
+Feature | pgx | lib/pq | GORM
+---------|-------------|-------------|-------------
+Type | Native Driver / Toolkit | Standard SQL Driver | High-level ORM
+Philosophy | Performance & PG Features | Minimalist & Stable | Productivity & Abstraction
+Postgres Support | Excellent (Native) | Good (Standard) | Basic (via Driver)
+Performance | Highest | High | Moderate (Reflection)
+Interface | Native or database/sql | database/sql only | GORM API
+Active Development | High | Maintenance Only | High
