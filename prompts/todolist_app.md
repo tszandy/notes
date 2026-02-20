@@ -10,6 +10,8 @@ use semantic versioning to track the project
 - [ ] How does normal todo list order and store the sequence of todo items
 how does atlassian jira order story
 - [ ] How can I implement a Nested Draggable Tree in React? I need to support a parent-child hierarchy where users can drag items to reorder them or nest them under other items.
+- [ ] add unit tests
+
 
 ## create a todolist app backend. 
 ### Requirements:
@@ -17,6 +19,7 @@ how does atlassian jira order story
 - [ ] code in golang
 - [ ] use postgres database
 - [ ] add basic CORS and healthcheck.
+- [ ] add unit tests
 
 ## use postgres database
 - [ ] code in project_root/migrations/
