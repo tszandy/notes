@@ -1,0 +1,253 @@
+services:
+  # --- API Gateway ---
+  gateway:
+    build:
+      context: ./gateway
+    image: ${NAME_PREFIX:-catf}-gateway-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      JWT_SECRET: ${JWT_SECRET:-dev-secret-change-in-production}
+      JWT_EXPIRY: ${JWT_EXPIRY:-24h}
+      AUTH_MODE: ${AUTH_MODE:-local}
+      AUTH_USERS: ${AUTH_USERS:-[{"username":"admin","password_hash":"plain:admin","role":"admin","email":"admin@localhost","id":"admin-001"},{"username":"dev","password_hash":"plain:dev","role":"engineer","email":"dev@localhost","id":"dev-001"}]}
+    depends_on:
+      - dtm
+      - dm
+      - em
+      - aim
+      - evm
+      - rm
+      - um
+      - web
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  # --- Frontend ---
+  web:
+    build:
+      context: ./web
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-web-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-web
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  # --- Backend Services ---
+  dtm:
+    build:
+      context: ./services/data-template-manager
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-dtm-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-dtm
+    environment:
+      PORT: "8081"
+      DATABASE_URL: postgres://dtm_app:dtm_password@postgres:5432/dtm_db?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  dm:
+    build:
+      context: ./services/data-manager
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-dm-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-dm
+    environment:
+      PORT: "8082"
+      DATABASE_URL: postgres://dm_app:dm_password@postgres:5432/dm_db?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  em:
+    build:
+      context: ./services/execution-manager
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-em-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-em
+    environment:
+      PORT: "8083"
+      DATABASE_URL: postgres://em_app:em_password@postgres:5432/em_db?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+      WORKER_COUNT: "4"
+      PROJECT_PATH: ${PROJECT_PATH:-/app}
+      AIM_BASE_URL: http://aim:8084
+      EVM_BASE_URL: http://evm:8085
+      DM_BASE_URL: http://dm:8082
+      DTM_BASE_URL: http://dtm:8081
+    volumes:
+      - workspaces:/workspaces
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - catf-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  aim:
+    build:
+      context: ./services/agents-interaction-manager
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-aim-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-aim
+    environment:
+      PORT: "8084"
+      DATABASE_URL: postgres://aim_app:aim_password@postgres:5432/aim_db?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+      PROJECT_PATH: ${PROJECT_PATH:-/app}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - catf-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  evm:
+    build:
+      context: ./services/evaluation-manager
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-evm-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-evm
+    environment:
+      PORT: "8085"
+      DATABASE_URL: postgres://evm_app:evm_password@postgres:5432/evm_db?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  rm:
+    build:
+      context: ./services/report-manager
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-rm-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-rm
+    environment:
+      PORT: "8086"
+      DATABASE_URL: postgres://rm_app:rm_password@postgres:5432/rm_db?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  um:
+    build:
+      context: ./services/user-manager
+      target: deploy
+    image: ${NAME_PREFIX:-catf}-um-prod:${TAG:-latest}
+    container_name: ${NAME_PREFIX:-catf}-um
+    environment:
+      PORT: "8087"
+      DATABASE_URL: postgres://um_app:um_password@postgres:5432/um_db?sslmode=disable
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8087/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  # --- Database (single container, multiple databases) ---
+  postgres:
+    image: postgres:15
+    container_name: ${NAME_PREFIX:-catf}-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./scripts/init-databases.sql:/docker-entrypoint-initdb.d/init-databases.sql:ro
+      - ./scripts/seed-data.sql:/scripts/seed-data.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  # --- Message Queue ---
+  rabbitmq:
+    image: rabbitmq:4.1-management
+    container_name: ${NAME_PREFIX:-catf}-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: -rabbitmq_management path_prefix "/rabbitmq"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+  # --- Cache ---
+  redis:
+    image: redis:7-alpine
+    container_name: ${NAME_PREFIX:-catf}-redis
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    volumes:
+      - redis-data:/data
+    networks:
+      - catf-network
+    restart: unless-stopped
+
+networks:
+  catf-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  rabbitmq-data:
+  redis-data:
+  workspaces:
