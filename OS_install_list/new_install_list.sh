@@ -1,3 +1,6 @@
+homebrew 
+    Mac:
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 node:
     Windows:
         https://nodejs.org/dist/v22.12.0/node-v22.12.0-x64.msi
@@ -152,3 +155,8 @@ yarn
     Linux:
         sudo apt update
         sudo apt install -y yarn
+
+wireguard:
+    Mac:
+        brew install wireguard-tools
+
